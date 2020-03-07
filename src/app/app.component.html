@@ -1,5 +1,16 @@
 <!-- <home></home> -->
 
-<div (click)="fetchAPI()">
+<!-- <div (click)="fetchAPI()">
     
-</div>
+</div> -->
+
+<div class = "links">
+    <a routerLink="/home" routerLinkActive="active">Home</a>
+    <a routerLink="/permits" routerLinkActive="active">Permits</a>
+    <a routerLink="/categories" routerLinkActive="active">Categories</a>
+    <a routerLink="/favorites" routerLinkActive="active">Favorites</a>
+ </div>
+
+<router-outlet></router-outlet>
+
+
