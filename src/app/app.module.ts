@@ -7,6 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { ProjectComponent } from './project/project.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { VoteCommentComponent } from './vote-comment/vote-comment.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -14,11 +17,13 @@ import { CategoriesComponent } from './categories/categories.component';
     HomeComponent,
     FavoritesComponent,
     ProjectComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    VoteCommentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
