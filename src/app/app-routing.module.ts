@@ -7,10 +7,11 @@ import { CategoriesComponent } from './categories/categories.component';
 
 
 const routes: Routes = [
-//{path: 'home', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
   {path: 'permits', component: ProjectComponent},
   {path: 'favorites', component: FavoritesComponent},
-  {path: 'categories', component: CategoriesComponent}
+  {path: 'categories/MJApi', component: CategoriesComponent},
+  {path: 'categories/PermitsApi', component: CategoriesComponent}
 ];
 
 @NgModule({

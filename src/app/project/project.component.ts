@@ -7,7 +7,7 @@ import { PermitsAPIService } from '../permits-api.service';
   styleUrls: ['./project.component.css']
 })
 
-//Need to fill in correct names from Sam's API functions
+//Displays API in the component -- Need to fill in correct names from Sam's API functions
 export class ProjectComponent implements OnInit {
 //permitsApi = [];
 //getPermits;
@@ -16,7 +16,7 @@ export class ProjectComponent implements OnInit {
   //this.permitsApi = [];
   }
   ngOnInit(): void {
-//     this.PermitsAPIService.getPermits().subscribe((data: any) => this.permitList = ...)     
+//     this.PermitsAPIService.getPermits().subscribe((data: any) => this.permitList = ____)     
 //   }}
   }}
 
