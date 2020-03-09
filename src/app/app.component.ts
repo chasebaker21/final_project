@@ -8,10 +8,19 @@ import { MJAPIService } from './mjapi.service';
 })
 export class AppComponent {
   title = 'finalProject';
+  open: boolean = false;
+
 
   constructor(public client: MJAPIService) {}
 
-  fetchAPI() {
-    this.client.getMJAPI();
-  }
+    /* Open when someone clicks on the span element */
+ openNav() {
+  this.open = true;
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+closeNav() {
+ this.open = false;
+}
+
 }

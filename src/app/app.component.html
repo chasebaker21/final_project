@@ -1,1 +1,21 @@
-<home></home>
+<header>
+  <button [routerLink]="['/home']" routerLinkActive="router-link-active" ><h3>UPVOICE GR</h3></button>
+  <button (click)="openNav()"><i class="fas fa-bars fa-2x"></i></button>
+</header>
+
+<!-- The overlay -->
+<div [ngClass]="{ openNav: open }" class="overlay">
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a [routerLink]="['/home']" routerLinkActive="router-link-active" (click)="closeNav()">Home</a>
+    <a href="#" (click)="closeNav()">About</a>
+    <a [routerLink]="['/favorites']" routerLinkActive="router-link-active" (click)="closeNav()"
+      >Saved</a
+    >
+  </div>
+</div>
+<router-outlet></router-outlet>
+

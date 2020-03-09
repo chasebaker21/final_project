@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { ProjectComponent } from './project/project.component';
-import { CategoriesComponent } from './categories/categories.component';
 import { VoteCommentComponent } from './vote-comment/vote-comment.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MjCategoryComponent } from './mj-category/mj-category.component';
+import { BuildingCategoryComponent } from './building-category/building-category.component';
 
 
 @NgModule({
@@ -17,8 +18,9 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     FavoritesComponent,
     ProjectComponent,
-    CategoriesComponent,
-    VoteCommentComponent
+    VoteCommentComponent,
+    MjCategoryComponent,
+    BuildingCategoryComponent
   ],
   imports: [
     BrowserModule,
