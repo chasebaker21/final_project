@@ -7,12 +7,14 @@ import { HttpClient } from '@angular/common/http';
 export class PermitsAPIService {
   private baseURL : string = "https://data.grandrapidsmi.gov/resource/dauu-a4tz.json";
   private appToken : string = "vCbvNklpbsoW5J7jcoERTiTjt";
+  private boardType : string = "Planning Commission";
+  private dateRange : string = "2019-03-01T00:00:00.000";
 
   constructor(private http: HttpClient) { }
   
   // pulls entire API
   getPermitsAPI() {
-    const url : string = `${this.baseURL}?$$app_token=${this.appToken}`;
+    const url : string = `${this.baseURL}?$$app_token=${this.appToken}&BoardType=${this.boardType}&$where=BoardIntakeDate>'${this.dateRange}'`;
 
     return this.http.get(url);
   }
