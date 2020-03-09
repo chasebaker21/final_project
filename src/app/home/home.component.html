@@ -1,11 +1,33 @@
 <body>
     <header>
         <h3>UPVOICE GR</h3>
-        <button><i class="fas fa-bars fa-5x"></i></button>
+        <input type="text" placeholder="Search">
+        <button (click)="openNav()"><i class="fas fa-bars fa-2x"></i></button>
     </header>
+    <!-- The overlay -->
+<div [ngClass]="{openNav: open}" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+      <a href="#">About</a>
+      <a [routerLink]="['/favorites']" routerLinkActive="router-link-active">Saved</a>
+    </div>
+  
+  </div>
+  
 <main>
-    <categories></categories>
-    <!-- <favorites></favorites> -->
+    <div class="catContainer">
+        <button class="buildingBtn"><i class="fas fa-building fa-5x"></i></button>
+        <h2 class="textStyle">Building Permits</h2>
+      </div>
+      <div class="catContainer">
+        <button class="marijuannaBtn"><i class="fas fa-cannabis fa-5x"></i></button>
+        <h2 class="textStyle">Marijuana Permits</h2>
+      </div>
 </main>    
 </body>
 

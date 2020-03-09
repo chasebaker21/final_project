@@ -8,8 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { }
+  open: boolean = false;
 
   ngOnInit(): void {
   }
+
+  /* Open when someone clicks on the span element */
+ openNav() {
+   this.open = true;
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+closeNav() {
+  this.open = false;
+}
 
 }
