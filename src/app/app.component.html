@@ -11,7 +11,7 @@
   <!-- Overlay content -->
   <div class="overlay-content">
     <a [routerLink]="['/home']" routerLinkActive="router-link-active" (click)="closeNav()">Home</a>
-    <a href="#" (click)="closeNav()">About</a>
+    <a [routerLink]="['/about']" routerLinkActive="router-link-active"  (click)="closeNav()">About</a>
     <a [routerLink]="['/favorites']" routerLinkActive="router-link-active" (click)="closeNav()"
       >Saved</a
     >

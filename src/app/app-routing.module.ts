@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { MjCategoryComponent } from './mj-category/mj-category.component';
 import { BuildingCategoryComponent } from './building-category/building-category.component';
+import { AboutComponent } from './about/about.component';
+
 
 
 const routes: Routes = [
@@ -22,6 +24,10 @@ const routes: Routes = [
   {
     path: 'buildingCategory',
     component: BuildingCategoryComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
   },
   {
     path: '',

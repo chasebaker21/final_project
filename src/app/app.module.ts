@@ -10,6 +10,7 @@ import { VoteCommentComponent } from './vote-comment/vote-comment.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MjCategoryComponent } from './mj-category/mj-category.component';
 import { BuildingCategoryComponent } from './building-category/building-category.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { BuildingCategoryComponent } from './building-category/building-category
     ProjectComponent,
     VoteCommentComponent,
     MjCategoryComponent,
-    BuildingCategoryComponent
+    BuildingCategoryComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
