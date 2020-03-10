@@ -1,4 +1,18 @@
-<body>
-  <h2>Your saved list</h2>
-  <p1>HELLO</p1>
-</body>
+<link href="https://fonts.googleapis.com/css?family=Coda+Caption:800&display=swap" rel="stylesheet">
+<div class="container">
+    <h2>Your Favorite Joints, Buildings</h2>
+<div>
+    <div *ngFor = "let post of mjPosts">
+        <mj-category> [post] = "post" [fave] = "true"></mj-category>
+    </div>
+
+    <div *ngFor = "let post of bpPosts">
+      <building-category> [post] = "post" [fave] = "true"></building-category>
+  </div>
+
+</div>
+<!-- CHECK OUT THE FOLLOWING LINE -->
+<div *ngIf="mjPosts.length == 0 && bpPosts.length == 0"> 
+    <p>You don't have any favorites yet!</p>
+</div>
+</div>
