@@ -1,3 +1,20 @@
+button {
+  border: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 8px;
+}
+
+.fa-2x {
+  font-size: 2rem;
+}
+
+
+
 /* code is pulled from W3 schools page */
 /* The Overlay (background) */
 .overlay {
@@ -64,14 +81,4 @@
   }
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 1px;
-}
-
-.fa-2x {
-  font-size: 2rem;
-}
 

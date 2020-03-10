@@ -18,3 +18,8 @@ body {
     padding: 5px;
     background-color: lightskyblue;
 }
+
+button {
+    border: none;
+}
+

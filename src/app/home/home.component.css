@@ -9,7 +9,8 @@ header {
 }
 
 input {
-  width: 99%;
+  margin: 8px;
+  width: 95%;
   border: 1px solid;
   height: 35px;
   font-size: large;
@@ -22,13 +23,18 @@ input {
   justify-content: center;
   margin: 40px;
 }
+button {
+  border: none;
+}
 
 .buildingBtn {
-  color: red;
+  color: black;
+  background-color: inherit;
 }
 
 .marijuannaBtn {
-  color: green;
+  color: black;
+  background-color: inherit;
 }
 
 .textStyle {

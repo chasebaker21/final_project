@@ -8,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class VoteCommentComponent implements OnInit {
 
   constructor() { }
+  commentForm: boolean = false;
 
   ngOnInit(): void {
+  }
+
+  commentBtn() {
+    this.commentForm = true;
   }
 
 }
