@@ -13,8 +13,8 @@ body {
 }
 
 .project {
-    border: 3px solid blue;
-    border-radius: 5px;
+    border-top: 3px solid darkgray;
+    border-bottom: 3px solid darkgray;
     padding: 5px;
 }
 button {

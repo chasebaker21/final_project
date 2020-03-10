@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MjCategoryComponent } from './mj-category/mj-category.component';
 import { BuildingCategoryComponent } from './building-category/building-category.component';
 import { AboutComponent } from './about/about.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { AboutComponent } from './about/about.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

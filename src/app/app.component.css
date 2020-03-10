@@ -1,5 +1,6 @@
 button {
   border: none;
+  background-color: inherit;
 }
 
 header {
@@ -7,6 +8,7 @@ header {
   justify-content: space-between;
   width: 95%;
   margin: 8px;
+  border-bottom: 2px solid black;
 }
 
 .fa-2x {

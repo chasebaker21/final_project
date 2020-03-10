@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'vote-comment',
@@ -7,14 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VoteCommentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
   commentForm: boolean = false;
+  comment: string;
 
   ngOnInit(): void {
   }
 
   commentBtn() {
-    this.commentForm = true;
+    this.commentForm = !this.commentForm;
+  }
+
+  submit() {
+    this.http.post('http://localhost:5000/comments', { id: 'some-id', comment: this.comment }).subscribe( res => console.log(res) );
   }
 
 }

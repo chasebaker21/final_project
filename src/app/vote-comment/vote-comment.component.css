@@ -11,12 +11,24 @@ div {
 }
 button {
     border: none;
+    background-color: inherit;
 }
 
 .form {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.comment {
+    height: 100px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: left;
+    
+}
+.submitBtn {
+    background-color: lightseagreen;
+    border-radius: 5px; 
 }
