@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {PermitsAPIService} from '../permits-api.service';
 
 @Component({
   selector: 'building-category',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./building-category.component.css']
 })
 export class BuildingCategoryComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  
+  getPermitsAPI;
+  permitList = [];
+  
+  constructor(private PermitsAPIService: PermitsAPIService) { 
+  
   }
+  ngOnInit(): void {
+    this.PermitsAPIService.getPermitsAPI().subscribe((data: any) => this.permitList = data)   
+  }}
 
-}

@@ -9,14 +9,14 @@ import { PermitsAPIService } from '../permits-api.service';
 
 //Displays API in the component -- Need to fill in correct names from Sam's API functions
 export class ProjectComponent implements OnInit {
-//permitsApi = [];
-//getPermits;
-//PermitList;
+permits = [];
+getPermitsAPI;
+PermitList;
   constructor(private PermitsAPIService: PermitsAPIService) { 
-  //this.permitsApi = [];
+  this.permits = [];
   }
   ngOnInit(): void {
-//     this.PermitsAPIService.getPermits().subscribe((data: any) => this.permitList = ____)     
-//   }}
+    this.PermitsAPIService.getPermitsAPI().subscribe((data: any) => this.PermitList = data)     
   }}
+
 
