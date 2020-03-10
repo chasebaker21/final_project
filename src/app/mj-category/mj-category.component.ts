@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MJAPIService } from '../mjapi.service';
 
 @Component({
   selector: 'mj-category',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MjCategoryComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  getMJAPI;
+  permitList = [];
+  
+  constructor(private MJAPIService: MJAPIService) { 
+  
   }
+  ngOnInit(): void {
+    this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features)   
+  }}
 
-}

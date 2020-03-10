@@ -3,15 +3,25 @@
       <h2>Upcoming Marijuana Building Permits</h2>
     </header>
     <main class="project">
+      <div *ngFor = "let permit of permitList"> 
+        <h3 class = "projectName">{{permit.attributes.EntityName}}</h3>
+         <p>{{permit.attributes.FullAddress}}<br>
+         Status:{{permit.attributes.Status}}<br>
+         Approval Date:{{permit.attributes.ApprovedDate}}<br>
+         Intake Date: {{permit.attributes.IntakeDate}}</p>
+         <vote-comment></vote-comment>
+      </div>
+
+
       <div class="genInfo">
         <p>Name: Slow Grow MJ</p>
-        <p>Location: 123 Divsion Ave</p>
+        <p>Location: 123 Division Ave</p>
       </div>
       <div class="statusInfo">
-        <p>Staus: Pending</p>
+        <p>Status: Pending</p>
         <p>Date Approved: N/A</p>
       </div>
-      <vote-comment></vote-comment>
+      
     </main>
   </body>
   
