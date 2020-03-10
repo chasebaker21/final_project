@@ -22,6 +22,5 @@ export class FavoritesComponent implements OnInit {
   ngOnInit(): void {
     this.mjPosts = this.service1.mjFavoritesList;
     this.bpPosts = this.service2.bpFavoritesList;
-
   }
 }
