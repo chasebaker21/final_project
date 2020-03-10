@@ -1,17 +1,38 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { ProjectComponent } from './project/project.component';
 import { FavoritesComponent } from './favorites/favorites.component';
-import { CategoriesComponent } from './categories/categories.component';
+import { MjCategoryComponent } from './mj-category/mj-category.component';
+import { BuildingCategoryComponent } from './building-category/building-category.component';
+import { AboutComponent } from './about/about.component';
+
 
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: 'permits', component: ProjectComponent},
-  {path: 'favorites', component: FavoritesComponent},
-  {path: 'categories/MJApi', component: CategoriesComponent},
-  {path: 'categories/PermitsApi', component: CategoriesComponent}
+  {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path: 'favorites',
+    component: FavoritesComponent
+  },
+  {
+    path: 'mjCategory',
+    component: MjCategoryComponent
+  },
+  {
+    path: 'buildingCategory',
+    component: BuildingCategoryComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
+  },
+  {
+    path: '',
+    component: HomeComponent
+  }
 ];
 
 @NgModule({

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PermitsAPIService } from '../permits-api.service';
 
 @Component({
-  selector: 'app-project',
+  selector: 'project',
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.css']
 })

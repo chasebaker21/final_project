@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+header {
+  flex: 1;
+}
+
+input {
+  width: 99%;
+  border: 1px solid;
+  height: 35px;
+  font-size: large;
+}
+
+/* css for the category buttons  */
+.catContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px;
+}
+
+.buildingBtn {
+  color: red;
+}
+
+.marijuannaBtn {
+  color: green;
+}
+
+.textStyle {
+  color: black;
+  font-size: 1rem;
+}
+
+.fa-5x {
+  font-size: 8rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer {
+  width: auto;
+}
