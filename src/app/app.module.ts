@@ -6,7 +6,12 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { ProjectComponent } from './project/project.component';
-import { CategoriesComponent } from './categories/categories.component';
+import { VoteCommentComponent } from './vote-comment/vote-comment.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MjCategoryComponent } from './mj-category/mj-category.component';
+import { BuildingCategoryComponent } from './building-category/building-category.component';
+import { AboutComponent } from './about/about.component';
+
 
 @NgModule({
   declarations: [
@@ -14,11 +19,15 @@ import { CategoriesComponent } from './categories/categories.component';
     HomeComponent,
     FavoritesComponent,
     ProjectComponent,
-    CategoriesComponent
+    VoteCommentComponent,
+    MjCategoryComponent,
+    BuildingCategoryComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

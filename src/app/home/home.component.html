@@ -1,1 +1,19 @@
-<p>home works!</p>
+<body>
+  <header>
+    <input type="text" placeholder="Search" />
+  </header>
+<main>
+    <div class="catContainer">
+        <button class="buildingBtn" [routerLink]="['/buildingCategory']" routerLinkActive="router-link-active" ><i class="fas fa-building fa-5x"></i></button>
+        <h2 class="textStyle">Building Permits</h2>
+      </div>
+      <div class="catContainer">
+        <button class="marijuannaBtn" [routerLink]="['/mjCategory']" routerLinkActive="router-link-active" ><i class="fas fa-cannabis fa-5x"></i></button>
+        <h2 class="textStyle">Marijuana Permits</h2>
+      </div>
+</main>
+<footer>
+     <!-- to be decided  -->
+</footer>    
+</body>
+
