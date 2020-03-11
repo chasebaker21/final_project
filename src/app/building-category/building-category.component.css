@@ -5,6 +5,9 @@ body {
     display: flex; 
     justify-content: space-between;
     align-items: center;
+    border-top: 3px solid darkgray;
+    border-bottom: 3px solid darkgray;
+
 }
 .statusInfo {
     display: flex;
@@ -13,8 +16,6 @@ body {
 }
 
 .project {
-    border-top: 3px solid darkgray;
-    border-bottom: 3px solid darkgray;
     padding: 5px;
 }
 button {
