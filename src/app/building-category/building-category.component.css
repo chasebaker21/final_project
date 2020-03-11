@@ -16,5 +16,11 @@ body {
     border: 3px solid blue;
     border-radius: 5px;
     padding: 5px;
-    background-color: lightskyblue;
+    background-color: lightskyblue;   
+}
+.voteButtons {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
 }

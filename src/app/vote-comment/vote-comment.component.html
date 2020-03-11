@@ -1,5 +1,10 @@
 <div>
-    <button><i class="fas fa-arrow-up fa-2x"></i></button>
-    <button class="commentBtn">UPVOICE</button>
-    <button><i class="fas fa-arrow-down fa-2x"></i></button>
+    <i class="far fa-thumbs-up" (click)="upVote()"></i>
+    <i class ="fas fa-angle-double-up"></i>
+    <i class="far fa-heart"></i>
+    <i class="far fa-thumbs-down" (click)="downVote()"></i>
+</div>
+<div> 
+<p class = "likes"> {{upVoteCount}} likes</p>
+<p class = "dislikes"> {{downVoteCount}} Dislikes</p> 
 </div>

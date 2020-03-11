@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&display=swap');
+
 body {
     margin: 0;
 }
@@ -13,6 +15,7 @@ body {
 }
 
 .project {
+    font-family: 'Bellota Text', cursive;
     border: 3px solid blue;
     border-radius: 5px;
     padding: 5px;

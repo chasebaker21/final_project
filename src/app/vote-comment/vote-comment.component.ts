@@ -11,5 +11,15 @@ export class VoteCommentComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  upVoteCount = 0;
+  downVoteCount = 0;
+  upVote(){
+    this.upVoteCount ++;
+    console.log(this.upVoteCount);
+  }
+  downVote() {
+  this.downVoteCount ++;
+  console.log (this.downVoteCount);
+}}
 
-}
+
