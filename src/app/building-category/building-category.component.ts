@@ -15,6 +15,17 @@ export class BuildingCategoryComponent implements OnInit {
   
   }
   ngOnInit(): void {
-    this.PermitsAPIService.getPermitsAPI().subscribe((data: any) => this.permitList = data)   
-  }}
+    this.PermitsAPIService.getPermitsAPI().subscribe((data: any) => this.permitList = data); 
+  }
+
+  formatDate(rawDate : string) : string {
+    if (rawDate === null) {
+      return "N/A";
+    }
+
+    const newDate = new Date(rawDate);
+    return newDate.toLocaleDateString();
+  }
+
+}
 

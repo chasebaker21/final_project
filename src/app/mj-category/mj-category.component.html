@@ -8,8 +8,8 @@
       <p>
         {{ permit.attributes.FullAddress }}<br />
         Status: {{ permit.attributes.Status }}<br />
-        Approval Date: {{ permit.attributes.ApprovedDate }}<br />
-        Intake Date: {{ permit.attributes.IntakeDate }}
+        Approval Date: {{ formatDate(permit.attributes.ApprovedDate) }}<br />
+        Intake Date: {{ formatDate(permit.attributes.IntakeDate) }}
       </p>
       <vote-comment></vote-comment>
     </div>
