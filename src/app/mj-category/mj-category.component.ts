@@ -8,13 +8,24 @@ import { MJAPIService } from '../mjapi.service';
 })
 export class MjCategoryComponent implements OnInit {
 
-  getMJAPI;
+  
   permitList = [];
   
-  constructor(private MJAPIService: MJAPIService) { 
+  constructor(private MJAPIService: MJAPIService) { }
+
   
-  }
   ngOnInit(): void {
     this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features)   
-  }}
+    let x = new Date(1582588800000);
+    console.log(x.toLocaleDateString());
+     
+  }
+
+  // displayDate() {
+  //   this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features.permits.attributes.IntakeDate)   
+
+  // }
+
+
+}
 

@@ -1,8 +1,9 @@
 <body>
-    <header>
-      <h2>Upcoming Building Permits</h2>
-    </header>
+  <header>
+    <h2>Upcoming Building Permits</h2>
+  </header>
 
+<<<<<<< HEAD
     <main class="project">
       <div class = "genInfo" *ngFor = "let permit of permitList"> 
        <h3 class = "projectName"> {{permit.projectname}}</h3>
@@ -21,6 +22,19 @@
         <p>Status: Pending</p>
         <p>Date Approved: N/A</p>
       </div>
+=======
+  <main class="project">
+    <div class="genInfo" *ngFor="let permit of permitList">
+      <h3 class="projectName">{{ permit.projectname }}</h3>
+      <br />
+      <p class="projectInfo">
+        {{ permit.originaladdress1 }}<br />
+        {{ permit.neighborhood }} Neighborhood<br />
+        Status: {{ permit.permitstatuscurrent }}<br />
+        Approved Date: {{ permit.permitapproveddate }}
+      </p>
+>>>>>>> cc68abd1ed480a228f288692bb3779e1c9885ff7
       <vote-comment></vote-comment>
+    </div>
     </main>
-  </body>
+</body>
