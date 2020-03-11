@@ -56,3 +56,13 @@ main {
 footer {
   width: auto;
 }
+
+.openerPage {
+  /* display: none; */
+  position: absolute;
+  border: 5px solid black;
+  background-color: blue;
+  text-align: center;
+  height: 101%;
+  width: 100%;
+}
