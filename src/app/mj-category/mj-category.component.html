@@ -1,5 +1,4 @@
 <body>
-<<<<<<< HEAD
     <header>
       <h2>Upcoming Marijuana Building Permits</h2>
     </header>
@@ -12,35 +11,8 @@
          Intake Date: {{permit.attributes.IntakeDate}}</p>
          <vote-comment></vote-comment>
       </div>
+      </main>
+      </body>
 
 
-      <div class="genInfo">
-        <p>Name: Slow Grow MJ</p>
-        <p>Location: 123 Division Ave</p>
-      </div>
-      <div class="statusInfo">
-        <p>Status: Pending</p>
-        <p>Date Approved: N/A</p>
-      </div>
       
-    </main>
-  </body>
-  
-=======
-  <header>
-    <h4>Upcoming Marijuana Building Permits</h4>
-  </header>
-  <main class="project">
-    <div *ngFor="let permit of permitList">
-      <h4 class="projectName">{{ permit.attributes.EntityName }}</h4>
-      <p>
-        {{ permit.attributes.FullAddress }}<br />
-        Status: {{ permit.attributes.Status }}<br />
-        Approval Date: {{ permit.attributes.ApprovedDate }}<br />
-        Intake Date: {{ permit.attributes.IntakeDate }}
-      </p>
-      <vote-comment></vote-comment>
-    </div>
-  </main>
-</body>
->>>>>>> cc68abd1ed480a228f288692bb3779e1c9885ff7

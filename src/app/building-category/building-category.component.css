@@ -17,7 +17,6 @@ body {
 
 .project {
     padding: 5px;
-<<<<<<< HEAD
     background-color: lightskyblue;   
 }
 .voteButtons {
@@ -25,9 +24,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     
-=======
 }
 button {
     border: none;
->>>>>>> cc68abd1ed480a228f288692bb3779e1c9885ff7
 }

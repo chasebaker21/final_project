@@ -25,12 +25,9 @@ div {
 }
 
 .project {
-<<<<<<< HEAD
     font-family: 'Bellota Text', cursive;
     border: 3px solid blue;
     border-radius: 5px;
-=======
->>>>>>> cc68abd1ed480a228f288692bb3779e1c9885ff7
     padding: 5px;
 }
 
