@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FavoritesComponent } from './favorites/favorites.component';
-import { ProjectComponent } from './project/project.component';
 import { VoteCommentComponent } from './vote-comment/vote-comment.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MjCategoryComponent } from './mj-category/mj-category.component';
@@ -19,7 +18,6 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     HomeComponent,
     FavoritesComponent,
-    ProjectComponent,
     VoteCommentComponent,
     MjCategoryComponent,
     BuildingCategoryComponent,

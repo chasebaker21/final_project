@@ -10,7 +10,7 @@
        {{permit.neighborhood}} Neighborhood<br>
        Status: {{permit.permitstatuscurrent}}<br>
        Approved Date: {{formatDate(permit.permitapproveddate)}}</p><br>
-       <div class = "voteButtons"><vote-comment></vote-comment></div>
+       <div class = "voteButtons"><vote-comment [id]="permit.permitnum"></vote-comment></div>
       </div>
     </main>
 </body>
