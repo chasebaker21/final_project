@@ -1,17 +1,10 @@
 <div>
-<<<<<<< HEAD
     <i class="far fa-thumbs-up fa-2x" (click)="upVote()"></i>
     <i class ="fas fa-angle-double-up fa-2x" (click)="commentBtn()"></i>
-    <i class="far fa-heart fa-2x"></i>
-    <i class="far fa-thumbs-down fa-2x" (click)="downVote()"></i>
-=======
-    <button (click)="upVote()"><i class="fas fa-arrow-up fa-2x"></i></button>
-    <button class="commentBtn" (click)="commentBtn()">UPVOICE</button>
     <button *ngIf="fave" (click)="removeMJItem(post)">Unfavorite</button>
     <button *ngIf="!fave" (click)="addMJItem(post)">Favorite</button>      
-    <button (click)="downVote()"><i class="fas fa-arrow-down fa-2x"></i></button>
-
->>>>>>> Ryan
+    <i class="far fa-heart fa-2x"></i>
+    <i class="far fa-thumbs-down fa-2x" (click)="downVote()"></i>
 </div>
 <div> 
 <p class = "likes"> {{upVoteCount}} Likes</p>

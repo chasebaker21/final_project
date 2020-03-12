@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
-=======
-import { Component, OnInit, Input } from '@angular/core';
->>>>>>> Ryan
 import { MJAPIService } from '../mjapi.service';
 
 @Component({
@@ -21,13 +17,7 @@ export class MjCategoryComponent implements OnInit {
 
   
   ngOnInit(): void {
-<<<<<<< HEAD
     this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features);
-=======
-    this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features)
-      let x = new Date(1582588800000);
-      console.log(x.toLocaleDateString());
->>>>>>> Ryan
      
     // for (let thingie of this.MJAPIService.favoritesList) {
     //   if(thingie.attributes.FullAddress == this.post.attributes.FullAddress) {
@@ -51,7 +41,7 @@ export class MjCategoryComponent implements OnInit {
     console.log(this.MJAPIService.favoritesList.length);
   }
 
-  }
+  
 
   formatDate(rawDate : string) : string {
     if (rawDate === null) {
@@ -62,5 +52,5 @@ export class MjCategoryComponent implements OnInit {
     return newDate.toLocaleDateString();
   }
 
-
+}
 
