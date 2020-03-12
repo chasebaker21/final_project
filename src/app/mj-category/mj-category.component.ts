@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 import { MJAPIService } from '../mjapi.service';
 
 @Component({
@@ -10,21 +10,14 @@ export class MjCategoryComponent implements OnInit {
 
   
   permitList = [];
+
   
   constructor(private MJAPIService: MJAPIService) { }
 
   
   ngOnInit(): void {
-    this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features)   
-    let x = new Date(1582588800000);
-    console.log(x.toLocaleDateString());
-     
+    this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features)
   }
-
-  // displayDate() {
-  //   this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features.permits.attributes.IntakeDate)   
-
-  // }
 
 
 }
