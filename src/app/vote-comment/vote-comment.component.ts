@@ -8,7 +8,7 @@ import { MJAPIService } from '../mjapi.service';
   styleUrls: ['./vote-comment.component.css']
 })
 export class VoteCommentComponent implements OnInit {
-  @Input() fave : boolean = false;
+  @Input() fave: boolean = false;
   @Input() post;
   @Input() id;
 
@@ -20,7 +20,7 @@ export class VoteCommentComponent implements OnInit {
   applicationID: string;
   name: string;
 
-  
+
   ngOnInit() {
     // for (let thingie of this.MJAPIService.favoritesList) {
     //   if(thingie.attributes.FullAddress == this.post.attributes.FullAddress) {
@@ -28,7 +28,7 @@ export class VoteCommentComponent implements OnInit {
     //     console.log("good");
     //   }
     // }
-    }
+  }
 
 
 
@@ -40,7 +40,8 @@ export class VoteCommentComponent implements OnInit {
   upVote() {
     // ****** need to also assign this vote to an application ID *****
     this.upVoteCount++
-    this.http.put('http://localhost:5000/votes/' + this.id , {  upVote: this.upVoteCount }).subscribe(res => console.log(res));  }
+    this.http.put('http://localhost:5000/votes/' + this.id, { upVote: this.upVoteCount }).subscribe(res => console.log(res));
+  }
 
   downVote() {
     // ***** need to also assign this vote to an application ID ******
@@ -50,15 +51,16 @@ export class VoteCommentComponent implements OnInit {
 
   // sends the comment and application ID data to server.js
   submit() {
-    this.http.post('http://localhost:5000/comments', { id: this.id, comment: this.comment, name: this.name  }).subscribe(res => console.log(res));  }
+    this.http.post('http://localhost:5000/comments', { id: this.id, comment: this.comment, name: this.name }).subscribe(res => console.log(res));
+  }
 
-  addMJItem (post) {
+  addMJItem(post) {
     this.MJAPIService.addToFavoritesList(post);
     this.fave = true;
     console.log(this.MJAPIService.favoritesList.length);
   }
 
-  removeMJItem (post) {
+  removeMJItem(post) {
     this.MJAPIService.removeFromFavoritesList(post);
     this.fave = false;
     console.log(this.MJAPIService.favoritesList.length);

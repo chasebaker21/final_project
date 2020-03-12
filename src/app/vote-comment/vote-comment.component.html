@@ -1,21 +1,40 @@
 <div>
-    <i class="far fa-thumbs-up fa-2x" (click)="upVote()"></i>
-    <i class ="fas fa-angle-double-up fa-2x" (click)="commentBtn()"></i>
-    <button *ngIf="fave" (click)="removeMJItem(post)">Unfavorite</button>
-    <button *ngIf="!fave" (click)="addMJItem(post)">Favorite</button>      
-    <i class="far fa-heart fa-2x"></i>
-    <i class="far fa-thumbs-down fa-2x" (click)="downVote()"></i>
+  <i class="far fa-thumbs-up fa-2x" (click)="upVote()"></i>
+  <i class="fas fa-angle-double-up fa-2x" (click)="commentBtn()"></i>
+  <button *ngIf="fave" (click)="removeMJItem(post)">Unfavorite</button>
+  <button *ngIf="!fave" (click)="addMJItem(post)">Favorite</button>
+  <!-- <i class="far fa-heart fa-2x"></i> -->
+  <i class="far fa-thumbs-down fa-2x" (click)="downVote()"></i>
 </div>
-<div> 
-<p class = "likes"> {{upVoteCount}} Likes</p>
-<p class = "dislikes"> {{downVoteCount}} Dislikes</p> 
+<div>
+  <p class="likes">{{ upVoteCount }} Likes</p>
+  <p class="dislikes">{{ downVoteCount }} Dislikes</p>
 
-    <form *ngIf="commentForm" class="form" (submit)="submit()">
-        <div class="form-group">
-          <input [(ngModel)]="name" name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
-        </div>
-        <div class="form-group">
-          <input [(ngModel)]="comment" name="comment" type="text" class="form-control" class="comment" id="exampleInputPassword1" placeholder="Please enter your comment">
-        </div>
-        <button type="submit" class="btn btn-primary" class="submitBtn" >Submit</button>
-      </form>
+  <form *ngIf="commentForm" class="form" (submit)="submit()">
+    <div class="form-group">
+      <input
+        [(ngModel)]="name"
+        name="name"
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Name"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        [(ngModel)]="comment"
+        name="comment"
+        type="text"
+        class="form-control"
+        class="comment"
+        id="exampleInputPassword1"
+        placeholder="Please enter your comment"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary" class="submitBtn">
+      Submit
+    </button>
+  </form>
+</div>

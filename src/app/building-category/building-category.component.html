@@ -3,14 +3,16 @@
     <h4>Upcoming Building Permits</h4>
   </header>
 
-    <main class="project">
-      <div class = "genInfo" *ngFor = "let permit of permitList"> 
-       <h3 class = "projectName"> {{permit.projectname}}</h3>
-       <p class = "projectInfo">{{permit.originaladdress1}}<br>
-       {{permit.neighborhood}} Neighborhood<br>
-       Status: {{permit.permitstatuscurrent}}<br>
-       Approved Date: {{formatDate(permit.permitapproveddate)}}<br>
-       <div class = "voteButtons"><vote-comment [id]="permit.permitnum"></vote-comment></div>
+  <main class="project">
+    <div *ngFor="let permit of permitList">
+      <h3 class="projectName">{{ permit.projectname }}</h3>
+      <h4 class="projectInfo">{{ permit.originaladdress1 }}</h4>
+      <div class="genInfo">
+        <p>{{ permit.neighborhood }} Neighborhood</p>
+        <p>Status: {{ permit.permitstatuscurrent }}</p>
+        <p>Approved Date: {{ formatDate(permit.permitapproveddate) }}</p>
       </div>
-    </main>
+      <vote-comment [id]="permit.permitnum"></vote-comment>
+    </div>
+  </main>
 </body>

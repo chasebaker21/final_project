@@ -3,19 +3,30 @@
 body {
   margin: 0;
 }
+header {
+  display: flex;
+  justify-content: center;
+}
 .genInfo {
   display: flex;
-  flex-direction: column;
+  border: none;
+  margin: 0;
+  padding: 0px;
+  padding-bottom: 9px;
 }
-
-h4 {
-  border-bottom: 3px solid green;
+p {
+  font-size: 0.8rem;
+  margin-bottom: 0px;
+  font-weight: 900;
 }
 div {
+  background-color: #47bbde;
   padding: 15px;
-  border: 5px solid lightgreen;
-  border-radius: 15px;
+  border-top: 5px solid #191a2b;
+  border-bottom: 5px solid #191a2b;
   margin-bottom: 10px;
+  width: 103%;
+  margin-left: -5px;
 }
 .statusInfo {
   display: flex;
@@ -26,14 +37,17 @@ div {
 .project {
   font-family: "Bellota Text", cursive;
   padding: 5px;
-  background-color: lightskyblue;
 }
-.voteButtons {
+
+.projectInfo {
+  margin-bottom: 10px;
+}
+/* .voteButtons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   border: none;
-}
+} */
 button {
   border: none;
 }
