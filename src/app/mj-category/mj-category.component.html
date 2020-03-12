@@ -11,6 +11,8 @@
         Approval Date: {{ permit.attributes.ApprovedDate }}<br />
         Intake Date: {{ permit.attributes.IntakeDate }}
       </p>
+      <button *ngIf="fave" (click)="removeMJItem(permit)">Unfavorite</button>
+      <button *ngIf="!fave" (click)="addMJItem(permit)">Favorite</button>      
       <vote-comment></vote-comment>
     </div>
   </main>

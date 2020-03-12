@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {PermitsAPIService} from '../permits-api.service';
 
 @Component({
@@ -15,6 +15,8 @@ export class BuildingCategoryComponent implements OnInit {
   
   }
   ngOnInit(): void {
-    this.PermitsAPIService.getPermitsAPI().subscribe((data: any) => this.permitList = data)   
-  }}
+    this.PermitsAPIService.getPermitsAPI().subscribe((data: any) => this.permitList = data);
+  }
+    
+}
 

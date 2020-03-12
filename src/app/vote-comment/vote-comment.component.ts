@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { MJAPIService } from '../mjapi.service';
 
 @Component({
   selector: 'vote-comment',
@@ -7,16 +8,18 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./vote-comment.component.css']
 })
 export class VoteCommentComponent implements OnInit {
+  // @Input() fave : boolean = false;
+  // @Input() permit;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, public MJAPIService: MJAPIService) { }
   commentForm: boolean = false;
   comment: string;
   upVoteCount: number = 0;
   downVoteCount: number = 0;
   applicationID: string;
-
-  ngOnInit(): void {
-  }
+  
+  ngOnInit() {
+    }
 
   // *** WHEN ID IS SET THE COMMENTS AND VOTES "SHOULD" AUTO ASSIGN TO THAT ID *** ???
 
@@ -38,11 +41,21 @@ export class VoteCommentComponent implements OnInit {
 
   }
 
-
   // sends the comment and application ID data to server.js
   submit() {
     this.http.post('http://localhost:5000/comments', { id: "this.applicationID", comment: this.comment }).subscribe(res => console.log(res));
   }
+
+  // addMJItem (permit) {
+  //   this.MJAPIService.addToFavoritesList(permit);
+  //   this.fave = true;
+  // }
+
+  // removeMJItem (permit) {
+  //   this.MJAPIService.removeFromFavoritesList(permit);
+  //   this.fave = false;
+  // }
+
 
 
 }

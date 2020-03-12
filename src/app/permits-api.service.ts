@@ -5,8 +5,6 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class PermitsAPIService {
-  bpFavoritesList = [];
-
   private baseURL : string = "https://data.grandrapidsmi.gov/resource/dauu-a4tz.json";
   private appToken : string = "vCbvNklpbsoW5J7jcoERTiTjt";
   private boardType : string = "Planning Commission";
