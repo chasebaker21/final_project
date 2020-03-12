@@ -6,6 +6,7 @@
       <div *ngFor = "let permit of permitList"> 
         <h3 class = "projectName">{{permit.attributes.EntityName}}</h3>
          <p><br>
+         Address: {{permit.attributes.FullAddress}}<br>
          Status:{{permit.attributes.Status}}<br>
          Approval Date:{{ formatDate(permit.attributes.ApprovedDate) }}<br>
          Intake Date: {{ formatDate(permit.attributes.IntakeDate) }}</p>
