@@ -16,7 +16,17 @@ export class MjCategoryComponent implements OnInit {
 
   
   ngOnInit(): void {
-    this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features)
+    this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features);
+     
+  }
+
+  formatDate(rawDate : string) : string {
+    if (rawDate === null) {
+      return "N/A";
+    }
+
+    const newDate = new Date(rawDate);
+    return newDate.toLocaleDateString();
   }
 
 

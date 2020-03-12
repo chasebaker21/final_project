@@ -7,8 +7,8 @@
         <h3 class = "projectName">{{permit.attributes.EntityName}}</h3>
          <p><br>
          Status:{{permit.attributes.Status}}<br>
-         Approval Date:{{permit.attributes.ApprovedDate}}<br>
-         Intake Date: {{permit.attributes.IntakeDate}}</p>
+         Approval Date:{{ formatDate(permit.attributes.ApprovedDate) }}<br>
+         Intake Date: {{ formatDate(permit.attributes.IntakeDate) }}</p>
          <vote-comment [id]="permit.attributes.ApplicationID"></vote-comment>
       </div>
       </main>
