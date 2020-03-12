@@ -5,8 +5,7 @@ body {
 }
 .genInfo {
     display: flex; 
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 }
 h4 {
     border-bottom: 3px solid green;
@@ -26,7 +25,6 @@ div {
 
 .project {
     font-family: 'Bellota Text', cursive;
-    border: 3px solid blue;
     border-radius: 5px;
     padding: 5px;
 }
