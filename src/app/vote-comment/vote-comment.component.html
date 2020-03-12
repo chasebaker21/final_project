@@ -1,8 +1,13 @@
 <div>
-    <button (click)="upVote()"><i class="fas fa-arrow-up fa-2x"></i></button>
-    <button class="commentBtn" (click)="commentBtn()">UPVOICE</button>
-    <button (click)="downVote()"><i class="fas fa-arrow-down fa-2x"></i></button>
+    <i class="far fa-thumbs-up" (click)="upVote()"></i>
+    <i class ="fas fa-angle-double-up" (click)="commentBtn()"></i>
+    <i class="far fa-heart"></i>
+    <i class="far fa-thumbs-down" (click)="downVote()"></i>
 </div>
+<div> 
+<p class = "likes"> {{upVoteCount}} Likes</p>
+<p class = "dislikes"> {{downVoteCount}} Dislikes</p> 
+
     <form *ngIf="commentForm" class="form" (submit)="submit()">
         <div class="form-group">
           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">

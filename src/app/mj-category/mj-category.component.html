@@ -1,17 +1,18 @@
 <body>
-  <header>
-    <h4>Upcoming Marijuana Building Permits</h4>
-  </header>
-  <main class="project">
-    <div *ngFor="let permit of permitList">
-      <h4 class="projectName">{{ permit.attributes.EntityName }}</h4>
-      <p>
-        {{ permit.attributes.FullAddress }}<br />
-        Status: {{ permit.attributes.Status }}<br />
-        Approval Date: {{ formatDate(permit.attributes.ApprovedDate) }}<br />
-        Intake Date: {{ formatDate(permit.attributes.IntakeDate) }}
-      </p>
-      <vote-comment></vote-comment>
-    </div>
-  </main>
-</body>
+    <header>
+      <h2>Upcoming Marijuana Building Permits</h2>
+    </header>
+    <main class="project">
+      <div *ngFor = "let permit of permitList"> 
+        <h3 class = "projectName">{{permit.attributes.EntityName}}</h3>
+         <p><br>
+         Status:{{permit.attributes.Status}}<br>
+         Approval Date:{{ formatDate(permit.attributes.ApprovedDate) }}<br>
+         Intake Date: {{ formatDate(permit.attributes.IntakeDate) }}</p>
+         <vote-comment [id]="permit.attributes.ApplicationID"></vote-comment>
+      </div>
+      </main>
+      </body>
+
+
+      

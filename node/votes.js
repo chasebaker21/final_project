@@ -11,9 +11,9 @@ app.post("/", (req, res) => {
 });
 
 // updates the upvote and downvote count
-app.put("/:id", (req, res) => {
+// app.put("/:id", (req, res) => {
 
     
-});
+// });
 
 export default app;

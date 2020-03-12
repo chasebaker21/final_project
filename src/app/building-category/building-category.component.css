@@ -17,6 +17,13 @@ body {
 
 .project {
     padding: 5px;
+    background-color: lightskyblue;   
+}
+.voteButtons {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
 }
 button {
     border: none;

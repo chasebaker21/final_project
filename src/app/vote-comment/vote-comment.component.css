@@ -9,10 +9,7 @@ div {
     color: white;
     font-size: large;
 }
-button {
-    border: none;
-    background-color: inherit;
-}
+
 
 .form {
     display: flex;
