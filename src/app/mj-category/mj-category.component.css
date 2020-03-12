@@ -45,3 +45,7 @@ p {
 button {
   border: none;
 }
+
+h5 {
+    display: ruby;
+}
