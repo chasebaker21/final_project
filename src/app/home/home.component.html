@@ -3,18 +3,18 @@
     <input type="text" placeholder="Search Address" />
   </header>
   
-<div [ngClass]="{openerPage: openerPage}">
+<!-- <div [ngClass]="{openerPage: openerPage}">
   <button (click)="test()">TEST</button>
     <h1 class="animated fadeInDown 3s">UPVOICE GR</h1>
-</div>
+</div> -->
 
 <main>
     <div class="catContainer">
-        <button class="buildingBtn" [routerLink]="['/buildingCategory']" routerLinkActive="router-link-active" ><i class="fas fa-building fa-5x"></i></button>
+        <button class="buildingBtn" [routerLink]="['/buildingCategory']" routerLinkActive="router-link-active" ><img src="assets/2-man-on-construction-site-during-daytime-159306.png"></button>
         <h2 class="textStyle">Building Permits</h2>
       </div>
       <div class="catContainer">
-        <button class="marijuannaBtn" [routerLink]="['/mjCategory']" routerLinkActive="router-link-active" ><i class="fas fa-cannabis fa-5x"></i></button>
+        <button class="marijuannaBtn" [routerLink]="['/mjCategory']" routerLinkActive="router-link-active" ><img src="assets/mjLeaf.png"></button>
         <h2 class="textStyle">Marijuana Permits</h2>
       </div>
 </main>
