@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { MJAPIService } from '../mjapi.service';
 
 @Component({
   selector: 'favorites',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./favorites.component.css']
 })
 export class FavoritesComponent implements OnInit {
+  @Input()
+  posts: any;
 
-  constructor() { }
+  constructor(public MJService: MJAPIService) { }
 
   ngOnInit(): void {
+    this.posts = this.MJService.favoritesList;
   }
-
 }

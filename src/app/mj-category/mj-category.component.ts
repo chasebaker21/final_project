@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
+=======
+import { Component, OnInit, Input } from '@angular/core';
+>>>>>>> Ryan
 import { MJAPIService } from '../mjapi.service';
 
 @Component({
@@ -7,8 +11,9 @@ import { MJAPIService } from '../mjapi.service';
   styleUrls: ['./mj-category.component.css']
 })
 export class MjCategoryComponent implements OnInit {
-
-  
+  @Input() permit;
+  @Input() fave : boolean = false;
+  // favoritesList: any;
   permitList = [];
 
   
@@ -16,8 +21,36 @@ export class MjCategoryComponent implements OnInit {
 
   
   ngOnInit(): void {
+<<<<<<< HEAD
     this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features);
+=======
+    this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features)
+      let x = new Date(1582588800000);
+      console.log(x.toLocaleDateString());
+>>>>>>> Ryan
      
+    // for (let thingie of this.MJAPIService.favoritesList) {
+    //   if(thingie.attributes.FullAddress == this.post.attributes.FullAddress) {
+    //     this.fave = true;
+    //     console.log("good");
+    //   }
+    // }
+  }
+
+  addMJItem (permit) {
+    this.MJAPIService.addToFavoritesList(permit);
+    console.log("add");
+    this.fave = true;
+    console.log(this.MJAPIService.favoritesList.length);
+  }
+
+  removeMJItem (permit) {
+    this.MJAPIService.removeFromFavoritesList(permit);
+    console.log("remove");
+    this.fave = false;
+    console.log(this.MJAPIService.favoritesList.length);
+  }
+
   }
 
   formatDate(rawDate : string) : string {
@@ -30,5 +63,4 @@ export class MjCategoryComponent implements OnInit {
   }
 
 
-}
 

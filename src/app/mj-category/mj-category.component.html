@@ -1,4 +1,5 @@
 <body>
+<<<<<<< HEAD
     <header>
       <h4>Upcoming Marijuana Building Permits</h4>
     </header>
@@ -17,3 +18,23 @@
 
 
       
+=======
+  <header>
+    <h4>Upcoming Marijuana Building Permits</h4>
+  </header>
+  <main class="project">
+    <div *ngFor="let permit of permitList">
+      <h4 class="projectName">{{ permit.attributes.EntityName }}</h4>
+      <p>
+        {{ permit.attributes.FullAddress }}<br />
+        Status: {{ permit.attributes.Status }}<br />
+        Approval Date: {{ permit.attributes.ApprovedDate }}<br />
+        Intake Date: {{ permit.attributes.IntakeDate }}
+      </p>
+      <button *ngIf="fave" (click)="removeMJItem(permit)">Unfavorite</button>
+      <button *ngIf="!fave" (click)="addMJItem(permit)">Favorite</button>      
+      <vote-comment></vote-comment>
+    </div>
+  </main>
+</body>
+>>>>>>> Ryan

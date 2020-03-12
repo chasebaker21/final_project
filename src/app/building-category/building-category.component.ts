@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {PermitsAPIService} from '../permits-api.service';
 
 @Component({
@@ -15,6 +15,7 @@ export class BuildingCategoryComponent implements OnInit {
   
   }
   ngOnInit(): void {
+<<<<<<< HEAD
     this.PermitsAPIService.getPermitsAPI().subscribe((data: any) => this.permitList = data); 
   }
 
@@ -27,5 +28,10 @@ export class BuildingCategoryComponent implements OnInit {
     return newDate.toLocaleDateString();
   }
 
+=======
+    this.PermitsAPIService.getPermitsAPI().subscribe((data: any) => this.permitList = data);
+  }
+    
+>>>>>>> Ryan
 }
 

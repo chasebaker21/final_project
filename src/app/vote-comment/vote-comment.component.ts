@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { MJAPIService } from '../mjapi.service';
 
 @Component({
   selector: 'vote-comment',
@@ -7,15 +8,31 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./vote-comment.component.css']
 })
 export class VoteCommentComponent implements OnInit {
+  @Input() fave : boolean = false;
+  @Input() post;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, public MJAPIService: MJAPIService) { }
   commentForm: boolean = false;
   comment: string;
   name: string;
   upVoteCount: number = 0;
   downVoteCount: number = 0;
+<<<<<<< HEAD
 
   @Input() id: any;
+=======
+  applicationID: string;
+  
+  ngOnInit() {
+    // for (let thingie of this.MJAPIService.favoritesList) {
+    //   if(thingie.attributes.FullAddress == this.post.attributes.FullAddress) {
+    //     this.fave = true;
+    //     console.log("good");
+    //   }
+    // }
+    }
+
+>>>>>>> Ryan
 
   ngOnInit(): void {
   }
@@ -46,5 +63,18 @@ export class VoteCommentComponent implements OnInit {
     this.http.post('http://localhost:5000/comments', { id: this.id, comment: this.comment, name: this.name  }).subscribe(res => console.log(res));
   }
 }
+
+  addMJItem (post) {
+    this.MJAPIService.addToFavoritesList(post);
+    this.fave = true;
+    console.log(this.MJAPIService.favoritesList.length);
+  }
+
+  removeMJItem (post) {
+    this.MJAPIService.removeFromFavoritesList(post);
+    this.fave = false;
+    console.log(this.MJAPIService.favoritesList.length);
+  }
+
 
 
