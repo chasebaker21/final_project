@@ -10,10 +10,6 @@ export class FavoritesComponent implements OnInit {
   @Input()
   posts: any;
 
-  // @Input()
-  // recipes : Recipes[] = [];
-  // recipeList : Recipes[] = [];
-
   constructor(public MJService: MJAPIService) { }
 
   ngOnInit(): void {

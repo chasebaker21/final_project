@@ -4,6 +4,7 @@ import { HttpClient } from "@angular/common/http";
 @Injectable({
   providedIn: 'root'
 })
+
 export class MJAPIService {
   favoritesList = [];
   
@@ -14,8 +15,7 @@ export class MJAPIService {
   // pulls entire Marijuana API
   getMJAPI() {
     return this.http.get(
-      this.baseURL
-    );
+      this.baseURL)
   }
 
   addToFavoritesList(post) {

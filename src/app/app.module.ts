@@ -21,7 +21,7 @@ import { FormsModule } from '@angular/forms';
     VoteCommentComponent,
     MjCategoryComponent,
     BuildingCategoryComponent,
-    AboutComponent
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

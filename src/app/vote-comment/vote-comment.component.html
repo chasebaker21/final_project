@@ -1,9 +1,9 @@
 <div>
     <button (click)="upVote()"><i class="fas fa-arrow-up fa-2x"></i></button>
     <button class="commentBtn" (click)="commentBtn()">UPVOICE</button>
+    <button *ngIf="fave" (click)="removeMJItem(post)">Unfavorite</button>
+    <button *ngIf="!fave" (click)="addMJItem(post)">Favorite</button>      
     <button (click)="downVote()"><i class="fas fa-arrow-down fa-2x"></i></button>
-    <!-- <button *ngIf="fave" (click)="removeMJItem(permit)">Unfavorite</button>
-    <button *ngIf="!fave" (click)="addMJItem(permit)">Favorite</button>       -->
 
 </div>
     <form *ngIf="commentForm" class="form" (submit)="submit()">

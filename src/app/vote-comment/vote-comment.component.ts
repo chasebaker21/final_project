@@ -8,8 +8,8 @@ import { MJAPIService } from '../mjapi.service';
   styleUrls: ['./vote-comment.component.css']
 })
 export class VoteCommentComponent implements OnInit {
-  // @Input() fave : boolean = false;
-  // @Input() permit;
+  @Input() fave : boolean = false;
+  @Input() post;
 
   constructor(private http: HttpClient, public MJAPIService: MJAPIService) { }
   commentForm: boolean = false;
@@ -19,7 +19,14 @@ export class VoteCommentComponent implements OnInit {
   applicationID: string;
   
   ngOnInit() {
+    // for (let thingie of this.MJAPIService.favoritesList) {
+    //   if(thingie.attributes.FullAddress == this.post.attributes.FullAddress) {
+    //     this.fave = true;
+    //     console.log("good");
+    //   }
+    // }
     }
+
 
   // *** WHEN ID IS SET THE COMMENTS AND VOTES "SHOULD" AUTO ASSIGN TO THAT ID *** ???
 
@@ -46,15 +53,17 @@ export class VoteCommentComponent implements OnInit {
     this.http.post('http://localhost:5000/comments', { id: "this.applicationID", comment: this.comment }).subscribe(res => console.log(res));
   }
 
-  // addMJItem (permit) {
-  //   this.MJAPIService.addToFavoritesList(permit);
-  //   this.fave = true;
-  // }
+  addMJItem (post) {
+    this.MJAPIService.addToFavoritesList(post);
+    this.fave = true;
+    console.log(this.MJAPIService.favoritesList.length);
+  }
 
-  // removeMJItem (permit) {
-  //   this.MJAPIService.removeFromFavoritesList(permit);
-  //   this.fave = false;
-  // }
+  removeMJItem (post) {
+    this.MJAPIService.removeFromFavoritesList(post);
+    this.fave = false;
+    console.log(this.MJAPIService.favoritesList.length);
+  }
 
 
 
