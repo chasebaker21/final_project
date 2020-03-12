@@ -4,16 +4,20 @@ const app = express.Router();
 
 const votes = [];
 
-app.post("/", (req, res) => {
-  // need to push the up or down vote from vote-comment component
-  votes.push();
-  res.json(200);
+// app.post("/", (req, res) => {
+//   votes.push();
+//   res.json(200);
+// });
+
+app.get("/", (req, res) => {
+  res.json(votes);
 });
 
 // updates the upvote and downvote count
-// app.put("/:id", (req, res) => {
-
-    
-// });
+app.put("/:applicationID", (req, res) => {
+  const id = req.params.applicationID;
+  votes.push(id);
+  res.json(200);
+});
 
 export default app;
