@@ -21,17 +21,12 @@ export class VoteCommentComponent implements OnInit {
 
   ngOnInit() {
     this.http.get('http://localhost:5000/votes/').subscribe((data: any) => {
-      console.log(data, this.id);
-
       if (data[this.id]) {
         this.upVoteCount = data[this.id].upVote;
         this.downVoteCount = data[this.id].downVote;
-  
       }
-
     }
     );
-
   }
 
   // fetchVotes() {
@@ -45,13 +40,13 @@ export class VoteCommentComponent implements OnInit {
 
   upVote() {
     // ****** need to also assign this vote to an application ID *****
-    this.upVoteCount++
+    // this.upVoteCount++
     this.http.put('http://localhost:5000/votes/' + this.id, { upVote: 1 }).subscribe(res => console.log(res));
   }
 
   downVote() {
     // ***** need to also assign this vote to an application ID ******
-    this.downVoteCount--
+    // this.downVoteCount--
     this.http.put('http://localhost:5000/votes/' + this.id, { downVote: 1 }).subscribe(res => console.log(res));
   }
 
