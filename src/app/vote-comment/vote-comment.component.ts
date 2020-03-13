@@ -40,13 +40,13 @@ export class VoteCommentComponent implements OnInit {
   upVote() {
     // ****** need to also assign this vote to an application ID *****
     this.upVoteCount++
-    this.http.put('http://localhost:5000/votes/' + this.id, { upVote: this.upVoteCount }).subscribe(res => console.log(res));
+    this.http.put('http://localhost:5000/votes/' + this.id, { upVote: 1 }).subscribe(res => console.log(res));
   }
 
   downVote() {
     // ***** need to also assign this vote to an application ID ******
     this.downVoteCount--
-    this.http.put('http://localhost:5000/votes/' + this.id, { downVote: this.downVoteCount }).subscribe(res => console.log(res));
+    this.http.put('http://localhost:5000/votes/' + this.id, { downVote: 1 }).subscribe(res => console.log(res));
   }
 
   // sends the comment and application ID data to server.js

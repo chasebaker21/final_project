@@ -1,7 +1,6 @@
 button {
   border: none;
   background-color: inherit;
-  color: white;
 }
 
 header {
@@ -9,14 +8,12 @@ header {
   justify-content: space-between;
   width: 95%;
   margin: 8px;
-  border-bottom: 2px solid white;
+  border-bottom: 3px solid black;
 }
 
 .fa-2x {
   font-size: 2rem;
 }
-
-
 
 /* code is pulled from W3 schools page */
 /* The Overlay (background) */
@@ -83,5 +80,3 @@ header {
     right: 35px;
   }
 }
-
-
