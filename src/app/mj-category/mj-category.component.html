@@ -16,5 +16,18 @@
       <button *ngIf="!fave" (click)="addMJItem(permit)">Favorite</button>       -->
       <vote-comment [id]="permit.attributes.ApplicationID"></vote-comment>
     </div>
+
   </main>
 </body>
+
+<!-- <body>
+  <header>
+    <h4>Upcoming Marijuana Building Permits</h4>
+  </header>
+  <main class = "project">
+    <h4 class = "projectName">{{ permit.attributes.FullAddress }}</h4>
+
+    <button *ngIf="fave" (click)="removeMJItem(permit)">Unfavorite</button>
+    <button *ngIf="!fave" (click)="addMJItem(permit)">Favorite</button>
+  </main>
+</body> -->

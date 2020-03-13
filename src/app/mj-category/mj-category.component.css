@@ -16,13 +16,11 @@ header {
   padding-bottom: 9px;
 }
 div {
-  background-color: #20B874;
+    background-color: white;
   padding: 15px;
-  border-top: 5px solid #191a2b;
-  border-bottom: 5px solid #191a2b;
+  border-radius: 10px;
+  border: 1px solid black;
   margin-bottom: 10px;
-  width: 103%;
-  margin-left: -5px;
 }
 p {
   font-size: 0.8rem;
@@ -45,3 +43,4 @@ p {
 button {
   border: none;
 }
+

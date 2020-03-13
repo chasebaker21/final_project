@@ -10,6 +10,7 @@ header {
 .genInfo {
   display: flex;
   border: none;
+  justify-content: space-evenly;
   margin: 0;
   padding: 0px;
   padding-bottom: 9px;
@@ -20,13 +21,11 @@ p {
   font-weight: 900;
 }
 div {
-  background-color: #47bbde;
+  background-color: white;
   padding: 15px;
-  border-top: 5px solid #191a2b;
-  border-bottom: 5px solid #191a2b;
+  border-radius: 10px;
+  border: 1px solid black;
   margin-bottom: 10px;
-  width: 103%;
-  margin-left: -5px;
 }
 .statusInfo {
   display: flex;
@@ -37,6 +36,10 @@ div {
 .project {
   font-family: "Bellota Text", cursive;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .projectInfo {

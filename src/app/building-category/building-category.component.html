@@ -6,9 +6,8 @@
   <main class="project">
     <div *ngFor="let permit of permitList">
       <h3 class="projectName">{{ permit.projectname }}</h3>
-      <h4 class="projectInfo">{{ permit.originaladdress1 }}</h4>
+      <h5 class="projectInfo">{{ permit.originaladdress1 }} <span>{{ permit.neighborhood }} Neighborhood</span></h5>
       <div class="genInfo">
-        <p>{{ permit.neighborhood }} Neighborhood</p>
         <p>Status: {{ permit.permitstatuscurrent }}</p>
         <p>Approved Date: {{ formatDate(permit.permitapproveddate) }}</p>
       </div>
