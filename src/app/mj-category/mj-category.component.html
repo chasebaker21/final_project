@@ -4,8 +4,8 @@
   </header>
   <main class="project">
     <div *ngFor="let permit of permitList">
-      <h3 class="projectName">{{ permit.attributes.EntityName }}</h3>
-      <h4>{{ permit.attributes.FullAddress }}</h4>
+      <h2 class="projectName">{{ permit.attributes.EntityName }}</h2>
+      <h5>{{ permit.attributes.FullAddress }}</h5>
       <div class="genInfo">
         <p>Status: {{ permit.attributes.Status }}</p>
         <p>Approval Date: {{ formatDate(permit.attributes.ApprovedDate) }}</p>

@@ -54,6 +54,7 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 footer {
@@ -72,7 +73,8 @@ footer {
 
 img {
   height: 150px;
-  border: 5px solid #47BBDE;
+  /* border: 5px solid #47BBDE; */
   border-radius: 53%;
   margin-bottom: 10px;
+  box-shadow: 4px 4px 8px -1px black;
 }
