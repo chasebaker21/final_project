@@ -3,7 +3,7 @@
     <h2>Your Favorite Joints, Buildings</h2>
 <div>
     <div *ngFor = "let post of posts">
-        <mj-category [permit] = "post" [fave] = "true"></mj-category>
+        <!-- <mj-category [post] = "post" [fave] = "true"></mj-category> -->
         <vote-comment [post] = "post" [fave] = "true"></vote-comment>
     </div>
 </div>

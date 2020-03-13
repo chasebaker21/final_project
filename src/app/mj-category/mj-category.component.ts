@@ -8,24 +8,25 @@ import { MJAPIService } from '../mjapi.service';
 })
 export class MjCategoryComponent implements OnInit {
   @Input() permit;
+  @Input() post;
   @Input() fave : boolean = false;
-  // favoritesList: any;
+  favoritesList: any;
   permitList = [];
   
-  constructor(private MJAPIService: MJAPIService) { }
+  constructor(public MJAPIService: MJAPIService) { }
 
   
-  ngOnInit(): void {
+  ngOnInit() {
     this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features)
       let x = new Date(1582588800000);
       console.log(x.toLocaleDateString());
      
-    // for (let thingie of this.MJAPIService.favoritesList) {
-    //   if(thingie.attributes.FullAddress == this.post.attributes.FullAddress) {
-    //     this.fave = true;
-    //     console.log("good");
-    //   }
-    // }
+    for (let thingie of this.MJAPIService.favoritesList) {
+      if(thingie.attributes.FullAddress == this.permit.attributes.FullAddress) {
+        this.fave = true;
+        console.log("good");
+      }
+    }
   }
 
   addMJItem (permit) {

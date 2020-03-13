@@ -9,7 +9,7 @@ import { MJAPIService } from '../mjapi.service';
 })
 export class VoteCommentComponent implements OnInit {
   @Input() fave : boolean = false;
-  @Input() post;
+  @Input() post : any;
 
   constructor(private http: HttpClient, public MJAPIService: MJAPIService) { }
   commentForm: boolean = false;
