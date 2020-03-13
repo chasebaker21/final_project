@@ -17,20 +17,26 @@ export class VoteCommentComponent implements OnInit {
   comment: string;
   upVoteCount: number = 0;
   downVoteCount: number = 0;
-  applicationID: string;
   name: string;
 
-
   ngOnInit() {
-    // for (let thingie of this.MJAPIService.favoritesList) {
-    //   if(thingie.attributes.FullAddress == this.post.attributes.FullAddress) {
-    //     this.fave = true;
-    //     console.log("good");
-    //   }
-    // }
+    this.http.get('http://localhost:5000/votes/').subscribe((data: any) => {
+      console.log(data, this.id);
+
+      if (data[this.id]) {
+        this.upVoteCount = data[this.id].upVote;
+        this.downVoteCount = data[this.id].downVote;
+  
+      }
+
+    }
+    );
+
   }
 
-
+  // fetchVotes() {
+  //   return this.http.get('http://localhost:5000/votes/');
+  // }
 
   // opens and closes the form for leaving name and comment
   commentBtn() {

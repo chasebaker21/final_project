@@ -6,6 +6,7 @@ const votes = {};
 
 app.get("/", (req, res) => {
   res.json(votes);
+  res.json(200);
 });
 
 // updates the upvote and downvote count in the server
