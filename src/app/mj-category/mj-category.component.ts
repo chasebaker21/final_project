@@ -17,14 +17,13 @@ export class MjCategoryComponent implements OnInit {
 
   
   ngOnInit() {
-    this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features)
-      let x = new Date(1582588800000);
-      console.log(x.toLocaleDateString());
+    // this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features)
+    //   let x = new Date(1582588800000);
+    //   console.log(x.toLocaleDateString());
      
     for (let thingie of this.MJAPIService.favoritesList) {
       if(thingie.attributes.FullAddress == this.permit.attributes.FullAddress) {
         this.fave = true;
-        console.log("good");
       }
     }
   }

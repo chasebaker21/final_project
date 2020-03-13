@@ -1,6 +1,11 @@
 body {
     margin: 0;
 }
+
+.outerLayer {
+    border : solid black 1px;
+}
+
 .genInfo {
     display: flex; 
     justify-content: space-between;

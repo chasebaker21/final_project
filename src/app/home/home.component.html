@@ -14,7 +14,9 @@
         <h2 class="textStyle">Building Permits</h2>
       </div>
       <div class="catContainer">
-        <button class="marijuannaBtn" [routerLink]="['/mjCategory']" routerLinkActive="router-link-active" ><i class="fas fa-cannabis fa-5x"></i></button>
+        <!-- <button class="marijuannaBtn" [routerLink]="['/mjCategory']" routerLinkActive="router-link-active" ><i class="fas fa-cannabis fa-5x"></i></button> -->
+        <button class="marijuannaBtn" type="submit" (click)="fetchMarijuana()" routerLink="/mjCategoryList" routerLinkActive="active"><i class="fas fa-cannabis fa-5x"></i></button>
+
         <h2 class="textStyle">Marijuana Permits</h2>
       </div>
 </main>
