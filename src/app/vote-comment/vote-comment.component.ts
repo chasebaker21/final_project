@@ -8,8 +8,8 @@ import { MJAPIService } from '../mjapi.service';
   styleUrls: ['./vote-comment.component.css']
 })
 export class VoteCommentComponent implements OnInit {
-  @Input() fave: boolean = false;
-  @Input() post;
+  @Input() fave : boolean = false;
+  @Input() post : any;
   @Input() id;
 
   constructor(private http: HttpClient, public MJAPIService: MJAPIService) { }
