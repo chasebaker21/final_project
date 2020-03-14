@@ -49,6 +49,7 @@ export class VoteCommentComponent implements OnInit {
   // sends the comment and application ID data to server.js
   submit() {
     this.http.post('http://localhost:5000/comments', { id: this.id, comment: this.comment, name: this.name }).subscribe(res => console.log(res));
+    this.commentForm = !this.commentForm;
   }
 
   addMJItem(post) {

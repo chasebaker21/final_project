@@ -10,13 +10,25 @@ export class BuildingCategoryComponent implements OnInit {
   
   getPermitsAPI;
   permitList = [];
+  permitAddress = ' ';
+  searchResults: any[] = [];
+
   
   constructor(private PermitsAPIService: PermitsAPIService) { 
   
   }
   ngOnInit(): void {
-    this.PermitsAPIService.getPermitsAPI().subscribe((data: any) => this.permitList = data); 
+    this.PermitsAPIService.getPermitsAPI().subscribe((data: any) => this.permitList = data);   
   }
+
+  filterAddress() {
+    this.PermitsAPIService.filterAddress(this.permitAddress).subscribe((data: any) => this.searchResults = data.results,
+    err => console.log('Error: ', err),
+    // () => this.userSearch.emit(this.searchResults)
+    );
+  }
+
+
 
   formatDate(rawDate : string) : string {
     if (rawDate === null) {
