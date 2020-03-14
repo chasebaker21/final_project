@@ -9,6 +9,7 @@ import { MJAPIService } from './mjapi.service';
 export class AppComponent {
   title = 'finalProject';
   open: boolean = false;
+  
 
 
   constructor(public client: MJAPIService) {}
@@ -17,6 +18,7 @@ export class AppComponent {
  openNav() {
   this.open = true;
 }
+ 
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
 closeNav() {
