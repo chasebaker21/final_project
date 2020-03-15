@@ -9,7 +9,7 @@ export class PermitsAPIService {
   private appToken: string = "vCbvNklpbsoW5J7jcoERTiTjt";
   private boardType: string = "Planning Commission";
   private dateRange: string = "2019-03-01T00:00:00.000";
-  fullAddress: string;
+  // fullAddress: string;
 
   constructor(private http: HttpClient) { }
 
@@ -21,7 +21,7 @@ export class PermitsAPIService {
   }
 
   filterAddress(fullAddress : string) {
-    const filterAddress: string = `${this.baseURL}${this.fullAddress}`;
+    const filterAddress: string = `${this.baseURL}?originaladdress1=${fullAddress}`;
     return this.http.get(filterAddress);
   }
 }
