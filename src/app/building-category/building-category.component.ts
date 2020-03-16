@@ -11,10 +11,10 @@ export class BuildingCategoryComponent implements OnInit {
   getPermitsAPI;
   permitList = [];
   permitAddress = ' ';
-  searchResults: any;
+  searchResults: string;
 
 
-  constructor(private PermitsAPIService: PermitsAPIService) {
+  constructor(public PermitsAPIService: PermitsAPIService) {
 
   }
   ngOnInit(): void {
@@ -24,7 +24,7 @@ export class BuildingCategoryComponent implements OnInit {
   // need to figure out how to display search results
   filterAddress() {
     this.PermitsAPIService.filterAddress(this.permitAddress).subscribe((data: any) => this.searchResults = data);
-    console.log(this.searchResults)
+    console.log(this.searchResults);
   }
 
 
