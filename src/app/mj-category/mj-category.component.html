@@ -2,8 +2,9 @@
   <header>
     <h4>Upcoming Marijuana Building Permits</h4>
   </header>
-  <main class="project">
-    <div *ngFor="let permit of permitList">
+  <div class = "outerlayer">
+  <!-- <main class="project"> -->
+    <!-- <div *ngFor="let permit of permitList"> -->
       <h4 class="projectName">{{ permit.attributes.EntityName }}</h4>
       <p>
         {{ permit.attributes.FullAddress }}<br />
@@ -14,19 +15,8 @@
       <button *ngIf="fave" (click)="removeMJItem(permit)">Unfavorite</button>
       <button *ngIf="!fave" (click)="addMJItem(permit)">Favorite</button>      
       <vote-comment [id] = "permit.attributes.ApplicationID" [post]="permit"></vote-comment>
-    </div>
+    <!-- </div> -->
 
-  </main>
+  <!-- </main> -->
+  </div>
 </body>
-
-<!-- <body>
-  <header>
-    <h4>Upcoming Marijuana Building Permits</h4>
-  </header>
-  <main class = "project">
-    <h4 class = "projectName">{{ permit.attributes.FullAddress }}</h4>
-
-    <button *ngIf="fave" (click)="removeMJItem(permit)">Unfavorite</button>
-    <button *ngIf="!fave" (click)="addMJItem(permit)">Favorite</button>
-  </main>
-</body> -->

@@ -6,7 +6,6 @@ const comments = [];
 
 app.post("/", (req, res) => {
   comments.push(req.body);
-  comments.push();
   res.json(200);
 });
 

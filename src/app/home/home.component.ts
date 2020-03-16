@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MJAPIService } from '../mjapi.service';
 
 @Component({
   selector: 'home',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public service1: MJAPIService) { }
 
   openerPage: boolean = false;
 
@@ -16,6 +17,11 @@ export class HomeComponent implements OnInit {
 
   test() {
     this.openerPage = true;
+  }
+
+  fetchMarijuana() {
+    // this.service.getRecipes();
+    this.service1.getMJAPI();
   }
 
 }

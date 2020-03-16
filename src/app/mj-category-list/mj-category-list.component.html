@@ -1,12 +1,13 @@
-<!-- <h2>Search Results</h2>
+<h2>Search Results</h2>
 
 <div>
+    <!-- <div *ngFor = "let post of service.recipes"> -->
     <div *ngFor = "let permit of MJAPIService.permitList">
         <mj-category [permit]="permit" [fave]="false"></mj-category>
     </div>
 </div>
 
-
+<!-- <div *ngIf="service.recipes.length == 0"> -->
 <div *ngIf="MJAPIService.permitList.length == 0">
     <p>Please Wait...</p>
-</div> -->
+</div>

@@ -53,17 +53,17 @@ export class VoteCommentComponent implements OnInit {
     this.http.post('http://localhost:5000/comments', { id: "this.applicationID", comment: this.comment }).subscribe(res => console.log(res));
   }
 
-  addMJItem (post) {
-    this.MJAPIService.addToFavoritesList(post);
-    this.fave = true;
-    console.log(this.MJAPIService.favoritesList.length);
-  }
+  // addMJItem (post) {
+  //   this.MJAPIService.addToFavoritesList(post);
+  //   this.fave = true;
+  //   console.log(this.MJAPIService.favoritesList.length);
+  // }
 
-  removeMJItem (post) {
-    this.MJAPIService.removeFromFavoritesList(post);
-    this.fave = false;
-    console.log(this.MJAPIService.favoritesList.length);
-  }
+  // removeMJItem (post) {
+  //   this.MJAPIService.removeFromFavoritesList(post);
+  //   this.fave = false;
+  //   console.log(this.MJAPIService.favoritesList.length);
+  // }
 
 
 

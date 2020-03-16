@@ -10,9 +10,9 @@ export class FavoritesComponent implements OnInit {
   @Input()
   posts: any;
 
-  constructor(public MJService: MJAPIService) { }
+  constructor(public MJAPIService: MJAPIService) { }
 
   ngOnInit(): void {
-    this.posts = this.MJService.favoritesList;
+    this.posts = this.MJAPIService.favoritesList;
   }
 }

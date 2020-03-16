@@ -1,18 +1,22 @@
-// import { Component, OnInit, Input } from '@angular/core';
-// import { MJAPIService } from '../mjapi.service';
+import { Component, OnInit, Input } from '@angular/core';
+import { MJAPIService } from '../mjapi.service';
 
-// @Component({
-//   selector: 'app-mj-category-list',
-//   templateUrl: './mj-category-list.component.html',
-//   styleUrls: ['./mj-category-list.component.css']
-// })
-// export class MjCategoryListComponent implements OnInit {
+@Component({
+  selector: 'mj-category-list',
+  templateUrl: './mj-category-list.component.html',
+  styleUrls: ['./mj-category-list.component.css']
+})
+
+export class MjCategoryListComponent implements OnInit {
+
+
+  @Input()
+  open : boolean = false;
+
+  constructor(public MJAPIService: MJAPIService) { }
+
+  ngOnInit(): void {
+    // this.service.getRecipes();
+  }
   
-//   constructor(public MJAPIService: MJAPIService) { }
-
-//   ngOnInit() {
-//       this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features)
-
-//   }
-
-// }
+}
