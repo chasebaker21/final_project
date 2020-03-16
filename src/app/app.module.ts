@@ -12,6 +12,7 @@ import { BuildingCategoryComponent } from './building-category/building-category
 import { AboutComponent } from './about/about.component';
 import { FormsModule } from '@angular/forms';
 import { MjCategoryListComponent } from './mj-category-list/mj-category-list.component';
+import { BpCategoryListComponent } from './bp-category-list/bp-category-list.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { MjCategoryListComponent } from './mj-category-list/mj-category-list.com
     BuildingCategoryComponent,
     AboutComponent,
     MjCategoryListComponent,
+    BpCategoryListComponent,
   ],
   imports: [
     BrowserModule,

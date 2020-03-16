@@ -8,63 +8,45 @@ import { MJAPIService } from '../mjapi.service';
   styleUrls: ['./vote-comment.component.css']
 })
 export class VoteCommentComponent implements OnInit {
-  @Input() fave : boolean = false;
   @Input() post : any;
+  @Input() id;
 
   constructor(private http: HttpClient, public MJAPIService: MJAPIService) { }
   commentForm: boolean = false;
   comment: string;
   upVoteCount: number = 0;
   downVoteCount: number = 0;
-  applicationID: string;
-  
+  name: string;
+
+  // when page first loads ngOnInit() will check the node server.js for any vote counts and will update
+  // the upVoteCount/downVoteCount
   ngOnInit() {
-    // for (let thingie of this.MJAPIService.favoritesList) {
-    //   if(thingie.attributes.FullAddress == this.post.attributes.FullAddress) {
-    //     this.fave = true;
-    //     console.log("good");
-    //   }
-    // }
+    this.http.get('http://localhost:5000/votes/').subscribe((data: any) => {
+      if (data[this.id]) {
+        this.upVoteCount = data[this.id].upVote;
+        this.downVoteCount = data[this.id].downVote;
+      }
     }
-
-
-  // *** WHEN ID IS SET THE COMMENTS AND VOTES "SHOULD" AUTO ASSIGN TO THAT ID *** ???
+    );
+  }
 
   // opens and closes the form for leaving name and comment
   commentBtn() {
     this.commentForm = !this.commentForm;
   }
-
+  // updates the upVote count on the server.js as well as the upVoteCount here
   upVote() {
-    // ****** need to also assign this vote to an application ID *****
     this.upVoteCount++
-    this.http.post('http://localhost:5000/comments', { id: "this.applicationID", upVote: this.upVoteCount }).subscribe(res => console.log(res));
+    this.http.put('http://localhost:5000/votes/' + this.id, { upVote: 1 }).subscribe(res => console.log(res));
   }
-
+  // updates the downVote count on the server.js as well as the downVoteCount here
   downVote() {
-    // ***** need to also assign this vote to an application ID ******
     this.downVoteCount--
-    this.http.post('http://localhost:5000/comments', { id: "this.applicationID", downVote: this.downVoteCount }).subscribe(res => console.log(res));
-
+    this.http.put('http://localhost:5000/votes/' + this.id, { downVote: 1 }).subscribe(res => console.log(res));
   }
 
   // sends the comment and application ID data to server.js
   submit() {
-    this.http.post('http://localhost:5000/comments', { id: "this.applicationID", comment: this.comment }).subscribe(res => console.log(res));
+    this.http.post('http://localhost:5000/comments', { id: this.id, comment: this.comment, name: this.name }).subscribe(res => console.log(res));
   }
-
-  // addMJItem (post) {
-  //   this.MJAPIService.addToFavoritesList(post);
-  //   this.fave = true;
-  //   console.log(this.MJAPIService.favoritesList.length);
-  // }
-
-  // removeMJItem (post) {
-  //   this.MJAPIService.removeFromFavoritesList(post);
-  //   this.fave = false;
-  //   console.log(this.MJAPIService.favoritesList.length);
-  // }
-
-
-
 }

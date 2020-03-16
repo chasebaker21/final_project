@@ -1,23 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&display=swap");
+
 body {
-    margin: 0;
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: center;
 }
 .genInfo {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    border-top: 3px solid darkgray;
-    border-bottom: 3px solid darkgray;
-
+  display: flex;
+  border: none;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0px;
+  padding-bottom: 9px;
+}
+p {
+  font-size: 0.8rem;
+  margin-bottom: 0px;
+  font-weight: 900;
+}
+div {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-bottom: 10px;
 }
 .statusInfo {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .project {
-    padding: 5px;
+  font-family: "Bellota Text", cursive;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.projectInfo {
+  margin-bottom: 10px;
+}
+/* .voteButtons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: none;
+} */
 button {
-    border: none;
+  border: none;
 }

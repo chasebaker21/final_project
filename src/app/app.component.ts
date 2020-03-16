@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MJAPIService } from './mjapi.service';
+import { PermitsAPIService } from './permits-api.service';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,15 @@ export class AppComponent {
   open: boolean = false;
 
 
-  constructor(public client: MJAPIService) {}
+  constructor(public client: MJAPIService, public service1: MJAPIService, public service2: PermitsAPIService) {}
+
+  fetchMarijuana() {
+    this.service1.getMJAPI();
+  }
+
+  fetchBuildings() {
+    this.service2.getPermitsAPI();
+  }
 
     /* Open when someone clicks on the span element */
  openNav() {

@@ -9,10 +9,7 @@ div {
     color: white;
     font-size: large;
 }
-button {
-    border: none;
-    background-color: inherit;
-}
+
 
 .form {
     display: flex;
@@ -31,4 +28,7 @@ button {
 .submitBtn {
     background-color: lightseagreen;
     border-radius: 5px; 
+}
+span {
+    font-size: 1.2rem;
 }

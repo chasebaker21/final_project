@@ -10,7 +10,7 @@ export class MjCategoryComponent implements OnInit {
   @Input() permit;
   @Input() post;
   @Input() fave : boolean = false;
-  favoritesList: any;
+  MJFavoritesList: any;
   permitList = [];
   
   constructor(public MJAPIService: MJAPIService) { }
@@ -18,33 +18,33 @@ export class MjCategoryComponent implements OnInit {
   
   ngOnInit() {
     // this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features)
-    //   let x = new Date(1582588800000);
-    //   console.log(x.toLocaleDateString());
      
-    for (let thingie of this.MJAPIService.favoritesList) {
-      if(thingie.attributes.FullAddress == this.permit.attributes.FullAddress) {
-        this.fave = true;
-      }
-    }
+    // for (let thingie of this.MJAPIService.MJFavoritesList) {
+    //   if(thingie.attributes.FullAddress == this.permit.attributes.FullAddress) {
+    //     this.fave = true;
+    //   }
+    // }
   }
 
   addMJItem (permit) {
-    this.MJAPIService.addToFavoritesList(permit);
+    this.MJAPIService.addToMJFavoritesList(permit);
     console.log("add");
     this.fave = true;
-    console.log(this.MJAPIService.favoritesList.length);
+    console.log(this.MJAPIService.MJFavoritesList.length);
   }
 
   removeMJItem (permit) {
-    this.MJAPIService.removeFromFavoritesList(permit);
+    this.MJAPIService.removeFromMJFavoritesList(permit);
     console.log("remove");
     this.fave = false;
-    console.log(this.MJAPIService.favoritesList.length);
+    console.log(this.MJAPIService.MJFavoritesList.length);
   }
 
+  formatDate(rawDate : string) : string {
+    if (rawDate === null) {
+      return "N/A";
+    }
+    const newDate = new Date(rawDate);
+    return newDate.toLocaleDateString();
   }
-
-  // displayDate() {
-  //   this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features.permits.attributes.IntakeDate)   
-
-  // }
+}

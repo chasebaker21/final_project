@@ -2,21 +2,18 @@
   <header>
     <h4>Upcoming Marijuana Building Permits</h4>
   </header>
-  <div class = "outerlayer">
   <!-- <main class="project"> -->
     <!-- <div *ngFor="let permit of permitList"> -->
-      <h4 class="projectName">{{ permit.attributes.EntityName }}</h4>
-      <p>
-        {{ permit.attributes.FullAddress }}<br />
-        Status: {{ permit.attributes.Status }}<br />
-        Approval Date: {{ permit.attributes.ApprovedDate }}<br />
-        Intake Date: {{ permit.attributes.IntakeDate }}
-      </p>
+      <h3 class="projectName">{{ permit.attributes.EntityName }}</h3>
+      <h4>{{ permit.attributes.FullAddress }}</h4>
+      <div class="genInfo">
+        <p>Status: {{ permit.attributes.Status }}</p>
+        <p>Approval Date: {{ formatDate(permit.attributes.ApprovedDate) }}</p>
+        <p>Intake Date: {{ formatDate(permit.attributes.IntakeDate) }}</p>  
+      </div>
       <button *ngIf="fave" (click)="removeMJItem(permit)">Unfavorite</button>
       <button *ngIf="!fave" (click)="addMJItem(permit)">Favorite</button>      
-      <vote-comment [id] = "permit.attributes.ApplicationID" [post]="permit"></vote-comment>
+      <vote-comment [id]="permit.attributes.ApplicationID"></vote-comment>
     <!-- </div> -->
-
   <!-- </main> -->
-  </div>
 </body>

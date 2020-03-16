@@ -6,9 +6,14 @@ import { MjCategoryComponent } from './mj-category/mj-category.component';
 import { BuildingCategoryComponent } from './building-category/building-category.component';
 import { AboutComponent } from './about/about.component';
 import { MjCategoryListComponent } from './mj-category-list/mj-category-list.component';
-
+import { BpCategoryListComponent } from './bp-category-list/bp-category-list.component';
 
 const routes: Routes = [
+  {
+    path: 'bpCategoryList',
+    component: BpCategoryListComponent
+  },
+  
   {
     path: 'mjCategoryList',
     component: MjCategoryListComponent
