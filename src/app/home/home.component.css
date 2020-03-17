@@ -76,15 +76,9 @@ span {
   margin-bottom: 25%;
 }
 #splashLogo {
-<<<<<<< HEAD
- border: 0;
-border-radius: 0;
-
-=======
   border: 0;
   border-radius: 0;
   box-shadow: none;
->>>>>>> 6e3486434d664b94c3a66ec38721c93580ecc16e
 }
 
 img {
