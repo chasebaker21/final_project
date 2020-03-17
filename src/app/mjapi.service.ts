@@ -16,13 +16,10 @@ export class MJAPIService {
 
   getMJAPI() {
     let baseURL = this.baseURL;
+    
     return(this.http.get(baseURL).subscribe((data : any) => {
-      console.log(data); 
       this.permitList = data.features;
-      }));
-
-    // return this.http.get(
-    //   this.baseURL)
+    }));
   }
 
   addToMJFavoritesList(post) {
@@ -31,9 +28,18 @@ export class MJAPIService {
 
   removeFromMJFavoritesList(post) {
     for(let i = 0; i < this.MJFavoritesList.length; i++) {
-      if(this.MJFavoritesList[i] == post) {
+      if(this.MJFavoritesList[i].attributes.ApplicationID == post.attributes.ApplicationID) {
         this.MJFavoritesList.splice(i, 1);
       }
     }
+  }
+
+  isAFavorite(post) : boolean {
+    for(let i of this.MJFavoritesList) {
+      if(i.attributes.ApplicationID == post.attributes.ApplicationID) {
+        return true;
+      }
+    }
+    return false;
   }
 }

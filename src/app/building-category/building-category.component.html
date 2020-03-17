@@ -3,8 +3,7 @@
     <h2>Upcoming Building Permits</h2>
   </header>
 
-  <!-- <main class="project">
-    <div *ngFor="let permit of permitList"> -->
+  <main class="project">
       <h3 class="projectName">{{ permit.projectname }}</h3>
       <h5 class="projectInfo">{{ permit.originaladdress1 }} <span>{{ permit.neighborhood }} Neighborhood</span></h5>
       <div class="genInfo">
@@ -14,6 +13,5 @@
       <button *ngIf="fave" (click)="removeBPItem(permit)">Unfavorite</button>
       <button *ngIf="!fave" (click)="addBPItem(permit)">Favorite</button>      
       <vote-comment [id]="permit.permitnum"></vote-comment>
-    <!-- </div>
-  </main> -->
+  </main>
 </body>

@@ -3,10 +3,12 @@
 body {
   margin: 0;
 }
+
 header {
   display: flex;
   justify-content: center;
 }
+
 .genInfo {
   display: flex;
   border: none;
@@ -15,11 +17,13 @@ header {
   padding: 0px;
   padding-bottom: 9px;
 }
+
 p {
   font-size: 0.8rem;
   margin-bottom: 0px;
   font-weight: 900;
 }
+
 div {
   background-color: white;
   padding: 15px;
@@ -27,6 +31,7 @@ div {
   border: 1px solid black;
   margin-bottom: 10px;
 }
+
 .statusInfo {
   display: flex;
   justify-content: space-evenly;
@@ -36,21 +41,17 @@ div {
 .project {
   font-family: "Bellota Text", cursive;
   padding: 5px;
-  display: flex;
+  border-radius: 5px;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .projectInfo {
   margin-bottom: 10px;
 }
-/* .voteButtons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  border: none;
-} */
+
 button {
   border: none;
 }

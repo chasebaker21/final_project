@@ -12,9 +12,7 @@
   <div class="overlay-content">
     <a [routerLink]="['/home']" routerLinkActive="router-link-active" (click)="closeNav()">Home</a>
     <a [routerLink]="['/about']" routerLinkActive="router-link-active"  (click)="closeNav()">About</a>
-    <!-- <a [routerLink]="['/mjCategory']" routerLinkActive="router-link-active" (click)="closeNav()">Marijuana Permits</a> -->
     <a [routerLink]="['/mjCategoryList']" (click) = "fetchMarijuana()" routerLinkActive="router-link-active" (click)="closeNav()">Marijuana Permits</a>
-    <!-- <a [routerLink]="['/buildingCategory']" routerLinkActive="router-link-active" (click)="closeNav()">Building Permits</a> -->
     <a [routerLink]="['/bpCategoryList']" (click) = "fetchBuildings()" routerLinkActive="router-link-active" (click)="closeNav()">Building Permits</a>
     <a [routerLink]="['/favorites']" routerLinkActive="router-link-active" (click)="closeNav()">Saved</a>
   </div>

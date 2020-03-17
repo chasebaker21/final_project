@@ -6,11 +6,11 @@ import { PermitsAPIService } from '../permits-api.service';
   templateUrl: './bp-category-list.component.html',
   styleUrls: ['./bp-category-list.component.css']
 })
+
 export class BpCategoryListComponent implements OnInit {
 
-  constructor(public PermitsAPIService: PermitsAPIService) { }
+  constructor(public PermitsAPIService: PermitsAPIService) {}
 
   ngOnInit(): void {
   }
-
 }

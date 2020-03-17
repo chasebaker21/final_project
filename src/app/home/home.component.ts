@@ -7,12 +7,12 @@ import { PermitsAPIService } from '../permits-api.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent implements OnInit {
 
   constructor(public service1: MJAPIService, public service2: PermitsAPIService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   fetchMarijuana() {
     this.service1.getMJAPI();
@@ -21,5 +21,4 @@ export class HomeComponent implements OnInit {
   fetchBuildings() {
     this.service2.getPermitsAPI();
   }
-
 }

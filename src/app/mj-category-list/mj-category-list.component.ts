@@ -9,14 +9,7 @@ import { MJAPIService } from '../mjapi.service';
 
 export class MjCategoryListComponent implements OnInit {
 
-
-  @Input()
-  open : boolean = false;
-
   constructor(public MJAPIService: MJAPIService) { }
 
-  ngOnInit(): void {
-    // this.service.getRecipes();
-  }
-  
+  ngOnInit(): void {}
 }
