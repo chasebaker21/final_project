@@ -11,7 +11,7 @@ export class BuildingCategoryComponent implements OnInit {
   getPermitsAPI;
   permitList = [];
   permitAddress = ' ';
-  searchResults: string;
+  searchResults: any = [];
 
 
   constructor(public PermitsAPIService: PermitsAPIService) {
