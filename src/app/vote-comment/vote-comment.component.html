@@ -1,10 +1,17 @@
 <div>
+  <!-- upvote button -->
   <i class="far fa-thumbs-up fa-2x" (click)="upVote()"><span>{{ upVoteCount }}</span></i>
+  <!-- down vote button -->
   <i class="far fa-thumbs-down fa-2x" (click)="downVote()"><span>{{ downVoteCount }}</span></i>
-  <button *ngIf="fave" (click)="removeMJItem(post);removedSnackbar()">Unfavorite</button>
-  <button *ngIf="!fave" (click)="addMJItem(post);addedSnackbar()">Favorite</button>
   <!-- <i class="far fa-heart fa-2x"></i> -->
   <i class="fas fa-angle-double-up fa-2x" (click)="commentBtn()"></i>
+  <!-- button to add permit to saved list -->
+  <i class="fas fa-bookmark fa-2x" *ngIf="fave" (click)="removeMJItem(post)"></i>
+  <!-- button to remove from saved list -->
+  <i class="far fa-bookmark fa-2x" *ngIf="!fave" (click)="addMJItem(post);;addedSnackbar()></i>
+  <!-- button to open or close comment form -->
+  <i class="far fa-comment fa-2x" (click)="commentBtn()"></i>
+
 </div>
 <div>
 

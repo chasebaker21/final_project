@@ -2,10 +2,32 @@
 
 body {
   margin: 0;
+  margin-top: 4%;
+}
+
+.test {
+  display: block;
+  font-size: larger;
 }
 header {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+}
+input {
+  width: 70%;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5rem;
+  text-align: center;
+  height: 40px;
+  box-shadow: 3px 3px 11px black;
+}
+.projectName {
+  font-weight: 900;
+  text-align: center;
 }
 .genInfo {
   display: flex;
@@ -14,6 +36,7 @@ header {
   margin: 0;
   padding: 0px;
   padding-bottom: 9px;
+  box-shadow: none;
 }
 p {
   font-size: 0.8rem;
@@ -24,8 +47,8 @@ div {
   background-color: white;
   padding: 15px;
   border-radius: 10px;
-  border: 1px solid black;
   margin-bottom: 10px;
+  box-shadow: 3px 3px 8px black;
 }
 .statusInfo {
   display: flex;
@@ -45,12 +68,6 @@ div {
 .projectInfo {
   margin-bottom: 10px;
 }
-/* .voteButtons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  border: none;
-} */
 button {
   border: none;
 }

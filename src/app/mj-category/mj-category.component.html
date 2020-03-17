@@ -1,22 +1,22 @@
 <body>
   <header>
     <h4>Upcoming Marijuana Building Permits</h4>
+    <input type="text" placeholder="Search Address" />
   </header>
   <main class="project">
     <div *ngFor="let permit of permitList">
-      <h3 class="projectName">{{ permit.attributes.EntityName }}</h3>
-      <h4>{{ permit.attributes.FullAddress }}</h4>
+      <h2 class="projectName">{{ permit.attributes.EntityName }}</h2>
+      <h5>{{ permit.attributes.FullAddress }}</h5>
       <div class="genInfo">
         <p>Status: {{ permit.attributes.Status }}</p>
         <p>Approval Date: {{ formatDate(permit.attributes.ApprovedDate) }}</p>
-        <p>Intake Date: {{ formatDate(permit.attributes.IntakeDate) }}</p>  
+        <p>Intake Date: {{ formatDate(permit.attributes.IntakeDate) }}</p>
       </div>
 
       <!-- <button *ngIf="fave" (click)="removeMJItem(permit)">Unfavorite</button>
       <button *ngIf="!fave" (click)="addMJItem(permit)">Favorite</button>       -->
       <vote-comment [id]="permit.attributes.ApplicationID"></vote-comment>
     </div>
-
   </main>
 </body>
 

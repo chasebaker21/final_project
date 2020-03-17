@@ -9,6 +9,7 @@ export class MJAPIService {
   favoritesList = [];
   // recipes = [];
   permitList = [];
+
   
   private baseURL: string = "https://maps.grcity.us/arcgis/rest/services/ArcGIS_Online/ENG_Marijuana_Applications/MapServer/1/query?where=1%3D1&outFields=*&outSR=4326&f=json";
 
@@ -18,6 +19,12 @@ export class MJAPIService {
     return this.http.get(
       this.baseURL)
   }
+
+  filterAddress(fullAddress : string) {
+    // const filterAddress: string = `${this.baseURL}?`;
+    // return this.http.get(filterAddress);
+  }
+
 
   addToFavoritesList(post) {
     this.favoritesList.push(post);
