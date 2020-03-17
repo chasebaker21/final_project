@@ -18,6 +18,8 @@ export class VoteCommentComponent implements OnInit {
   upVoteCount: number = 0;
   downVoteCount: number = 0;
   name: string;
+  show: boolean;
+  
 
   // when page first loads ngOnInit() will check the node server.js for any vote counts and will update
   // the upVoteCount/downVoteCount
@@ -54,7 +56,9 @@ export class VoteCommentComponent implements OnInit {
   addMJItem(post) {
     this.MJAPIService.addToFavoritesList(post);
     this.fave = true;
+    this.show=true;
     console.log(this.MJAPIService.favoritesList.length);
+
   }
 
   removeMJItem(post) {
@@ -63,6 +67,12 @@ export class VoteCommentComponent implements OnInit {
     console.log(this.MJAPIService.favoritesList.length);
   }
 
+  addedSnackbar() {
+    this.show=true;
+  }
+  removedSnackbar() {
+    this.show=false;
+  }
 
 
 }

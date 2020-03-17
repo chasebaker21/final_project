@@ -9,6 +9,7 @@ import { MJAPIService } from '../mjapi.service';
 export class FavoritesComponent implements OnInit {
   @Input()
   posts: any;
+  
 
   constructor(public MJService: MJAPIService) { }
 

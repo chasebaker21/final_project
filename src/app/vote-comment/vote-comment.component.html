@@ -1,11 +1,10 @@
 <div>
   <i class="far fa-thumbs-up fa-2x" (click)="upVote()"><span>{{ upVoteCount }}</span></i>
   <i class="far fa-thumbs-down fa-2x" (click)="downVote()"><span>{{ downVoteCount }}</span></i>
-  <button *ngIf="fave" (click)="removeMJItem(post)">Unfavorite</button>
-  <button *ngIf="!fave" (click)="addMJItem(post)">Favorite</button>
+  <button *ngIf="fave" (click)="removeMJItem(post);removedSnackbar()">Unfavorite</button>
+  <button *ngIf="!fave" (click)="addMJItem(post);addedSnackbar()">Favorite</button>
   <!-- <i class="far fa-heart fa-2x"></i> -->
   <i class="fas fa-angle-double-up fa-2x" (click)="commentBtn()"></i>
-
 </div>
 <div>
 
@@ -36,4 +35,5 @@
       Submit
     </button>
   </form>
-</div>
+  <div *ngIf="show" class="snackbar" class="animated bounceOut 3s">Added to Favorites</div>
+ <!-- <div [ngClass]="{snackbar2: show}" class="snackbar2" class="animated bounceOut 3s">Removed from Favorites</div>  -->
