@@ -10,11 +10,7 @@ import { PermitsAPIService } from '../permits-api.service';
 export class FavoritesComponent implements OnInit {
   @Input()
   posts: any;
-<<<<<<< HEAD
-  
-=======
   posts1: any;
->>>>>>> 61860fc21fb60d8f8e457f85d0e1f809b77edf62
 
   constructor(public MJAPIService: MJAPIService, public PermitsAPIService: PermitsAPIService) { }
 

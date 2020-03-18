@@ -17,12 +17,8 @@ export class VoteCommentComponent implements OnInit {
   upVoteCount: number = 0;
   downVoteCount: number = 0;
   name: string;
-<<<<<<< HEAD
-  show: boolean;
-  
-=======
   fave: boolean;
->>>>>>> 61860fc21fb60d8f8e457f85d0e1f809b77edf62
+  show: boolean;
 
   // when page first loads ngOnInit() will check the node server.js for any vote counts and will update
   // the upVoteCount/downVoteCount
@@ -58,29 +54,14 @@ export class VoteCommentComponent implements OnInit {
 
   addMJItem() {
     this.fave = true;
-<<<<<<< HEAD
-    this.show=true;
-    console.log(this.MJAPIService.favoritesList.length);
-
-=======
     console.log("No functionality yet, maybe add event emitter");
->>>>>>> 61860fc21fb60d8f8e457f85d0e1f809b77edf62
   }
 
   removeMJItem() {
     this.fave = false;
     console.log("No functionality yet, maybe add event emitter");
   }
-<<<<<<< HEAD
-
-  addedSnackbar() {
+  addedFavorite(){
     this.show=true;
   }
-  removedSnackbar() {
-    this.show=false;
-  }
-
-
-=======
->>>>>>> 61860fc21fb60d8f8e457f85d0e1f809b77edf62
 }
