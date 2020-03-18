@@ -8,7 +8,6 @@ import { MJAPIService } from '../mjapi.service';
   styleUrls: ['./vote-comment.component.css']
 })
 export class VoteCommentComponent implements OnInit {
-  @Input() fave : boolean = false;
   @Input() post : any;
   @Input() id;
 
@@ -18,6 +17,7 @@ export class VoteCommentComponent implements OnInit {
   upVoteCount: number = 0;
   downVoteCount: number = 0;
   name: string;
+  fave: boolean;
 
   // when page first loads ngOnInit() will check the node server.js for any vote counts and will update
   // the upVoteCount/downVoteCount
@@ -49,21 +49,15 @@ export class VoteCommentComponent implements OnInit {
   // sends the comment and application ID data to server.js
   submit() {
     this.http.post('http://localhost:5000/comments', { id: this.id, comment: this.comment, name: this.name }).subscribe(res => console.log(res));
-    this.commentForm = !this.commentForm;
   }
 
-  addMJItem(post) {
-    this.MJAPIService.addToFavoritesList(post);
+  addMJItem() {
     this.fave = true;
-    console.log(this.MJAPIService.favoritesList.length);
+    console.log("No functionality yet, maybe add event emitter");
   }
 
-  removeMJItem(post) {
-    this.MJAPIService.removeFromFavoritesList(post);
+  removeMJItem() {
     this.fave = false;
-    console.log(this.MJAPIService.favoritesList.length);
+    console.log("No functionality yet, maybe add event emitter");
   }
-
-
-
 }

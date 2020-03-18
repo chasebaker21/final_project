@@ -50,6 +50,7 @@ div {
   margin-bottom: 10px;
   box-shadow: 3px 3px 8px black;
 }
+
 .statusInfo {
   display: flex;
   justify-content: space-evenly;
@@ -59,15 +60,17 @@ div {
 .project {
   font-family: "Bellota Text", cursive;
   padding: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: white;
+  /* box-shadow: 3px 3px 7px black; */
 }
 
 .projectInfo {
   margin-bottom: 10px;
 }
+button {
+  border: none;
+}
+
 button {
   border: none;
 }
