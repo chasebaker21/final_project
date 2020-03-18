@@ -20,7 +20,9 @@ export class PermitsAPIService {
   }
 
   filterAddress(fullAddress : string) {
-    const filterAddress: string = `${this.baseURL}?$$app_token=${this.appToken}&BoardType=${this.boardType}?originaladdress1=${fullAddress}`;
+    const filterAddress: string = `${this.baseURL}?$$app_token=${this.appToken}&BoardType=${this.boardType}&$where=originaladdress1 like '%25${fullAddress}%25'`;  
+
     return this.http.get(filterAddress);
   }
 }
+
