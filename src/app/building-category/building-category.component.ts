@@ -10,7 +10,7 @@ export class BuildingCategoryComponent implements OnInit {
 
   getPermitsAPI;
   permitList = [];
-  permitAddress = ' ';
+  permitAddress: string;
   searchResults: any;
 
 
