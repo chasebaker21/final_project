@@ -1,17 +1,23 @@
 <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800&display=swap" rel="stylesheet">
-
-<div class="container">
-    <h2>Your Favorite Joints, Buildings</h2>
-    <div>
-        <div *ngFor = "let post of posts">
-            <mj-category [permit] = "post" [fave] = "true"></mj-category>
+<div class='some-page-wrapper'>
+    <div class="row">
+        <div class = "column">
+            <!-- <h2>Your Favorite Marijuana Permits</h2> -->
+            <div class = "left-column">
+                <h2>Your Favorite Marijuana Permits</h2>
+                <div *ngFor = "let post of posts">
+                    <mj-category [permit] = "post" [fave] = "true"></mj-category>
+                </div>
+            </div>
         </div>
-        <div *ngFor = "let post of posts1">
-            <building-category [permit] = "post" [fave] = "true"></building-category>
+        <br><br>
+        <div class = "column">
+            <div class = "right-column">
+                <h2>Your Favorite Building Permits</h2>
+                <div *ngFor = "let post of posts1">
+                    <building-category [permit] = "post" [fave] = "true"></building-category>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div *ngIf="posts.length == 0 && posts1.length == 0"> 
-        <p>You don't have any favorites yet!</p>
     </div>
 </div>

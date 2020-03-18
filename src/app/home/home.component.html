@@ -5,12 +5,13 @@
   
   <main>
       <div class="catContainer">
-        <button class="buildingBtn" (click) = "fetchBuildings()" [routerLink]="['/bpCategoryList']" routerLinkActive="router-link-active" ><img src="assets/2-man-on-construction-site-during-daytime-159306.png"></button>
-        <h2 class="textStyle">Building Permits</h2>
-      </div>
-      <div class="catContainer">
         <button class="marijuannaBtn" (click) = "fetchMarijuana()" [routerLink]="['/mjCategoryList']" routerLinkActive="router-link-active" ><img src="assets/mjLeaf.png"></button>
         <h2 class="textStyle">Marijuana Permits</h2>
+      </div>
+
+      <div class="catContainer">
+        <button class="buildingBtn" (click) = "fetchBuildings()" [routerLink]="['/bpCategoryList']" routerLinkActive="router-link-active" ><img src="assets/2-man-on-construction-site-during-daytime-159306.png"></button>
+        <h2 class="textStyle">Building Permits</h2>
       </div>
   </main>
   <footer>
