@@ -19,8 +19,8 @@ export class BpCategoryListComponent implements OnInit {
   }
 
   filterAddress() {
+    this.permitAddress = this.permitAddress.toUpperCase();
     this.PermitsAPIService.filterAddress(this.permitAddress).subscribe((data: any) => this.searchResults = data);
     console.log(this.searchResults);
   }
-
 }

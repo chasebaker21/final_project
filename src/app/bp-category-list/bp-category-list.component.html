@@ -1,5 +1,5 @@
 <header>
-    <input type="text" placeholder="Search Address" [(ngModel)]="permitAddress">
+    <input type="text" placeholder="Search by street name ex. 'Wealthy'" [(ngModel)]="permitAddress">
     <button (click)="filterAddress()" >Search</button>
     <div *ngFor="let address of searchResults">
       <h1 class="test">{{ address.originaladdress1 }}</h1>

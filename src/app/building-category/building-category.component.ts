@@ -24,12 +24,6 @@ export class BuildingCategoryComponent implements OnInit {
     this.fave = this.PermitsAPIService.isAFavorite(this.permit);
   }
 
-  // need to figure out how to display search results
-  filterAddress() {
-    this.PermitsAPIService.filterAddress(this.permitAddress).subscribe((data: any) => this.searchResults = data);
-    console.log(this.searchResults);
-  }
-
 
   addBPItem(permit) {
     this.PermitsAPIService.addToBPFavoritesList(permit);
