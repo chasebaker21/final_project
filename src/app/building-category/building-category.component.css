@@ -61,6 +61,7 @@ div {
   font-family: "Bellota Text", cursive;
   padding: 5px;
   background-color: white;
+  /* box-shadow: 3px 3px 7px black; */
 }
 
 .projectInfo {
