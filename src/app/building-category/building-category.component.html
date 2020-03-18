@@ -1,23 +1,13 @@
 <body>
-  <header>
-    <h4>Upcoming Building Permits</h4>
-    <input type="text" placeholder="Search Address" [(ngModel)]="permitAddress">
-    <button (click)="filterAddress()" >Search</button>
-    <div *ngFor="let address of searchResults">
-      <h1 class="test">{{ address.originaladdress1 }}</h1>
-      <h2>{{ address.projectname }}</h2>
-    </div>
-  </header>
-
   <main class="project">
-    <div *ngFor="let permit of permitList">
-      <h2 class="projectName">{{ permit.projectname }}</h2>
+      <h3 class="projectName">{{ permit.projectname }}</h3>
       <h5 class="projectInfo">{{ permit.originaladdress1 }} <span>{{ permit.neighborhood }} Neighborhood</span></h5>
       <div class="genInfo">
         <p>Status: {{ permit.permitstatuscurrent }}</p>
         <p>Approved Date: {{ formatDate(permit.permitapproveddate) }}</p>
       </div>
+      <button *ngIf="fave" (click)="removeBPItem(permit)">Unfavorite</button>
+      <button *ngIf="!fave" (click)="addBPItem(permit)">Favorite</button>      
       <vote-comment [id]="permit.permitnum"></vote-comment>
-    </div>
   </main>
 </body>

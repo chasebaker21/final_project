@@ -11,7 +11,8 @@ import { MjCategoryComponent } from './mj-category/mj-category.component';
 import { BuildingCategoryComponent } from './building-category/building-category.component';
 import { AboutComponent } from './about/about.component';
 import { FormsModule } from '@angular/forms';
-// import { MjCategoryListComponent } from './mj-category-list/mj-category-list.component';
+import { MjCategoryListComponent } from './mj-category-list/mj-category-list.component';
+import { BpCategoryListComponent } from './bp-category-list/bp-category-list.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     MjCategoryComponent,
     BuildingCategoryComponent,
     AboutComponent,
-    // MjCategoryListComponent,
+    MjCategoryListComponent,
+    BpCategoryListComponent,
   ],
   imports: [
     BrowserModule,

@@ -4,12 +4,42 @@
   <!-- down vote button -->
   <i class="far fa-thumbs-down fa-2x" (click)="downVote()"><span>{{ downVoteCount }}</span></i>
   <!-- button to add permit to saved list -->
-  <i class="fas fa-bookmark fa-2x" *ngIf="fave" (click)="removeMJItem(post)"></i>
+  <i class="fas fa-bookmark fa-2x" *ngIf="fave" (click)="removeMJItem()"></i>
   <!-- button to remove from saved list -->
-  <i class="far fa-bookmark fa-2x" *ngIf="!fave" (click)="addMJItem(post)"></i>
+  <i class="far fa-bookmark fa-2x" *ngIf="!fave" (click)="addMJItem()"></i>
   <!-- button to open or close comment form -->
   <i class="far fa-comment fa-2x" (click)="commentBtn()"></i>
 
+</div>
+<div>
+
+  <form *ngIf="commentForm" class="form" (submit)="submit()">
+    <div class="form-group">
+      <input
+        [(ngModel)]="name"
+        name="name"
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Name"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        [(ngModel)]="comment"
+        name="comment"
+        type="text"
+        class="form-control"
+        class="comment"
+        id="exampleInputPassword1"
+        placeholder="Please enter your comment"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary" class="submitBtn">
+      Submit
+    </button>
+  </form>
 </div>
 <div>
 
