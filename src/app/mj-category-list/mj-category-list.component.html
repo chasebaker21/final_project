@@ -1,12 +1,13 @@
-<!-- <h2>Search Results</h2>
-
-<div>
+<header>
+    <h4>Upcoming Marijuana Building Permits</h4>
+    <input type="text" placeholder="Search by street name ex. 'Division'" />
+</header>
+<div class="fullList">
     <div *ngFor = "let permit of MJAPIService.permitList">
-        <mj-category [permit]="permit" [fave]="false"></mj-category>
+        <mj-category [permit]="permit"></mj-category>
     </div>
 </div>
 
-
 <div *ngIf="MJAPIService.permitList.length == 0">
     <p>Please Wait...</p>
-</div> -->
+</div>

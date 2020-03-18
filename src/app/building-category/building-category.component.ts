@@ -6,28 +6,34 @@ import { PermitsAPIService } from '../permits-api.service';
   templateUrl: './building-category.component.html',
   styleUrls: ['./building-category.component.css']
 })
+
 export class BuildingCategoryComponent implements OnInit {
+  @Input() permit;
+  @Input() post;
+  @Input() fave: boolean = false;
 
-  getPermitsAPI;
+  BPFavoritesList: any;
   permitList = [];
-  permitAddress = ' ';
-  searchResults: any = [];
+  getPermitsAPI;
+  searchResults: any;
+  permitAddress: string;
 
+  constructor(public PermitsAPIService: PermitsAPIService) { }
 
-  constructor(public PermitsAPIService: PermitsAPIService) {
-
-  }
   ngOnInit(): void {
-    this.PermitsAPIService.getPermitsAPI().subscribe((data: any) => this.permitList = data);
-  }
-
-  // need to figure out how to display search results
-  filterAddress() {
-    this.PermitsAPIService.filterAddress(this.permitAddress).subscribe((data: any) => this.searchResults = data);
-    console.log(this.searchResults);
+    this.fave = this.PermitsAPIService.isAFavorite(this.permit);
   }
 
 
+  addBPItem(permit) {
+    this.PermitsAPIService.addToBPFavoritesList(permit);
+    this.fave = true;
+  }
+
+  removeBPItem(permit) {
+    this.PermitsAPIService.removeFromBPFavoritesList(permit);
+    this.fave = false;
+  }
 
   formatDate(rawDate: string): string {
     if (rawDate === null) {
@@ -38,4 +44,3 @@ export class BuildingCategoryComponent implements OnInit {
     return newDate.toLocaleDateString();
   }
 }
-
