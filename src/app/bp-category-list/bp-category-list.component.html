@@ -1,6 +1,14 @@
-<h2>Upcoming Building Permits</h2>
+<header>
+    <input type="text" placeholder="Search by street name ex. 'Wealthy'" [(ngModel)]="permitAddress">
+    <button (click)="filterAddress()" >Search</button>
+    <div *ngFor="let address of searchResults">
+      <h1 class="test">{{ address.originaladdress1 }}</h1>
+      <h2>{{ address.projectname }}</h2>
+    </div>
 
-<div>
+</header>
+
+<div class="fullList">
     <div *ngFor = "let permit of PermitsAPIService.permitList">
         <building-category [permit]="permit"></building-category>
     </div>

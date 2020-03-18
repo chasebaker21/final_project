@@ -9,10 +9,16 @@ import { PermitsAPIService } from '../permits-api.service';
 })
 
 export class HomeComponent implements OnInit {
+  
+  show:boolean = false;
 
   constructor(public service1: MJAPIService, public service2: PermitsAPIService) { }
 
   ngOnInit(): void {}
+
+  display() {
+    this.show = true;
+  }
 
   fetchMarijuana() {
     this.service1.getMJAPI();

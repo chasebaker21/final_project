@@ -8,6 +8,7 @@ import { HttpClient } from "@angular/common/http";
 export class MJAPIService {
   MJFavoritesList = [];
   permitList = [];
+
   
   constructor(private http: HttpClient) { }
 

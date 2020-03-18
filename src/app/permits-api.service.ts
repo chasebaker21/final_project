@@ -15,10 +15,10 @@ export class PermitsAPIService {
   private dateRange : string = "2019-03-01T00:00:00.000";
 
   constructor(private http: HttpClient) { }
-  
+
   // pulls entire API
   getPermitsAPI() {
-    const url : string = `${this.baseURL}?$$app_token=${this.appToken}&BoardType=${this.boardType}&$where=BoardIntakeDate>'${this.dateRange}'`;
+    const url: string = `${this.baseURL}?$$app_token=${this.appToken}&BoardType=${this.boardType}&$where=BoardIntakeDate>'${this.dateRange}'`;
 
     return (this.http.get(url).subscribe((data : any) => {
       this.permitList = data;
@@ -45,4 +45,11 @@ export class PermitsAPIService {
     }
     return false;
   }
+
+  filterAddress(fullAddress : string) {
+    const filterAddress: string = `${this.baseURL}?$$app_token=${this.appToken}&BoardType=${this.boardType}&$where=originaladdress1 like '%25${fullAddress}%25'`;  
+
+    return this.http.get(filterAddress);
+  }
 }
+

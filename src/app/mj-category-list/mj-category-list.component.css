@@ -2,3 +2,30 @@ h2 {
     display: flex;
     justify-content: center;
 }
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  input {
+    width: 70%;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    height: 40px;
+    box-shadow: 3px 3px 11px black;
+  }
+  div {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 8px black;
+  }
+  .fullList {
+      background-color: inherit;
+      box-shadow: none;
+  }

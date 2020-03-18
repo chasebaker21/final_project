@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 import { MJAPIService } from '../mjapi.service';
 
 @Component({
@@ -14,6 +14,7 @@ export class MjCategoryComponent implements OnInit {
   
   MJFavoritesList: any;
   permitList = [];
+
   
   constructor(public MJAPIService: MJAPIService) { }
 

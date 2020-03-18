@@ -11,7 +11,8 @@ export class AppComponent {
   title = 'finalProject';
   open: boolean = false;
 
-  constructor(public client: MJAPIService, public service1: MJAPIService, public service2: PermitsAPIService) {}
+
+  constructor(public client: MJAPIService, public service1: MJAPIService, public service2: PermitsAPIService) { }
 
   fetchMarijuana() {
     this.service1.getMJAPI();
@@ -21,13 +22,13 @@ export class AppComponent {
     this.service2.getPermitsAPI();
   }
 
-    /* Open when someone clicks on the span element */
+  /* Open when someone clicks on the span element */
   openNav() {
     this.open = true;
   }
 
   /* Close when someone clicks on the "x" symbol inside the overlay */
   closeNav() {
-  this.open = false;
+    this.open = false;
   }
 }
