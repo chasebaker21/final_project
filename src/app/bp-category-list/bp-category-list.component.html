@@ -1,0 +1,19 @@
+<header>
+    <input type="text" placeholder="Search Address" [(ngModel)]="permitAddress">
+    <button (click)="filterAddress()" >Search</button>
+    <div *ngFor="let address of searchResults">
+      <h1 class="test">{{ address.originaladdress1 }}</h1>
+      <h2>{{ address.projectname }}</h2>
+    </div>
+
+</header>
+
+<div class="fullList">
+    <div *ngFor = "let permit of PermitsAPIService.permitList">
+        <building-category [permit]="permit"></building-category>
+    </div>
+</div>
+
+<div *ngIf="PermitsAPIService.permitList.length == 0">
+    <p>Please Wait...</p>
+</div>

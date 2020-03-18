@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { MJAPIService } from '../mjapi.service';
+import { PermitsAPIService } from '../permits-api.service';
 
 @Component({
   selector: 'favorites',
@@ -9,10 +10,12 @@ import { MJAPIService } from '../mjapi.service';
 export class FavoritesComponent implements OnInit {
   @Input()
   posts: any;
+  posts1: any;
 
-  constructor(public MJService: MJAPIService) { }
+  constructor(public MJAPIService: MJAPIService, public PermitsAPIService: PermitsAPIService) { }
 
   ngOnInit(): void {
-    this.posts = this.MJService.favoritesList;
+    this.posts = this.MJAPIService.MJFavoritesList;
+    this.posts1 = this.PermitsAPIService.BPFavoritesList;
   }
 }

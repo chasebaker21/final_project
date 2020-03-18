@@ -6,52 +6,37 @@ import { MJAPIService } from '../mjapi.service';
   templateUrl: './mj-category.component.html',
   styleUrls: ['./mj-category.component.css']
 })
+
 export class MjCategoryComponent implements OnInit {
   @Input() permit;
   @Input() post;
   @Input() fave : boolean = false;
-  favoritesList: any;
+  
+  MJFavoritesList: any;
   permitList = [];
 
   
   constructor(public MJAPIService: MJAPIService) { }
 
-  
-  ngOnInit(): void {
-    this.MJAPIService.getMJAPI().subscribe((data: any) => this.permitList = data.features);
-     
-    for (let thingie of this.MJAPIService.favoritesList) {
-      if(thingie.attributes.FullAddress == this.permit.attributes.FullAddress) {
-        this.fave = true;
-        console.log("good");
-      }
-    }
+  ngOnInit() {
+    this.fave = this.MJAPIService.isAFavorite(this.permit);
   }
 
   addMJItem (permit) {
-    this.MJAPIService.addToFavoritesList(permit);
-    console.log("add");
+    this.MJAPIService.addToMJFavoritesList(permit);
     this.fave = true;
-    console.log(this.MJAPIService.favoritesList.length);
   }
 
   removeMJItem (permit) {
-    this.MJAPIService.removeFromFavoritesList(permit);
-    console.log("remove");
+    this.MJAPIService.removeFromMJFavoritesList(permit);
     this.fave = false;
-    console.log(this.MJAPIService.favoritesList.length);
   }
-
-  
 
   formatDate(rawDate : string) : string {
     if (rawDate === null) {
       return "N/A";
     }
-
     const newDate = new Date(rawDate);
     return newDate.toLocaleDateString();
   }
-
 }
-
