@@ -23,6 +23,7 @@ export class BuildingCategoryComponent implements OnInit {
 
   // need to figure out how to display search results
   filterAddress() {
+    this.permitAddress = this.permitAddress.toUpperCase();
     this.PermitsAPIService.filterAddress(this.permitAddress).subscribe((data: any) => this.searchResults = data);
     console.log(this.searchResults);
   }
