@@ -67,10 +67,10 @@ div {
 .projectInfo {
   margin-bottom: 10px;
 }
-button {
-  border: none;
-}
 
-button {
+.fa-2x {
   border: none;
+  position: relative;
+  left: 59%;
+  top: 36px;
 }

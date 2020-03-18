@@ -7,8 +7,10 @@
         <p>Approval Date: {{ formatDate(permit.attributes.ApprovedDate) }}</p>
         <p>Intake Date: {{ formatDate(permit.attributes.IntakeDate) }}</p>  
       </div>
-      <button *ngIf="fave" (click)="removeMJItem(permit)">Unfavorite</button>
-      <button *ngIf="!fave" (click)="addMJItem(permit)">Favorite</button>      
+         <!-- button to add permit to saved list -->
+         <i class="fas fa-bookmark fa-2x" *ngIf="fave" (click)="removeMJItem(permit)"></i>
+         <!-- button to remove from saved list -->
+         <i class="far fa-bookmark fa-2x" *ngIf="!fave" (click)="addMJItem(permit)"></i>  
       <vote-comment [id]="permit.attributes.ApplicationID"></vote-comment>
   </main>
 </body>
