@@ -1,7 +1,6 @@
-<body>
   <div *ngIf="!show" (click)="display()" class="splash">
     <span>
-      <!-- <img class="backgroundImg" src="assets/grand-rapids.jpg"> -->
+      <!-- <img class="backgroundImg" src="assets/grand-rapids.jpg" /> -->
 
       <h1 class="animated fadeInDown">Welcome To</h1>
       <img
@@ -17,7 +16,7 @@
     <div class="catContainer">
       <button
         class="buildingBtn"
-        (click) = "fetchBuildings()"
+        (click)="fetchBuildings()"
         [routerLink]="['/bpCategoryList']"
         routerLinkActive="router-link-active"
       >
@@ -40,8 +39,6 @@
 
       <h2 class="textStyle">Marijuana Permits</h2>
     </div>
-  </main>
   <footer>
     <!-- to be decided  -->
   </footer>
-</body>
