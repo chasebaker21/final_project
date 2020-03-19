@@ -11,7 +11,7 @@ export class BpCategoryListComponent implements OnInit {
 
   constructor(public PermitsAPIService: PermitsAPIService) {}
   
-  searchResults: any;
+//  searchResults: any;
   permitAddress: string;
 
 
@@ -20,7 +20,6 @@ export class BpCategoryListComponent implements OnInit {
 
   filterAddress() {
     this.permitAddress = this.permitAddress.toUpperCase();
-    this.PermitsAPIService.filterAddress(this.permitAddress).subscribe((data: any) => this.searchResults = data);
-    console.log(this.searchResults);
+    this.PermitsAPIService.filterAddress(this.permitAddress).subscribe((data: any) => this.PermitsAPIService.permitList = data);
   }
 }
