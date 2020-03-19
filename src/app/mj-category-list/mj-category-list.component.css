@@ -1,3 +1,7 @@
+h2 {
+    display: flex;
+    justify-content: center;
+}
 header {
     display: flex;
     justify-content: center;
@@ -9,10 +13,23 @@ header {
     width: 70%;
     border-radius: 5px;
     border: none;
-    font-size: 1rem;
-    text-align: center;
+    font-size: 1.6rem;
+    text-align: left;
     height: 40px;
     box-shadow: 3px 3px 11px black;
+    padding-left: 2%;
+  }
+  .searchBar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+  }
+  .searchBtn {
+    position: relative;
+    right: 6%;
   }
   div {
     background-color: white;
@@ -25,3 +42,52 @@ header {
       background-color: inherit;
       box-shadow: none;
   }
+  @media only screen and (min-width: 375px) {
+    .searchBtn {
+      right: 9%;
+    }
+    input {
+      font-size: 0.9rem;
+    }
+    .fa-2x {
+      font-size: 1rem;
+    }
+  }
+  
+  /* css for tablet size screens */
+  @media only screen and (min-width: 768px) {
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-basis: 45%;
+      margin: 10px;
+    }
+    .searchBtn {
+      right: 6%;
+    }
+    .fa-2x {
+      font-size: 1.8rem;
+    }
+    input {
+      font-size: 1.8rem;
+    }
+  }
+  /* css for standard laptop screens */
+  @media only screen and (min-width: 1024px) {
+    div {
+      flex-basis: 46%;
+      margin: 15px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  
+  /* css for larger laptop screens */
+  @media only screen and (min-width: 1440px) {
+    div {
+      flex-basis: 30%;
+    }
+  }
+  

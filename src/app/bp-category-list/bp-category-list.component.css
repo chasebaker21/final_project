@@ -1,27 +1,95 @@
+h2 {
+  display: flex;
+  justify-content: center;
+}
 header {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+}
+input {
+  width: 70%;
+  border-radius: 5px;
+  border: none;
+  padding-left: 1%;
+  font-size: 1rem;
+  text-align: left;
+  height: 40px;
+  box-shadow: 3px 3px 11px black;
+  padding-left: 2%;
+}
+.searchBar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
+.searchBtn {
+  position: relative;
+  right: 6%;
+}
+
+div {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 8px black;
+}
+.fullList {
+  background-color: inherit;
+  box-shadow: none;
+}
+
+@media only screen and (min-width: 375px) {
+  .searchBtn {
+    right: 9%;
   }
   input {
-    width: 70%;
-    border-radius: 5px;
-    border: none;
+    font-size: 0.9rem;
+  }
+  .fa-2x {
     font-size: 1rem;
-    text-align: center;
-    height: 40px;
-    box-shadow: 3px 3px 11px black;
   }
+}
+
+/* css for tablet size screens */
+@media only screen and (min-width: 768px) {
   div {
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    box-shadow: 3px 3px 8px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 45%;
+    margin: 10px;
   }
-  .fullList {
-      background-color: inherit;
-      box-shadow: none;
+  .searchBtn {
+    right: 6%;
   }
+  .fa-2x {
+    font-size: 1.8rem;
+  }
+  input {
+    font-size: 1.8rem;
+  }
+}
+/* css for standard laptop screens */
+@media only screen and (min-width: 1024px) {
+  div {
+    flex-basis: 46%;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* css for larger laptop screens */
+@media only screen and (min-width: 1440px) {
+  div {
+    flex-basis: 30%;
+  }
+}
