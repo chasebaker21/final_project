@@ -7,18 +7,16 @@ button {
 header {
   display: flex;
   justify-content: space-between;
-  width: 95%;
-  margin: 8px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 3px 3px 5px black;
+  align-items: center;
+  background-color: #4797DE;
+  height: 175px;
 }
 .menuBtnLogo {
   display: flex;
   align-items: center;
 }
 img {
-  height: 45px;
+  height: 125px;
   margin-bottom: 7px;
 }
 h3 {

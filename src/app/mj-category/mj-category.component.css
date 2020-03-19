@@ -2,7 +2,6 @@
 
 body {
   margin: 0;
-  margin-top: 4%;
 }
 header {
   display: flex;
@@ -28,6 +27,7 @@ input {
   display: flex;
   border: none;
   justify-content: space-evenly;
+  align-items: center;
   margin: 0;
   padding: 0px;
   /* padding-bottom: 9px; */

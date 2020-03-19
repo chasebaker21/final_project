@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 0;
 }
 
@@ -62,20 +63,12 @@ main {
 footer {
   width: auto;
 }
-
-/* .splash {
-  display:flex;
-  top: 50%;
-  height: 101%;
-  width: 100%;
-} */
 span {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 25%;
-  margin-bottom: 25%;
+  z-index: 10;
 }
 #splashLogo {
   border: 0;
@@ -85,14 +78,27 @@ span {
 
 img {
   height: 150px;
-  /* border: 5px solid #47BBDE; */
   border-radius: 53%;
   margin-bottom: 10px;
   box-shadow: 4px 4px 8px -1px black;
 }
+.backgroundImg {
+  height: 100%;
+}
 
-img {
-  height: 150px;
-  border-radius: 53%;
-  margin-bottom: 10px;
+ /* style for laptop size screens */
+@media only screen and (min-width: 768px) {
+  img {
+    height: 415px;
+  }
+
+  .textStyle {
+    font-size: 3rem;
+  }
+  main {
+    height: 88vh;
+  }
+  span {
+    top: 27%;
+  }
 }

@@ -9,8 +9,7 @@
       <!-- button to add permit to saved list -->
       <i class="fas fa-bookmark fa-2x" *ngIf="fave" (click)="removeBPItem(permit)"></i>
       <!-- button to remove from saved list -->
-      <i class="far fa-bookmark fa-2x" *ngIf="!fave" (click)="addBPItem(permit)"></i>
-    
+      <i class="far fa-bookmark fa-2x" *ngIf="!fave" (click)="addBPItem(permit)"></i>   
       <vote-comment [id]="permit.permitnum"></vote-comment>
   </main>
 </body>
