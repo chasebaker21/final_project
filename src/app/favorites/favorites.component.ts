@@ -12,10 +12,29 @@ export class FavoritesComponent implements OnInit {
   posts: any;
   posts1: any;
 
+  mjShow = true;
+  bpShow = true;
+
   constructor(public MJAPIService: MJAPIService, public PermitsAPIService: PermitsAPIService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.posts = this.MJAPIService.MJFavoritesList;
     this.posts1 = this.PermitsAPIService.BPFavoritesList;
+
+    if (window.screen.width >=768) {
+      this.mjShow = !this.mjShow;
+      this.bpShow = !this.bpShow;
+    } else if (window.screen.width <768) {
+      this.mjShow = this.mjShow;
+      this.bpShow = this.mjShow;
+    }
+  }
+
+  mjToggle() {
+      this.mjShow = !this.mjShow;
+  }
+
+  bpToggle() {
+    this.bpShow = !this.bpShow;
   }
 }
