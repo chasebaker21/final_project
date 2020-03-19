@@ -33,3 +33,7 @@ div {
 span {
     font-size: 1.2rem;
 }
+.hidden {
+    opacity: -1%;
+    z-index: -1;
+}

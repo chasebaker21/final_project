@@ -65,3 +65,9 @@ p {
 button {
   border: none;
 }
+.fa-2x {
+  border: none;
+  position: relative;
+  left: 59%;
+  top: 36px;
+}
