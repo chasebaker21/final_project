@@ -11,7 +11,7 @@ app.use(express.json());
 app.use('/comments', comments);
 
 app.use('/votes', votes);
-
-app.listen(5000, () => {
+const port = process.env.PORT||5000;
+app.listen(port, () => {
     console.log("listening");
 });

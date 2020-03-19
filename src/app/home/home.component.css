@@ -4,6 +4,7 @@ body {
   justify-content: center;
   margin: 0;
 }
+
 header {
   display: flex;
   justify-content: center;
@@ -31,14 +32,25 @@ button {
   border: none;
 }
 
-.buildingBtn {
+.buildingBtn >img {
   color: black;
   background-color: inherit;
+  height: 150px;
+  /* border: 5px solid #47BBDE; */
+  border-radius: 53%;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 8px -1px black;
+ 
 }
 
-.marijuannaBtn {
+.marijuanaBtn > img {
   color: black;
   background-color: inherit;
+  height: 150px;
+  /* border: 5px solid #47BBDE; */
+  border-radius: 53%;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 8px -1px black;
 }
 
 .textStyle {
@@ -61,25 +73,46 @@ footer {
   width: auto;
 }
 
-span {
-  display: flex;
+/* img {
+  height: 150px;
+   border: 5px solid #47BBDE; 
+  border-radius: 53%;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 8px -1px black;
+} */
+
+/* img {
+  height: 150px;
+  border-radius: 53%;
+  margin-bottom: 10px;
+} */
+
+/* splash page */
+#splash {
+  background-image: "../../assets/grand-rapids.jpg"
+  /* display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
-  margin-top: 25%;
-  margin-bottom: 25%;
+  align-items: center; */
+  /* margin-top: 25%;
+  margin-bottom: 25%; */
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
 }
 #splashLogo {
   border: 0;
   border-radius: 0;
   box-shadow: none;
-  
 }
 
-img {
-  height: 150px;
-  /* border: 5px solid #47BBDE; */
-  border-radius: 53%;
-  margin-bottom: 10px;
-  box-shadow: 4px 4px 8px -1px black;
-}
+#splashBackground {
+  height: 100vh;
+  width: 100vw;
+  opacity: 70%;
+  border-radius: none;
+  z-index: -1
+} 
+
+

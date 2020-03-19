@@ -1,3 +1,6 @@
+html {
+  background-image:  "../../assets/grand-rapids.jpg";
+}
 button {
   border: none;
   background-color: inherit;
