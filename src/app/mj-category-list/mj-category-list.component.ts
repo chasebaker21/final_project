@@ -9,7 +9,13 @@ import { MJAPIService } from '../mjapi.service';
 
 export class MjCategoryListComponent implements OnInit {
 
+  permitAddress: string;
+
   constructor(public MJAPIService: MJAPIService) { }
 
   ngOnInit(): void {}
+
+  filterAddress() {
+    this.MJAPIService.filterAddress(this.permitAddress).subscribe((data: any) => this.MJAPIService.permitList = data.features);
+  }
 }
