@@ -1,4 +1,4 @@
-import express from "express";
+const express = require ("express");
 
 const app = express.Router();
 
@@ -26,4 +26,4 @@ app.put("/:applicationID", (req, res) => {
   res.json(200);
 });
 
-export default app;
+module.exports = app;
