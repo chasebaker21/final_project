@@ -18,6 +18,7 @@ input {
   text-align: left;
   height: 40px;
   box-shadow: 3px 3px 11px black;
+  padding-left: 2%;
 }
 .searchBar {
   display: flex;

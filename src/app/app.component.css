@@ -82,7 +82,7 @@ h3 {
 /* opens and closes the nav menu with ngclass */
 .openNav {
   width: 100%;
-  height: 74%;
+  height: 85%;
   border-bottom-left-radius: 100%;
   border-left: 8px solid #f7f70b;
   border-bottom: 5px solid #ff0100;
