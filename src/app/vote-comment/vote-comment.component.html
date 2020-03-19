@@ -4,9 +4,9 @@
   <!-- down vote button -->
   <i class="far fa-thumbs-down fa-2x" (click)="downVote()"><span>{{ downVoteCount }}</span></i>
   <!-- button to add permit to saved list -->
-  <i class="fas fa-bookmark fa-2x" *ngIf="fave" (click)="removeMJItem()"></i>
+  <i class="fas fa-bookmark fa-2x" *ngIf="fave" (click)="removeFave()"></i>
   <!-- button to remove from saved list -->
-  <i class="far fa-bookmark fa-2x" *ngIf="!fave" (click)="addMJItem()"></i>
+  <i class="far fa-bookmark fa-2x" *ngIf="!fave" (click)="addFave()"></i>
   <!-- button to open or close comment form -->
   <i class="far fa-comment fa-2x" (click)="commentBtn()"></i>
 

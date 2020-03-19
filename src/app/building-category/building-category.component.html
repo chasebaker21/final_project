@@ -5,9 +5,7 @@
       <div class="genInfo">
         <p>Status: {{ permit.permitstatuscurrent }}</p>
         <p>Approved Date: {{ formatDate(permit.permitapproveddate) }}</p>
-      </div>
-      <button *ngIf="fave" (click)="removeBPItem(permit)">Unfavorite</button>
-      <button *ngIf="!fave" (click)="addBPItem(permit)">Favorite</button>      
-      <vote-comment [id]="permit.permitnum"></vote-comment>
+      </div>   
+      <vote-comment [id]="permit.permitnum" [post]="permit"></vote-comment>
   </main>
 </body>
