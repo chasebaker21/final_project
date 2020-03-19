@@ -21,13 +21,13 @@ export class VoteCommentComponent implements OnInit {
   // when page first loads ngOnInit() will check the node server.js for any vote counts and will update
   // the upVoteCount/downVoteCount
   ngOnInit() {
-    // this.http.get('http://localhost:5000/votes/').subscribe((data: any) => {
-    //   if (data[this.id]) {
-    //     this.upVoteCount = data[this.id].upVote;
-    //     this.downVoteCount = data[this.id].downVote;
-    //   }
-    // }
-    // );
+    this.http.get('http://localhost:5000/votes/').subscribe((data: any) => {
+      if (data[this.id]) {
+        this.upVoteCount = data[this.id].upVote;
+        this.downVoteCount = data[this.id].downVote;
+      }
+    }
+    );
   }
 
   // opens and closes the form for leaving name and comment
