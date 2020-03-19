@@ -1,5 +1,8 @@
 # FinalProject
 
+Run this in terminal to redeploy to github pages.
+npm run ng:push
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
 
 ## Development server
