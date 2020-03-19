@@ -29,3 +29,31 @@ header {
       background-color: inherit;
       box-shadow: none;
   }
+
+  /* css for tablet size screens */
+  @media only screen and (min-width: 768px) {
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-basis: 45%;
+      margin: 10px;
+    }
+  }  
+ /* css for standard laptop screens */
+  @media only screen and (min-width: 1024px) {
+    div {
+      flex-basis: 46%;
+      margin: 15px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  /* css for larger laptop screens */
+  @media only screen and (min-width: 1440px) {
+    div {
+      flex-basis: 30%;
+    }
+  }
