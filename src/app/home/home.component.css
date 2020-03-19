@@ -1,9 +1,24 @@
+* {
+  z-index: 3;
+}
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0;
+}
+.backgroundImg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: inherit;
+  z-index: 1;
+  filter: blur(2px);
+}
+.zIndex {
+  z-index: 3;
 }
 
 header {
@@ -36,16 +51,16 @@ button {
 
 .buildingBtn {
   color: black;
-  background-color: inherit;
+  background-color: rgb(32, 184, 116, 0);
 }
 
 .marijuannaBtn {
   color: black;
-  background-color: inherit;
+  background-color: rgb(32, 184, 116, 0);
 }
 
 .textStyle {
-  color: black;
+  color: white;
   font-size: 1rem;
 }
 
@@ -68,28 +83,24 @@ span {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  z-index: 10;
-} 
- #splashLogo {
+}
+#splashLogo {
   border: 0;
   border-radius: 0;
   box-shadow: none;
-} 
+}
 
 img {
-  height: 150px;
+  height: 225px;
   border-radius: 53%;
   margin-bottom: 10px;
   box-shadow: 4px 4px 8px -1px black;
 }
-.backgroundImg {
-  height: 100%;
-}
 
- /* style for laptop size screens */
+/* style for tablet size screens */
 @media only screen and (min-width: 768px) {
   img {
-    height: 415px;
+    height: 290px;
   }
 
   .textStyle {
@@ -100,5 +111,14 @@ img {
   }
   span {
     top: 27%;
+  }
+  @media only screen and (min-width: 768px) {
+    .catContainer {
+      margin: 30px;
+      background-color: rgb(0, 0, 0, 80%);
+      border-radius: 10px;
+      padding: 30px;
+      width: 464px;
+    }
   }
 }
