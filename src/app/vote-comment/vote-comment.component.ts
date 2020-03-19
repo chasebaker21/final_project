@@ -31,7 +31,9 @@ export class VoteCommentComponent implements OnInit {
     }
     );
 
+
     this.fave = this.PermitAPIService.isAFavorite(this.post) || this.MJAPIService.isAFavorite(this.post);
+
   }
 
   // opens and closes the form for leaving name and comment
