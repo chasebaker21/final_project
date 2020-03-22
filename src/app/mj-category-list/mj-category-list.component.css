@@ -1,6 +1,5 @@
- h2 {
-  display: flex;
-  justify-content: center;
+h1 {
+  text-align: center;
 }
 header {
   display: flex;
@@ -17,7 +16,7 @@ input {
   text-align: left;
   box-shadow: 3px 3px 11px black;
   padding-left: 2%;
-} 
+}
 .searchBar {
   display: flex;
   background-color: inherit;
@@ -34,7 +33,7 @@ input {
   border: none;
 }
 div {
-  background-color: #20b874;
+  background-color: #1179cc;
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -55,7 +54,7 @@ div {
   .fa-2x {
     font-size: 1rem;
   }
-} 
+}
 
 /* css for tablet size screens */
 @media only screen and (min-width: 768px) {
@@ -65,7 +64,7 @@ div {
     justify-content: center;
     flex-basis: 45%;
     margin: 10px;
-    background-color: #20b874;
+    background-color: #1179cc;
   }
   .searchBtn {
     position: relative;
@@ -86,7 +85,7 @@ div {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #20b874;
+    background-color: #1179cc;
   }
 }
 

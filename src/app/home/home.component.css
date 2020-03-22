@@ -100,7 +100,10 @@ img {
 /* style for tablet size screens */
 @media only screen and (min-width: 768px) {
   img {
-    height: 290px;
+    height: 300px;
+  }
+  .catContainer {
+    width: 464px;
   }
 
   .textStyle {
@@ -112,18 +115,4 @@ img {
   span {
     top: 27%;
   }
-  @media only screen and (min-width: 768px) {
-    .catContainer {
-      width: 464px;
-    }
-  }
-  @media only screen and (min-width: 768px) {
-    main {
-      flex-wrap: nowrap;
-    }
-    img {
-      height: 425px;
-    }
-  }
-
 }

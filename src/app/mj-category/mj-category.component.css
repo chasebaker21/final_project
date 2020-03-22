@@ -37,7 +37,7 @@ input {
 }
 
 div {
-  background-color: #20B874;
+  background-color: #1179cc;
   padding: 1%;
   border-radius: 10px;
   box-shadow: 3px 3px 8px black;
@@ -60,7 +60,7 @@ p {
 .project {
   font-family: "Bellota Text", cursive;
   padding: 5px;
-  background-color: #20B874;
+  background-color: #1179cc;
 }
 
 button {

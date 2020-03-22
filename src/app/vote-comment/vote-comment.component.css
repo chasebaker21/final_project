@@ -15,27 +15,37 @@ div {
     display: flex;
     position: absolute;
     left: 19%;
-    border: 3px solid black;
     border-radius: 5px;
     padding: 4%;
-    background-color: powderblue;
+    background-color: #20B874;
     justify-content: center;
     flex-direction: column;
     width: 60%;
     margin-top: 10px;
 }
+.formCloseBtn {
+    position: relative;
+    text-align: end;
+}
 .comment {
     height: 100px;
     width: 100%;
-    border: 1px solid black;
     border-radius: 5px;
+    border: none;
     text-align: left;
+    padding-top: 2%;
     padding-bottom: 12%;
+    padding-left: 1%;
     
 }
 .submitBtn {
-    background-color: lightseagreen;
+    background-color: #1179CC;
     border-radius: 5px; 
+    border: none;
+    height: 45px;
+    width: 30%;
+    position: relative;
+    left: 37%;
 }
 span {
     font-size: 1.2rem;
