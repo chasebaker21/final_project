@@ -30,6 +30,8 @@ header {
   .searchBtn {
     position: relative;
     right: 6%;
+    background: inherit;
+    border: none;
   }
   div {
     background-color: white;

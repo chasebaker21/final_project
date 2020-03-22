@@ -114,11 +114,16 @@ img {
   }
   @media only screen and (min-width: 768px) {
     .catContainer {
-      margin: 30px;
-      background-color: rgb(0, 0, 0, 80%);
-      border-radius: 10px;
-      padding: 30px;
       width: 464px;
     }
   }
+  @media only screen and (min-width: 768px) {
+    main {
+      flex-wrap: nowrap;
+    }
+    img {
+      height: 425px;
+    }
+  }
+
 }

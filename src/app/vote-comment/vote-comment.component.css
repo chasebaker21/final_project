@@ -13,9 +13,15 @@ div {
 
 .form {
     display: flex;
+    position: absolute;
+    left: 19%;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 4%;
+    background-color: powderblue;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 60%;
     margin-top: 10px;
 }
 .comment {
@@ -24,6 +30,7 @@ div {
     border: 1px solid black;
     border-radius: 5px;
     text-align: left;
+    padding-bottom: 12%;
     
 }
 .submitBtn {
