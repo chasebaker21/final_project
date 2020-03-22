@@ -1,95 +1,98 @@
-h2 {
-    display: flex;
-    justify-content: center;
+ h2 {
+  display: flex;
+  justify-content: center;
 }
 header {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+}
+input {
+  width: 70%;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.6rem;
+  text-align: left;
+  box-shadow: 3px 3px 11px black;
+  padding-left: 2%;
+} 
+.searchBar {
+  display: flex;
+  background-color: inherit;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
+.searchBtn {
+  position: relative;
+  right: 6%;
+  background: inherit;
+  border: none;
+}
+div {
+  background-color: #20b874;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 8px black;
+}
+.fullList {
+  background-color: inherit;
+  box-shadow: none;
+}
+@media only screen and (min-width: 375px) {
+  .searchBtn {
+    position: relative;
+    right: 9%;
   }
   input {
-    width: 70%;
-    border-radius: 5px;
-    border: none;
-    font-size: 1.6rem;
-    text-align: left;
-    height: 40px;
-    box-shadow: 3px 3px 11px black;
-    padding-left: 2%;
+    font-size: 0.9rem;
   }
-  .searchBar {
+  .fa-2x {
+    font-size: 1rem;
+  }
+} 
+
+/* css for tablet size screens */
+@media only screen and (min-width: 768px) {
+  div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    box-shadow: none;
+    flex-basis: 45%;
+    margin: 10px;
+    background-color: #20b874;
   }
   .searchBtn {
     position: relative;
     right: 6%;
-    background: inherit;
-    border: none;
   }
+  .fa-2x {
+    font-size: 1.8rem;
+  }
+  input {
+    font-size: 1.8rem;
+  }
+}
+/* css for standard laptop screens */
+@media only screen and (min-width: 1024px) {
   div {
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    box-shadow: 3px 3px 8px black;
+    flex-basis: 46%;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #20b874;
   }
-  .fullList {
-      background-color: inherit;
-      box-shadow: none;
+}
+
+/* css for larger laptop screens */
+@media only screen and (min-width: 1440px) {
+  div {
+    flex-basis: 30%;
   }
-  @media only screen and (min-width: 375px) {
-    .searchBtn {
-      right: 9%;
-    }
-    input {
-      font-size: 0.9rem;
-    }
-    .fa-2x {
-      font-size: 1rem;
-    }
-  }
-  
-  /* css for tablet size screens */
-  @media only screen and (min-width: 768px) {
-    div {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      flex-basis: 45%;
-      margin: 10px;
-    }
-    .searchBtn {
-      right: 6%;
-    }
-    .fa-2x {
-      font-size: 1.8rem;
-    }
-    input {
-      font-size: 1.8rem;
-    }
-  }
-  /* css for standard laptop screens */
-  @media only screen and (min-width: 1024px) {
-    div {
-      flex-basis: 46%;
-      margin: 15px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-  }
-  
-  /* css for larger laptop screens */
-  @media only screen and (min-width: 1440px) {
-    div {
-      flex-basis: 30%;
-    }
-  }
-  
+}
