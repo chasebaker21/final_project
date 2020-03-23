@@ -7,6 +7,7 @@ import { BuildingCategoryComponent } from './building-category/building-category
 import { AboutComponent } from './about/about.component';
 import { MjCategoryListComponent } from './mj-category-list/mj-category-list.component';
 import { BpCategoryListComponent } from './bp-category-list/bp-category-list.component';
+import { MapLocationsComponent } from './map-locations/map-locations.component';
 
 const routes: Routes = [
   {
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'map-locations',
+    component: MapLocationsComponent
   },
   {
     path: '',

@@ -9,16 +9,21 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1179CC;
+  background-color: #1179cc;
   height: 150px;
+}
+.menuBtn {
+  position: relative;
+  bottom: 21%;
+  right: 1%;
 }
 .menuBtnLogo {
   display: flex;
   align-items: center;
 }
 img {
-  height: 125px;
-  margin-bottom: 7px;
+  height: 60px;
+  margin-bottom: 68px;
 }
 h3 {
   margin: 0;
@@ -26,8 +31,10 @@ h3 {
 }
 
 .fa-2x {
-  font-size: 4rem;
+  font-size: 3rem;
   padding-right: 8%;
+  position: relative;
+  bottom: 10px;
 }
 
 /* code is pulled from W3 schools page */
@@ -40,7 +47,7 @@ h3 {
   z-index: 10; /* Sit on top */
   right: 0;
   top: 0;
-  background: #20B874;
+  background: #20b874;
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -109,5 +116,29 @@ h3 {
     top: -5%;
     right: 6%;
     font-size: 7rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .fa-2x {
+      font-size: 3rem;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    img {
+      height: 90px;
+      margin-bottom: 38px;
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .fa-2x {
+      font-size: 4rem;
+      bottom: 0px;
+    }
+    img {
+      height: 90px;
+      margin-bottom: 36px;
+    }
   }
 }

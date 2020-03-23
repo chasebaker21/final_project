@@ -1,10 +1,8 @@
 <body>
   <header class="mainHeader">
     <div class="menuBtnLogo"><button [routerLink]="['/home']" routerLinkActive="router-link-active" ><img src="assets/UPVOICE LOGO.png" alt="UPVOICE GR LOGO"></button></div>
-    <button (click)="openNav()"><i class="fas fa-bars fa-2x"></i></button>
+    <button (click)="openNav()"  class="menuBtn"><i class="fas fa-bars fa-2x"></i></button>
   </header>
-
-  
   <!-- The overlay -->
   <div [ngClass]="{ openNav: open }" class="overlay">
     <!-- Button to close the overlay navigation -->
@@ -16,6 +14,7 @@
       <a [routerLink]="['/about']" routerLinkActive="router-link-active"  (click)="closeNav()">About</a>
       <a [routerLink]="['/mjCategoryList']" (click) = "fetchMarijuana()" routerLinkActive="router-link-active" (click)="closeNav()">Marijuana Permits</a>
       <a [routerLink]="['/bpCategoryList']" (click) = "fetchBuildings()" routerLinkActive="router-link-active" (click)="closeNav()">Building Permits</a>
+      <a [routerLink]="['/map-locations']" routerLinkActive="router-link-active" (click)="closeNav()">Permit Locations</a>
       <a [routerLink]="['/favorites']" routerLinkActive="router-link-active" (click)="closeNav()">Saved</a>
     </div>
   </div>
