@@ -1,5 +1,4 @@
 <div id="background">
-  <img class="backgroundImg" src="assets/grand-rapids.jpg" />
 
   <div *ngIf="!show" (click)="display()" class="splash">
     <span>
@@ -13,6 +12,7 @@
       <h4 class="animated fadeInDown">Let Your Voice Be Heard</h4>
     </span>
   </div>
+  <h1 class="title">UPVOICE Grand Rapids</h1>
 
   <main *ngIf="show">
     <div class="catContainer">
@@ -39,3 +39,10 @@
         <img src="assets/mjLeaf.png" />
     </button>
     </div>
+    <div class="catContainer">
+      <h2 class="textStyle">Permit Locations</h2>
+      <button class="mapBtn" [routerLink]="['/map-locations']" routerLinkActive="router-link-active" >
+        <img src="assets/GoogleMapMarker.png" />
+      </button>
+    </div>
+    </main>

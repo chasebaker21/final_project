@@ -2,11 +2,7 @@
 
 body {
   margin: 0;
-}
-
-.test {
-  display: block;
-  font-size: larger;
+  background-color: #1179CC;
 }
 header {
   display: flex;
@@ -47,7 +43,7 @@ p {
 }
 
 div {
-  background-color: white;
+  background-color: #1179CC;
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -63,17 +59,10 @@ div {
 .project {
   font-family: "Bellota Text", cursive;
   padding: 5px;
-  background-color: white;
-  /* box-shadow: 3px 3px 7px black; */
+  background-color: inherit;
 }
 
 .projectInfo {
   margin-bottom: 10px;
 }
 
-.fa-2x {
-  border: none;
-  position: relative;
-  left: 59%;
-  top: 36px;
-}

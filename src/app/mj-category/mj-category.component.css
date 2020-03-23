@@ -37,7 +37,7 @@ input {
 }
 
 div {
-  background-color: white;
+  background-color: #1179cc;
   padding: 1%;
   border-radius: 10px;
   box-shadow: 3px 3px 8px black;
@@ -59,18 +59,10 @@ p {
 
 .project {
   font-family: "Bellota Text", cursive;
-  border-radius: 5px;
   padding: 5px;
-  background-color: white;
-  /* box-shadow: 3px 3px 7px black; */
+  background-color: #1179cc;
 }
 
 button {
   border: none;
-}
-.fa-2x {
-  border: none;
-  position: relative;
-  left: 59%;
-  top: 36px;
 }
