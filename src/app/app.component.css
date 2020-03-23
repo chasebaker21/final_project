@@ -98,3 +98,24 @@ h3 {
     right: 35px;
   }
 }
+/* fixed footer will only show for screens smaller than 600px wide */
+@media screen and (max-width: 600px) {
+  footer {
+    position: absolute;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+   }
+   ul {
+     list-style-type: none;
+     display: flex;
+     flex-flow: row;
+     justify-content: space-evenly;
+     margin-top: 10px;
+   }
+   i {
+     size: 300%;
+   }
+}

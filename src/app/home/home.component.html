@@ -2,18 +2,17 @@
   <header *ngIf="show">
     <input type="text" placeholder="Search Address"/>
   </header>
-
-  <div *ngIf="!show" (click)="display()" class="splash">
-    <!-- <img src="../../assets/grand-rapids.jpg" id = "splashBackground"/> -->
-      <h1 class="animated fadeInDown">Welcome To</h1>
-       <img
+  <section id="testing"*ngIf="!show" (click)="display()">
+      <div id = "splash"  class = "animated fadeIn"> 
+    <!-- <h1 class="animated fadeInDown">Welcome To</h1> -->
+      <h3 class = "animated fadeInDown">UPVOICE GR</h3>
+      <img
         src="../../assets/UPVOICE LOGO.png"
         id="splashLogo"
         class="animated fadeInUp"
-      /> 
-       <h4 class="animated fadeInDown">Let Your Voice Be Heard</h4>
-  </div>
-
+      />
+      </div> 
+</section>
   <main *ngIf="show">
     <div class="catContainer">
       <button
