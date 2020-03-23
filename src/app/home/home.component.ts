@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MJAPIService } from '../mjapi.service';
 import { PermitsAPIService } from '../permits-api.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'home',
@@ -12,9 +13,15 @@ export class HomeComponent implements OnInit {
   
   show:boolean = false;
 
-  constructor(public service1: MJAPIService, public service2: PermitsAPIService) { }
+  constructor(public service1: MJAPIService, public service2: PermitsAPIService, public route: ActivatedRoute) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    const param = this.route.snapshot.queryParamMap;
+
+    if (param.get('skipintro') == 'true') {
+      this.display();
+    }
+  }
 
   display() {
     this.show = true;
