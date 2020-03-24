@@ -9,6 +9,12 @@ body {
   align-items: center;
   margin: 0;
 }
+.title {
+  position: absolute;
+  top: 9%;
+  right: 7%;
+  font-size: 1.6rem;
+}
 .backgroundImg {
   height: 100%;
   width: 100%;
@@ -42,7 +48,7 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 30px;
+  margin: 5px;
 }
 
 button {
@@ -59,9 +65,18 @@ button {
   background-color: rgb(32, 184, 116, 0);
 }
 
+.mapBtn {
+  color: black;
+  background-color: rgb(32, 184, 116, 0);
+}
 .textStyle {
   color: white;
   font-size: 2rem;
+  border-radius: 5px;
+  padding: 2%;
+  background: #20b874;
+  width: max-content;
+  text-align: center;
 }
 
 .fa-5x {
@@ -91,20 +106,32 @@ span {
 }
 
 img {
-  height: 225px;
+  height: 170px;
   border-radius: 53%;
   margin-bottom: 10px;
   box-shadow: 4px 4px 8px -1px black;
 }
 
+@media only screen and (min-width: 375px) {
+  .title {
+    top: 8%;
+    right: 7%;
+    font-size: 1.9rem;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .title {
+    top: 8%;
+    right: 6%;
+    font-size: 2.2rem;
+  }
+}
+
 /* style for tablet size screens */
 @media only screen and (min-width: 768px) {
   img {
-    height: 290px;
-  }
-
-  .textStyle {
-    font-size: 3rem;
+    height: 238px;
   }
   main {
     height: 88vh;
@@ -112,13 +139,34 @@ img {
   span {
     top: 27%;
   }
-  @media only screen and (min-width: 768px) {
-    .catContainer {
-      margin: 30px;
-      background-color: rgb(0, 0, 0, 80%);
-      border-radius: 10px;
-      padding: 30px;
-      width: 464px;
-    }
+  .catContainer {
+    margin: 30px;
+  }
+  .title {
+    top: 5%;
+    right: 11%;
+    font-size: 3.7rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  img {
+    height: 288px;
+  }
+  .title {
+    top: 4%;
+    right: 18%;
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  img {
+    height: 393px;
+  }
+  .title {
+    top: 1%;
+    right: 17%;
+    font-size: 6rem;
   }
 }
