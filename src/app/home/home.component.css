@@ -111,6 +111,9 @@ img {
   margin-bottom: 10px;
   box-shadow: 4px 4px 8px -1px black;
 }
+img:hover {
+  box-shadow: 8px 11px 10px 2px #1179cc;
+}
 
 @media only screen and (min-width: 375px) {
   .title {
