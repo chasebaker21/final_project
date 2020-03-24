@@ -10,7 +10,7 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 input {
   position: absolute;
@@ -89,6 +89,8 @@ div {
   }
   .searchBtn {
     padding-top: 5px;
+    left: 41%;
+    top: 33px;
   }
   .fa-2x {
     font-size: 1.8rem;
@@ -118,6 +120,12 @@ div {
     right: 14%;
     font-size: 3.8rem;
   }
+  input {
+    width: 70%;
+  }
+  .searchBtn {
+    left: 32%;
+  }
 }
 
 /* css for larger laptop screens */
@@ -129,5 +137,11 @@ div {
     top: 2%;
     right: 12%;
     font-size: 5.8rem;
+  }
+  input {
+    width: 50%;
+  }
+  .searchBtn {
+    left: 23%;
   }
 }

@@ -26,6 +26,8 @@ div {
 .formCloseBtn {
     position: relative;
     text-align: end;
+    background: inherit;
+    border: none;
 }
 .comment {
     height: 100px;

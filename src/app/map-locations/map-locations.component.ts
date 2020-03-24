@@ -36,6 +36,5 @@ export class MapLocationsComponent implements OnInit {
   constructor(public MJAPIService: MJAPIService) { }
 
   ngOnInit(): void {
-    this.MJAPIService.fetchCordinates(this.coordinates).subscribe((data: any) => this.MJAPIService.permitList = data.features);
   }
 }
