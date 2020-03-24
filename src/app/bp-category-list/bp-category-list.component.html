@@ -1,11 +1,9 @@
 <header>
-    <input type="text" placeholder="Search by street name ex. 'Wealthy'" [(ngModel)]="permitAddress">
-    <button (click)="filterAddress()" >Search</button>
-    <div *ngFor="let address of searchResults">
-      <h1 class="test">{{ address.originaladdress1 }}</h1>
-      <h2>{{ address.projectname }}</h2>
+    <h1 class="title">Commercial Building Permits</h1>
+    <div class="searchBar">
+        <input type="text" placeholder="Search by street name ex. 'Division'" [(ngModel)]="permitAddress" />
+        <button (click)="filterAddress()" class="searchBtn"><i class="fas fa-search fa-2x"></i></button>
     </div>
-
 </header>
 
 <div class="fullList">

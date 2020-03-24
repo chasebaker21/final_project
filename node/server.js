@@ -1,7 +1,7 @@
-import express from 'express'
-import comments from './comments.js';
-import votes from './votes.js';
-import cors from 'cors';
+const express = require ('express');
+const comments = require ('./comments.js');
+const votes = require ('./votes.js');
+const cors = require ('cors');
 
 const app = express();
 

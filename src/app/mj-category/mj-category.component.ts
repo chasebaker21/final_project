@@ -22,16 +22,6 @@ export class MjCategoryComponent implements OnInit {
     this.fave = this.MJAPIService.isAFavorite(this.permit);
   }
 
-  addMJItem (permit) {
-    this.MJAPIService.addToMJFavoritesList(permit);
-    this.fave = true;
-  }
-
-  removeMJItem (permit) {
-    this.MJAPIService.removeFromMJFavoritesList(permit);
-    this.fave = false;
-  }
-
   formatDate(rawDate : string) : string {
     if (rawDate === null) {
       return "N/A";

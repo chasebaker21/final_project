@@ -10,6 +10,8 @@ import { PermitsAPIService } from './permits-api.service';
 export class AppComponent {
   title = 'finalProject';
   open: boolean = false;
+  mapsAPIKey: string = "AIzaSyCTVJiI3W9FFBkhaickK4mi3ufzGdWBAn8";
+
 
 
   constructor(public client: MJAPIService, public service1: MJAPIService, public service2: PermitsAPIService) { }

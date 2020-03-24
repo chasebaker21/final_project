@@ -4,6 +4,7 @@
 } */
 body {
     margin: 0;
-    color: black;
-    
+    background-image: url("/assets/grand-rapids.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;        
 }

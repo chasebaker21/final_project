@@ -6,29 +6,38 @@
       <div id = "splash"  class = "animated fadeIn"> 
     <!-- <h1 class="animated fadeInDown">Welcome To</h1> -->
       <h3 class = "animated fadeInDown">UPVOICE GR</h3>
+<div id="background">
+
+  <div *ngIf="!show" (click)="display()" class="splash">
+    <span>
+
+      <h1 class="animated fadeInDown">Welcome To</h1>
       <img
         src="../../assets/UPVOICE LOGO.png"
         id="splashLogo"
         class="animated fadeInUp"
       />
-      </div> 
-</section>
+      <h4 class="animated fadeInDown">Let Your Voice Be Heard</h4>
+    </span>
+  </div>
+  <h1 class="title">UPVOICE Grand Rapids</h1>
+
   <main *ngIf="show">
     <div class="catContainer">
+      <h2 class="textStyle">Building Permits</h2>
       <button
         class="buildingBtn"
-        (click) = "fetchBuildings()"
+        (click)="fetchBuildings()"
         [routerLink]="['/bpCategoryList']"
         routerLinkActive="router-link-active"
       >
         <img
           src="assets/2-man-on-construction-site-during-daytime-159306.png"
         />
-      </button>
-
-      <h2 class="textStyle">Building Permits</h2>
+      </button> 
     </div>
     <div class="catContainer">
+      <h2 class="textStyle">Marijuana Permits</h2>
       <button
         class="marijuanaBtn"
         (click)="fetchMarijuana()"
@@ -36,12 +45,12 @@
         routerLinkActive="router-link-active"
       >
         <img src="assets/mjLeaf.png" />
-      </button>
-
-      <h2 class="textStyle">Marijuana Permits</h2>
+    </button>
     </div>
-  </main>
-  <footer>
-    <!-- to be decided  -->
-  </footer>
-</body>
+    <div class="catContainer">
+      <h2 class="textStyle">Permit Locations</h2>
+      <button class="mapBtn" [routerLink]="['/map-locations']" routerLinkActive="router-link-active" >
+        <img src="assets/GoogleMapMarker.png" />
+      </button>
+    </div>
+    </main>

@@ -1,21 +1,24 @@
-<header class="mainHeader">
-  <div class="menuBtnLogo"><button [routerLink]="['/home']" routerLinkActive="router-link-active" ><img src="assets/UPVOICE LOGO.png" alt="UPVOICE GR LOGO"></button><h3>UPVOICE GR</h3></div>
-  <button (click)="openNav()"><i class="fas fa-bars fa-2x"></i></button>
-</header>
-
-<!-- The overlay -->
-<div [ngClass]="{ openNav: open }" class="overlay">
-  <!-- Button to close the overlay navigation -->
-  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
-
-  <!-- Overlay content -->
-  <div class="overlay-content">
-    <a [routerLink]="['/home']" routerLinkActive="router-link-active" (click)="closeNav()">Home</a>
-    <a [routerLink]="['/about']" routerLinkActive="router-link-active"  (click)="closeNav()">About</a>
-    <a [routerLink]="['/mjCategoryList']" (click) = "fetchMarijuana()" routerLinkActive="router-link-active" (click)="closeNav()">Marijuana Permits</a>
-    <a [routerLink]="['/bpCategoryList']" (click) = "fetchBuildings()" routerLinkActive="router-link-active" (click)="closeNav()">Building Permits</a>
-    <a [routerLink]="['/favorites']" routerLinkActive="router-link-active" (click)="closeNav()">Saved</a>
+<body>
+  <header class="mainHeader">
+    <div class="menuBtnLogo"><button [routerLink]="['/home']" routerLinkActive="router-link-active" [queryParams]="{skipintro: true}"><img src="assets/UPVOICE LOGO.png" alt="UPVOICE GR LOGO"></button></div>
+    <button (click)="openNav()"><i class="fas fa-bars fa-2x"></i></button>
+  </header>
+  <!-- The overlay -->
+  <div [ngClass]="{ openNav: open }" class="overlay">
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active" (click)="closeNav()" [queryParams]="{skipintro: true}">Home</a>
+      <a [routerLink]="['/about']" routerLinkActive="router-link-active"  (click)="closeNav()">About</a>
+      <a [routerLink]="['/mjCategoryList']" (click) = "fetchMarijuana()" routerLinkActive="router-link-active" (click)="closeNav()">Marijuana Permits</a>
+      <a [routerLink]="['/bpCategoryList']" (click) = "fetchBuildings()" routerLinkActive="router-link-active" (click)="closeNav()">Building Permits</a>
+      <a [routerLink]="['/map-locations']" routerLinkActive="router-link-active" (click)="closeNav()">Permit Locations</a>
+      <a [routerLink]="['/favorites']" routerLinkActive="router-link-active" (click)="closeNav()">Saved</a>
+    </div>
   </div>
+<<<<<<< HEAD
 </div>
 <footer>
   <nav>
@@ -32,3 +35,9 @@
   </nav>
 </footer>
 <router-outlet></router-outlet>
+=======
+  
+  <router-outlet></router-outlet>
+  
+</body>
+>>>>>>> 52c8826f9623177a402676a2c22e10fb2dd53101
