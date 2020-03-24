@@ -1,7 +1,7 @@
 <body>
   <header class="mainHeader">
-    <div class="menuBtnLogo"><button [routerLink]="['/home']" routerLinkActive="router-link-active" ><img src="assets/UPVOICE LOGO.png" alt="UPVOICE GR LOGO"></button></div>
-    <button (click)="openNav()"  class="menuBtn"><i class="fas fa-bars fa-2x"></i></button>
+    <div class="menuBtnLogo"><button [routerLink]="['/home']" routerLinkActive="router-link-active" [queryParams]="{skipintro: true}"><img src="assets/UPVOICE LOGO.png" alt="UPVOICE GR LOGO"></button></div>
+    <button (click)="openNav()"><i class="fas fa-bars fa-2x"></i></button>
   </header>
   <!-- The overlay -->
   <div [ngClass]="{ openNav: open }" class="overlay">
@@ -10,7 +10,7 @@
   
     <!-- Overlay content -->
     <div class="overlay-content">
-      <a class="buttons" [routerLink]="['/home']" routerLinkActive="router-link-active" (click)="closeNav()">Home</a>
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active" (click)="closeNav()" [queryParams]="{skipintro: true}">Home</a>
       <a [routerLink]="['/about']" routerLinkActive="router-link-active"  (click)="closeNav()">About</a>
       <a [routerLink]="['/mjCategoryList']" (click) = "fetchMarijuana()" routerLinkActive="router-link-active" (click)="closeNav()">Marijuana Permits</a>
       <a [routerLink]="['/bpCategoryList']" (click) = "fetchBuildings()" routerLinkActive="router-link-active" (click)="closeNav()">Building Permits</a>
