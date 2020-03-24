@@ -2,7 +2,6 @@
 
 body {
   margin: 0;
-  margin-top: 4%;
 }
 
 header {
@@ -20,6 +19,7 @@ input {
   text-align: center;
   height: 40px;
   box-shadow: 3px 3px 11px black;
+  padding-left: 2%;
 }
 .projectName {
   font-weight: 900;
@@ -29,6 +29,7 @@ input {
   display: flex;
   border: none;
   justify-content: space-evenly;
+  align-items: center;
   margin: 0;
   padding: 0px;
   /* padding-bottom: 9px; */
@@ -61,8 +62,15 @@ p {
   border-radius: 5px;
   padding: 5px;
   background-color: white;
+  /* box-shadow: 3px 3px 7px black; */
 }
 
 button {
   border: none;
+}
+.fa-2x {
+  border: none;
+  position: relative;
+  left: 59%;
+  top: 36px;
 }

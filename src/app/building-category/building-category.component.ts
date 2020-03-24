@@ -24,17 +24,6 @@ export class BuildingCategoryComponent implements OnInit {
     this.fave = this.PermitsAPIService.isAFavorite(this.permit);
   }
 
-
-  addBPItem(permit) {
-    this.PermitsAPIService.addToBPFavoritesList(permit);
-    this.fave = true;
-  }
-
-  removeBPItem(permit) {
-    this.PermitsAPIService.removeFromBPFavoritesList(permit);
-    this.fave = false;
-  }
-
   formatDate(rawDate: string): string {
     if (rawDate === null) {
       return "N/A";

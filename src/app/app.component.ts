@@ -12,6 +12,7 @@ export class AppComponent {
   open: boolean = false;
 
 
+
   constructor(public client: MJAPIService, public service1: MJAPIService, public service2: PermitsAPIService) { }
 
   fetchMarijuana() {

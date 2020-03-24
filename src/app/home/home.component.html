@@ -1,21 +1,9 @@
-<!-- <body> -->
-  <header *ngIf="show">
-    <input type="text" placeholder="Search Address" />
-  </header>
-  
-  <main>
-      <div class="catContainer">
-        <button class="marijuannaBtn" (click) = "fetchMarijuana()" [routerLink]="['/mjCategoryList']" routerLinkActive="router-link-active" ><img src="assets/mjLeaf.png"></button>
-        <h2 class="textStyle">Marijuana Permits</h2>
-      </div>
-
-      <div class="catContainer">
-        <button class="buildingBtn" (click) = "fetchBuildings()" [routerLink]="['/bpCategoryList']" routerLinkActive="router-link-active" ><img src="assets/2-man-on-construction-site-during-daytime-159306.png"></button>
-        <h2 class="textStyle">Building Permits</h2>
-      </div>
+<div id="background">
+  <img class="backgroundImg" src="assets/grand-rapids.jpg" />
 
   <div *ngIf="!show" (click)="display()" class="splash">
     <span>
+
       <h1 class="animated fadeInDown">Welcome To</h1>
       <img
         src="../../assets/UPVOICE LOGO.png"
@@ -28,20 +16,20 @@
 
   <main *ngIf="show">
     <div class="catContainer">
+      <h2 class="textStyle">Building Permits</h2>
       <button
         class="buildingBtn"
-        (click) = "fetchBuildings()"
+        (click)="fetchBuildings()"
         [routerLink]="['/bpCategoryList']"
         routerLinkActive="router-link-active"
       >
         <img
           src="assets/2-man-on-construction-site-during-daytime-159306.png"
         />
-      </button>
-
-      <h2 class="textStyle">Building Permits</h2>
+      </button> 
     </div>
     <div class="catContainer">
+      <h2 class="textStyle">Marijuana Permits</h2>
       <button
         class="marijuannaBtn"
         (click)="fetchMarijuana()"
@@ -49,12 +37,5 @@
         routerLinkActive="router-link-active"
       >
         <img src="assets/mjLeaf.png" />
-      </button>
-
-      <h2 class="textStyle">Marijuana Permits</h2>
+    </button>
     </div>
-  </main>
-  <footer>
-    <!-- to be decided  -->
-  </footer>
-<!-- </body> -->
