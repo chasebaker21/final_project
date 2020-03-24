@@ -2,6 +2,15 @@
     height: 100px;
     width: 100px;
 }
+/* body {
+    background-color: #1179CC;
+} */
+
+/* .chaseImg:hover{
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+} */
 div {
     display: flex;
     flex-direction: column;
@@ -29,10 +38,46 @@ a {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.contact {
+#socialMedia{
     display: flex;
     flex-flow: row;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 50px;
+    align-content: space-between;
+    justify-content: center;
+    
+
 }
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h4 {
+    display: flex;
+    justify-content: center;
+
+}
+
+ #facebook {
+     color: #3b5998;
+     padding: 20px;
+     
+ }
+ #youtube {
+     color: #c4302b;
+     padding: 20px;
+    
+ }
+ #twitter {
+     color: #00acee;
+     padding: 20px;
+ }
+ /* fix instagram logo color */
+ #insta {
+     color:#E1306C;
+     padding: 20px;
+ }
+ #location {
+     padding: 20px;
+     margin-right: 40px;
+     color: black;
+ }

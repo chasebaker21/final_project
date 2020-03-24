@@ -98,10 +98,17 @@ h3 {
     right: 35px;
   }
 }
+
+/* footer will not display on laptop screens */
+@media screen and (min-width: 1020px) {
+  footer {
+    display: none;
+  }
+}
 /* fixed footer will only show for screens smaller than 600px wide */
 @media screen and (max-width: 600px) {
   footer {
-    position: absolute;
+    position: fixed;
     height: 50px;
     bottom: 0;
     width: 100%;
@@ -118,4 +125,5 @@ h3 {
    i {
      size: 300%;
    }
+  
 }
