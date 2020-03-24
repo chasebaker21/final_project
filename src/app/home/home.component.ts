@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MJAPIService } from '../mjapi.service';
 import { PermitsAPIService } from '../permits-api.service';
 import { ActivatedRoute } from '@angular/router';
+import { timer } from 'rxjs';
 
 @Component({
   selector: 'home',
@@ -21,6 +22,9 @@ export class HomeComponent implements OnInit {
     if (param.get('skipintro') == 'true') {
       this.display();
     }
+
+    const numbers = timer(3000);
+    numbers.subscribe(x => this.display());
   }
 
   display() {
