@@ -10,7 +10,7 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 input {
   position: absolute;
@@ -127,10 +127,10 @@ div {
     top: 3%;
   }
   .searchBtn {
-    left: 28%;
+    left: 23%;
   }
   input {
-    width: 60%;
+    width: 50%;
   }
 
 }

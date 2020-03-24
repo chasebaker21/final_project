@@ -59,8 +59,7 @@ export class VoteCommentComponent implements OnInit {
   }
 
   addFave() {
-    this.fave = true;
-    
+    this.fave = true;    
     if (this.post.attributes) {   // only MJ permits have the "attributes" field
       this.MJAPIService.addToMJFavoritesList(this.post);
     }
