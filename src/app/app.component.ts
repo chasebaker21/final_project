@@ -10,6 +10,7 @@ import { PermitsAPIService } from './permits-api.service';
 export class AppComponent {
   title = 'finalProject';
   open: boolean = false;
+  mapsAPIKey: string = "AIzaSyCTVJiI3W9FFBkhaickK4mi3ufzGdWBAn8";
 
 
 
