@@ -15,8 +15,12 @@ div {
 .some-page-wrapper {
     margin: 15px;
     height: 100vw;
+    background-color: lightgray;
 }
 
+.mj-category {
+    background-color: lightgray;
+}
 .row {
     display: flex;
     flex-direction: column;
@@ -32,26 +36,23 @@ div {
 }
 
 .left-column {
-    border: 3px solid green;
-    background: radial-gradient(circle, orange, yellow);
+    border: 3px solid rgb(248,99,91);
+    background: rgb(251,238,54);
     width: 100%;
     text-align: center;
 }
 
 .right-column {
-    border: 3px solid brown;
-    background: radial-gradient(circle, orange, yellow);
+    border: 3px solid rgb(248,99,91);
+    background: rgb(251,238,54);
     width: 100%;
     text-align: center;
-}
-
-h2 {
-    font-size: 24px;
 }
 
 button {
     background-color: transparent;
     border: none;
+    color: rgb(27,156,241);
     font-size: 24px;
 }
 
@@ -65,7 +66,7 @@ button {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 100vw;
+        width: 100%;
     }
       
     .column {
@@ -74,13 +75,5 @@ button {
         width: 100vw;
         flex-basis: 100%;
         flex: 1;
-    }
-      
-    .left-column {
-        background: radial-gradient(circle, orange, yellow);
-    }
-      
-    .right-column {
-        background: radial-gradient(circle, orange, yellow);
     }
 }

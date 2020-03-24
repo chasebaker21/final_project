@@ -5,7 +5,7 @@
             <div class = "left-column">
                 <button (click) = mjToggle()>Your Favorite Marijuana Permits</button>
                 <div [hidden] = "mjShow" *ngFor = "let post of posts">
-                    <mj-category [permit] = "post" [fave] = "true"></mj-category>
+                    <mj-category [permit] = "post" class = "list" [fave] = "true"></mj-category>
                 </div>
             </div>
         </div>

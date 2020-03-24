@@ -23,15 +23,6 @@ export class VoteCommentComponent implements OnInit {
   // when page first loads ngOnInit() will check the node server.js for any vote counts and will update
   // the upVoteCount/downVoteCount
   ngOnInit() {
-<<<<<<< HEAD
-    // this.http.get('http://localhost:5000/votes/').subscribe((data: any) => {
-    //   if (data[this.id]) {
-    //     this.upVoteCount = data[this.id].upVote;
-    //     this.downVoteCount = data[this.id].downVote;
-    //   }
-    // }
-    // );
-=======
     this.http.get('http://localhost:5000/votes/').subscribe((data: any) => {
       if (data[this.id]) {
         this.upVoteCount = data[this.id].upVote;
@@ -43,7 +34,6 @@ export class VoteCommentComponent implements OnInit {
 
     this.fave = this.PermitAPIService.isAFavorite(this.post) || this.MJAPIService.isAFavorite(this.post);
 
->>>>>>> e0f660748a17960581a189d3305d0adcc8e996b9
   }
 
   // opens and closes the form for leaving name and comment
