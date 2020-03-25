@@ -120,7 +120,7 @@ h3 {
   }
 }
 /* fixed footer will only show for screens smaller than 600px wide */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   footer {
     position: fixed;
     height: 50px;

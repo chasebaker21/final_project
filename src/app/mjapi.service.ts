@@ -45,8 +45,7 @@ export class MJAPIService {
   }
 
   filterAddress(fullAddress : string) {
-    const filterAddress: string = `https://maps.grcity.us/arcgis/rest/services/ArcGIS_Online/ENG_Marijuana_Applications/
-    MapServer/3/query?where=UPPER(FullAddress)%20like%20'%25${fullAddress}%25'&outFields=*&outSR=4326&f=json`;  
+    const filterAddress: string = `https://maps.grcity.us/arcgis/rest/services/ArcGIS_Online/ENG_Marijuana_Applications/MapServer/3/query?where=UPPER(FullAddress)%20like%20'%25${fullAddress}%25'&outFields=*&outSR=4326&f=json`;  
 
     return this.http.get(filterAddress);
   }

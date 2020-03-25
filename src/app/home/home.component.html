@@ -2,14 +2,10 @@
   <header *ngIf="show">
     <input type="text" placeholder="Search Address"/>
   </header>
-  <section id="testing"*ngIf="!show" (click)="display()">
-      <div id = "splash"  class = "animated fadeIn"> 
-    <!-- <h1 class="animated fadeInDown">Welcome To</h1> -->
-      <h3 class = "animated fadeInDown">UPVOICE GR</h3>
-<div id="background">
-
-  <div *ngIf="!show" (click)="display()" class="splash">
+  <section *ngIf="!show" (click)="display()" id="testing">
+    <div id = "splash"  class = "animated fadeIn"> 
     <span>
+      <h3 class = "animated fadeInDown">UPVOICE GR</h3>
       <img
         src="../../assets/UPVOICE LOGO.png"
         id="splashLogo"
@@ -17,7 +13,7 @@
       />
     </span>
   </div>
-  
+
   <main *ngIf="show">
     <div class="catContainer">
       <h2 class="textStyle">Building Permits</h2>
