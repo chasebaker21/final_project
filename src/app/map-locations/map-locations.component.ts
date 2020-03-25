@@ -12,6 +12,8 @@ export class MapLocationsComponent implements OnInit {
   longitude : number = -85.670006;
   zoom : number = 14;
   center : any = {lng: this.longitude, lat: this.latitude}
+  height: string ="500px";
+  width: string = "100vw";
 
    locations: any = [];
 

@@ -1,8 +1,9 @@
 <body>
     <google-map
-    style="height: 100%; width: 100%;"
     [zoom]="zoom"
     [center]="center"
+    [height]="height"
+    [width]="width"
     >
         <map-marker
         *ngFor="let location of locations"
