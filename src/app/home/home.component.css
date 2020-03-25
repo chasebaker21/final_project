@@ -50,17 +50,17 @@ input {
   align-items: center;
   margin: 5px;
 }
-
 button {
   border: none;
+  background: transparent;
 }
 
-.buildingBtn {
+.buildingBtn >img {
   color: black;
   background-color: rgb(32, 184, 116, 0);
 }
 
-.marijuannaBtn {
+.marijuanaBtn > img {
   color: black;
   background-color: rgb(32, 184, 116, 0);
 }
@@ -93,16 +93,29 @@ main {
 footer {
   width: auto;
 }
-span {
+/* splash page */
+#splash {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
+  padding:0;
+  position: absolute;
+  margin-top: 10px;
+  left: 50%;
+  top: 69%;
+  transform: translate(-50%, -50%);
 }
 #splashLogo {
   border: 0;
   border-radius: 0;
   box-shadow: none;
+  max-height: 300px; 
+  max-width: 400px;
+}
+h3 {
+  width: max-content;
+  animation-duration: 2s;
 }
 
 img {
@@ -110,6 +123,27 @@ img {
   border-radius: 53%;
   margin-bottom: 10px;
   box-shadow: 4px 4px 8px -1px black;
+  animation-duration: 2s;
+}
+
+/* #splashBackground {
+  height: 100vh;
+  width: 100vw;
+  opacity: 70%;
+  border-radius: none;
+  z-index: -1
+}  */
+
+#testing {
+height: 175%;
+width: 100%;
+position: fixed;
+background: linear-gradient(to bottom, #1179cc 0%,#1179cc 50%,#1179cc 70%,#20b874 50%,#20b874 100%);
+z-index: 4;
+}
+.city {
+  opacity: 60%;
+  width: 100vw;
 }
 img:hover {
   box-shadow: 8px 11px 10px 2px #1179cc;
@@ -150,6 +184,13 @@ img:hover {
     right: 11%;
     font-size: 3.7rem;
   }
+  #testing {
+    background: linear-gradient(to bottom, #1179cc 0%,#1179cc 50%,#1179cc 64%,#20b874 50%,#20b874 100%);
+  }
+  #splash {
+    top: 62%;
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -161,6 +202,13 @@ img:hover {
     right: 18%;
     font-size: 4rem;
   }
+  #testing {
+    background: linear-gradient(to bottom, #1179cc 0%,#1179cc 50%,#1179cc 68%,#20b874 50%,#20b874 100%);
+  }
+  #splash {
+    top: 66%;
+  }
+  
 }
 
 @media only screen and (min-width: 1440px) {

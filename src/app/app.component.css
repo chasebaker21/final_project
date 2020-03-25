@@ -93,7 +93,7 @@ h3 {
 /* opens and closes the nav menu with ngclass */
 .openNav {
   width: 100%;
-  height: 85%;
+  height: 92%;
   border-bottom-left-radius: 100%;
   /* border-left: 8px solid #F7F77C;
   border-bottom: 5px solid #ff0100; */
@@ -146,4 +146,32 @@ h3 {
       margin-bottom: 36px;
     }
   }
+}
+/* footer will not display on laptop screens */
+@media screen and (min-width: 1020px) {
+  footer {
+    display: none;
+  }
+}
+/* fixed footer will only show for screens smaller than 600px wide */
+@media screen and (max-width: 600px) {
+  footer {
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+   }
+   ul {
+     list-style-type: none;
+     display: flex;
+     flex-flow: row;
+     justify-content: space-evenly;
+     margin-top: 10px;
+   }
+   i {
+     size: 300%;
+   }
+  
 }
