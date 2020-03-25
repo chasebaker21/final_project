@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
       this.display();
     }
 
-    const numbers = timer(3000);
+    const numbers = timer(3750);
     numbers.subscribe(x => this.display());
   }
 

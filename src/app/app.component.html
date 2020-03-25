@@ -17,8 +17,20 @@
       <a [routerLink]="['/map-locations']" routerLinkActive="router-link-active" (click)="closeNav()">Permit Locations</a>
       <a [routerLink]="['/favorites']" routerLinkActive="router-link-active" (click)="closeNav()">Saved</a>
     </div>
-  </div>
-  
-  <router-outlet></router-outlet>
-  
+</div>
+<footer>
+  <nav>
+    <ul> 
+   <li><i class="fas fa-home"[routerLink]="['/home']"
+     routerLinkActive="router-link-active"></i></li>
+   <li><i class="fas fa-heart"[routerLink]="['/favorites']" 
+    routerLinkActive="router-link-active"></i></li>
+   <li><i class="fas fa-share-alt"[routerLink]="['/about']" 
+    routerLinkActive="router-link-active" ></i></li>
+    <li><i class="fas fa-map-marked-alt" [routerLink]="['/map-locations']" routerLinkActive="router-link-active" ></i></li>
+    </ul>
+  </nav>
+</footer>
+<router-outlet></router-outlet>
 </body>
+
