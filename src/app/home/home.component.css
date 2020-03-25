@@ -3,6 +3,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0;
+  height: 75vh;
 }
 
 header {
@@ -30,6 +31,7 @@ input {
 }
 button {
   border: none;
+  background: transparent;
 }
 
 .buildingBtn >img {
@@ -47,7 +49,14 @@ button {
   color: black;
   background-color: inherit;
   height: 150px;
-  /* border: 5px solid #47BBDE; */
+  border-radius: 53%;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 8px -1px black;
+}
+.mapBtn > img {
+  color: black;
+  background-color: inherit;
+  height: 150px;
   border-radius: 53%;
   margin-bottom: 10px;
   box-shadow: 4px 4px 8px -1px black;
@@ -79,12 +88,12 @@ footer {
   justify-content: center;
   flex-direction: column;
   align-items: center; 
-  margin-top:25%;
-  margin-bottom: 15%; 
   padding:0;
   position: absolute;
+  margin-top: 10px;
   left: 50%;
-  right: 50%;
+  top: 69%;
+
   transform: translate(-50%, -50%);
   border-bottom: 10px solid rgb(251,238,54);
   z-index: 3;
@@ -97,22 +106,101 @@ footer {
   max-width: 400px;
 }
 h3 {
+  width: max-content;
+  animation-duration: 2s;
+}
+
+#testing {
+  height: 175%;
+  width: 100%;
+  position: fixed;
+  background: linear-gradient(to bottom, #1179cc 0%,#1179cc 50%,#1179cc 70%,#20b874 50%,#20b874 100%);
+  z-index: 4;
+  }
+.city {
+
   margin-top: 30px;
   margin-left: 30px;
   color: black;
 }
+img:hover {
+  box-shadow: 8px 11px 10px 2px #1179cc;
+}
 
-/* #testing {
-height: 100vh;
-width: 100vw;
-display: block;
-background-color: rgb(17,121,204);
-border-bottom: 10px solid rgb(251,238,54);
-z-index: 3;
-} */
+@media only screen and (min-width: 375px) {
+  .title {
+    top: 8%;
+    right: 7%;
+    font-size: 1.9rem;
+  }
+}
 
-/* .city {
-  opacity: 60%;
-  width: 100vw;
-}  */
+@media only screen and (min-width: 425px) {
+  .title {
+    top: 8%;
+    right: 6%;
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (min-width:550px) {
+  img {
+    height: 235px;
+  }
+}
 
+/* style for tablet size screens */
+@media only screen and (min-width: 768px) {
+  img {
+    height: 238px;
+  }
+  main {
+    height: 88vh;
+  }
+  span {
+    top: 27%;
+  }
+  .catContainer {
+    margin: 30px;
+  }
+  .title {
+    top: 5%;
+    right: 11%;
+    font-size: 3.7rem;
+  }
+  #testing {
+    background: linear-gradient(to bottom, #1179cc 0%,#1179cc 50%,#1179cc 64%,#20b874 50%,#20b874 100%);
+  }
+  #splash {
+    top: 62%;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  img {
+    height: 288px;
+  }
+  .title {
+    top: 4%;
+    right: 18%;
+    font-size: 4rem;
+  }
+  #testing {
+    background: linear-gradient(to bottom, #1179cc 0%,#1179cc 50%,#1179cc 68%,#20b874 50%,#20b874 100%);
+  }
+  #splash {
+    top: 66%;
+  }
+  
+}
+
+@media only screen and (min-width: 1440px) {
+  img {
+    height: 393px;
+  }
+  .title {
+    top: 1%;
+    right: 17%;
+    font-size: 6rem;
+  }
+}

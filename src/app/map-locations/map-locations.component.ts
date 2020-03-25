@@ -12,15 +12,12 @@ export class MapLocationsComponent implements OnInit {
   longitude : number = -85.670006;
   zoom : number = 14;
   center : any = {lng: this.longitude, lat: this.latitude}
+  height: string = "500px";
+  width: string = "100vw"
 
    locations: any = [];
 
-   coordinates = [
-     {
-       lat: 42.93356919,
-       lng: -85.66663465
-     }
-   ]
+   coordinates = [];
   
   // markers = [
   //   { lng: -85.6797945188957, lat: 42.95149365769928, alpha: 1 },
@@ -36,5 +33,6 @@ export class MapLocationsComponent implements OnInit {
   constructor(public MJAPIService: MJAPIService) { }
 
   ngOnInit(): void {
+    
   }
 }

@@ -19,7 +19,7 @@ export class VoteCommentComponent implements OnInit {
   downVoteCount: number = 0;
   name: string;
   fave: boolean;
-  show: boolean;
+  show: boolean = false;
 
   // when page first loads ngOnInit() will check the node server.js for any vote counts and will update
   // the upVoteCount/downVoteCount

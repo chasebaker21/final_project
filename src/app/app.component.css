@@ -1,4 +1,19 @@
-
+footer {
+  position: fixed;
+  height: 50px;
+  bottom: 0;
+  width: 100%;
+  background-color: #1179CC;
+  color: white;
+  z-index: 4;
+ }
+ ul {
+   list-style-type: none;
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 10px;
+   padding: 0;
+ }
 
 button {
   border: none;
@@ -10,7 +25,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1179cc;
+  background-color: #1179CC;
   height: 150px;
 }
 .menuBtn {
@@ -33,9 +48,9 @@ h3 {
 
 .fa-2x {
   font-size: 3rem;
-  padding-right: 8%;
+  padding-right: 20%;
   position: relative;
-  bottom: 10px;
+  bottom: 37px;
 }
 
 /* code is pulled from W3 schools page */
@@ -93,7 +108,7 @@ h3 {
 /* opens and closes the nav menu with ngclass */
 .openNav {
   width: 100%;
-  height: 85%;
+  height: 92%;
   border-bottom-left-radius: 100%;
   /* border-left: 8px solid #F7F77C;
   border-bottom: 5px solid #ff0100; */
@@ -119,28 +134,7 @@ h3 {
     display: none;
   }
 }
-/* fixed footer will only show for screens smaller than 600px wide */
-@media screen and (max-width: 768px) {
-  footer {
-    position: fixed;
-    height: 50px;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-   }
-   ul {
-     list-style-type: none;
-     display: flex;
-     flex-flow: row;
-     justify-content: space-evenly;
-     margin-top: 10px;
-   }
-   i {
-     size: 300%;
-   }
-  
-}
+
 @media only screen and (min-width: 768px) {
   .overlay a {
     font-size: 3rem;
@@ -150,12 +144,13 @@ h3 {
     right: 6%;
     font-size: 7rem;
   }
-
-  @media only screen and (min-width: 768px) {
-    .fa-2x {
-      font-size: 3rem;
-    }
+  .fa-2x {
+    font-size: 3rem;
   }
+  footer {
+    display: none;
+  }
+}
 
   @media only screen and (min-width: 1024px) {
     img {
@@ -167,11 +162,10 @@ h3 {
   @media only screen and (min-width: 1440px) {
     .fa-2x {
       font-size: 4rem;
-      bottom: 0px;
     }
     img {
       height: 90px;
       margin-bottom: 36px;
     }
   }
-}
+
