@@ -22,13 +22,12 @@
   <nav>
     <ul> 
    <li><i class="fas fa-home"[routerLink]="['/home']"
-     routerLinkActive="router-link-active" (click)="closeNav()"></i></li>
+     routerLinkActive="router-link-active"></i></li>
    <li><i class="fas fa-heart"[routerLink]="['/favorites']" 
-    routerLinkActive="router-link-active" (click)="closeNav()"></i></li>
+    routerLinkActive="router-link-active"></i></li>
    <li><i class="fas fa-share-alt"[routerLink]="['/about']" 
-    routerLinkActive="router-link-active"  (click)="closeNav()"></i></li>
-    <!-- link to map route can go below -->
-    <li><i class="fas fa-map-marked-alt"></i></li>
+    routerLinkActive="router-link-active" ></i></li>
+    <li><i class="fas fa-map-marked-alt" [routerLink]="['/map-locations']" routerLinkActive="router-link-active" ></i></li>
     </ul>
   </nav>
 </footer>
