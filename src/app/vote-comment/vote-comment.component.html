@@ -10,7 +10,7 @@
   <!-- button to add permit to saved list -->
   <i class="fas fa-bookmark fa-2x" *ngIf="fave" (click)="removeFave()"></i>
   <!-- button to remove from saved list -->
-  <i class="far fa-bookmark fa-2x" *ngIf="!fave" (click)="addFave()"></i>
+  <i class="far fa-bookmark fa-2x" *ngIf="!fave" (click)="addFave();showSnackbar()"></i>
   <!-- button to open or close comment form -->
   <i class="far fa-comment fa-2x" (click)="commentBtn()"></i>
 </div>
