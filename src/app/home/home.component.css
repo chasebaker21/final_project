@@ -62,6 +62,7 @@ button {
   box-shadow: 4px 4px 8px -1px black;
 }
 
+
 .textStyle {
   color: black;
   font-size: 1rem;
@@ -92,7 +93,10 @@ footer {
   margin-top: 10px;
   left: 50%;
   top: 69%;
+
   transform: translate(-50%, -50%);
+  border-bottom: 10px solid rgb(251,238,54);
+  z-index: 3;
 }
 #splashLogo {
   border: 0;
@@ -114,8 +118,10 @@ h3 {
   z-index: 4;
   }
 .city {
-  opacity: 60%;
-  width: 100vw;
+
+  margin-top: 30px;
+  margin-left: 30px;
+  color: black;
 }
 img:hover {
   box-shadow: 8px 11px 10px 2px #1179cc;
