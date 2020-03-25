@@ -82,4 +82,8 @@ export class VoteCommentComponent implements OnInit {
   addedFavorite(){
     this.show=true;
   }
+  showSnackbar () {
+    this.show=true;
+  }
+
 }
