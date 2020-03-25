@@ -72,8 +72,10 @@ h4 {
 /* Code from W3 Schools for photo overlay */
 .container {
     position: relative;
-    width: 50%;
+    width: 130px;
     flex-basis: 150px;
+
+
   }
  .devImg {
     display: block;
@@ -98,7 +100,10 @@ h4 {
     width: 130px;
     opacity: 0;
     transition: .5s ease;
-    background-color: darkgray;
+    background-color: #101419;
+    margin-top: 10px;
+    border: 1px solid #FBEE37;
+    
   }
   
   .container:hover .overlay {
@@ -106,7 +111,7 @@ h4 {
   }
   
   .text {
-    color: black;
+    color: #fff;
     font-size: 20px;
     position: absolute;
     top: 50%;
