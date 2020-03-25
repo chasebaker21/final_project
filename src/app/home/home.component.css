@@ -92,10 +92,8 @@ footer {
   position: absolute;
   margin-top: 10px;
   left: 50%;
-  top: 69%;
-
+  top: 48%;
   transform: translate(-50%, -50%);
-  border-bottom: 10px solid rgb(251,238,54);
   z-index: 3;
 }
 #splashLogo {
@@ -114,11 +112,10 @@ h3 {
   height: 175%;
   width: 100%;
   position: fixed;
-  background: linear-gradient(to bottom, #1179cc 0%,#1179cc 50%,#1179cc 70%,#20b874 50%,#20b874 100%);
+  background: linear-gradient(to bottom, #1179cc 0%,#1179cc 50%,#1179cc 50%,#20b874 50%,#20b874 100%);
   z-index: 4;
   }
 .city {
-
   margin-top: 30px;
   margin-left: 30px;
   color: black;
@@ -167,13 +164,6 @@ img:hover {
     right: 11%;
     font-size: 3.7rem;
   }
-  #testing {
-    background: linear-gradient(to bottom, #1179cc 0%,#1179cc 50%,#1179cc 64%,#20b874 50%,#20b874 100%);
-  }
-  #splash {
-    top: 62%;
-    margin-top: 20px;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -184,12 +174,6 @@ img:hover {
     top: 4%;
     right: 18%;
     font-size: 4rem;
-  }
-  #testing {
-    background: linear-gradient(to bottom, #1179cc 0%,#1179cc 50%,#1179cc 68%,#20b874 50%,#20b874 100%);
-  }
-  #splash {
-    top: 66%;
   }
   
 }
