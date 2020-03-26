@@ -41,7 +41,7 @@ input {
 .searchBtn {
   position: relative;
   left: 38%;
-  top: 32px;
+  top: 10px;
   background: inherit;
   border: none;
 }
@@ -64,7 +64,6 @@ div {
 @media only screen and (min-width: 375px) {
   .searchBtn {
     left: 38%;
-    top: 32px;
   }
   input {
     font-size: 0.9rem;
@@ -95,7 +94,6 @@ div {
   .searchBtn {
     padding-top: 5px;
     left: 41%;
-    top: 33px;
   }
   .fa-2x {
     font-size: 1.8rem;
