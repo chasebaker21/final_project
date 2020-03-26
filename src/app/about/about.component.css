@@ -1,15 +1,50 @@
+.devImg {
+    height: 125px;
+}
+/* body {
+    background: #20b874;
+    height: 85vh;
+} */
+.title {
+    position: absolute;
+    top: 8%;
+    font-size: 2.3rem;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* .chaseImg:hover{
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+} */
 div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-basis: 150px;
+    margin: 3px;
 }
 a {
     text-decoration: none;
     color: #0077B5;
     margin: 3px;
     display: inline;
+}
+p {
+    font-weight: 700;
 }
 .gitHub {
     color: black;
@@ -31,11 +66,15 @@ a {
     flex-flow: row;
     align-content: space-between;
     justify-content: center;
+    flex-direction: column;
+    
+
 }
 header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: #fff;
 }
 h4 {
@@ -68,6 +107,48 @@ h4 {
      padding: 20px;
      margin-right: 40px;
      color: black;
+ }
+
+ @media only screen and (min-width: 340px) {
+     .title {
+         font-size: 2.5rem;
+     }
+ }
+
+ @media only screen and (min-width: 405px) {
+     div {
+         flex-basis: 190px;
+     }
+ }
+
+ @media only screen and (min-width: 450px) {
+     h1 {
+         font-size: 2.5rem;
+     }
+ }
+ @media only screen and (min-width: 617px) {
+     div {
+         flex-basis: 295px;
+     }
+ }
+ @media only screen and (min-width: 630px) {
+     .devImg {
+         height: 185px;
+     }
+ }
+ @media only screen and (min-width: 909px) {
+     div {
+         flex-basis: 480px;
+     }
+ }
+ @media only screen and (min-width: 1366px) {
+     div {
+         flex-basis: 670px;
+     }
+     .devImg {
+         height: 215px;
+     }
+
  }
 
 /* Code from W3 Schools for photo overlay */
@@ -122,4 +203,3 @@ h4 {
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  
