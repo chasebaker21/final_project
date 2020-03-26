@@ -139,7 +139,7 @@ img:hover {
     font-size: 2.2rem;
   }
 }
-@media only screen and (min-width:550px) {
+@media only screen and (min-width: 550px) {
   img {
     height: 235px;
   }
