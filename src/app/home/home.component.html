@@ -28,38 +28,34 @@
         <img class = "permitBtn"
           src="assets/2-man-on-construction-site-during-daytime-159306.png"
         />
-        <div class = "permitBtn">
-          <!-- <i class="fas fa-hammer fa-3x" id = "img"></i> -->
-        </div>
         <div class = "overlay">
           <div class = "text">Building Permits</div>
         </div>
       </div>
       </button> 
     </div>
+
+
     <div class="catContainer">
-      <button
-        class="marijuanaBtn"
-        (click)="fetchMarijuana()"
-        [routerLink]="['/mjCategoryList']"
-        routerLinkActive="router-link-active"
-      >
       <div class = "container"> 
+      <button class="marijuanaBtn" (click)="fetchMarijuana()" [routerLink]="['/mjCategoryList']" routerLinkActive="router-link-active">
         <img class = "permitBtn" src="assets/mjLeaf.png" />
-        <div class = "permitBtn">
-          <!-- <i class="fas fa-cannabis fa-4x" id = "img"></i> -->
-        </div>
         <div class = "overlay">
           <div class = "text">Marijuana Permits</div>
         </div>
+        </button>
     </div>
+    </div>
+    
+
+
     <div class="catContainer">
       <div class = "container"> 
       <button class="mapBtn" [routerLink]="['/map-locations']" routerLinkActive="router-link-active" >
         <img src="assets/GoogleMapMarker.png" class="permitBtn" />
-        <div class = "overlay">
+        <div class = "overlayMap">
           <div class = "text">View Locations</div>
         </div>
       </button>
     </div>
-    
+    </div>
