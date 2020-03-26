@@ -147,22 +147,16 @@ h3 {
   }
 }
 
-/* footer will not display on laptop screens */
-@media screen and (min-width: 1020px) {
-  footer {
-    display: none;
-  }
-}
 @media only screen and (min-width: 768px) {
 
   .title {
     font-size: 3.5rem;
   }
-
-  @media only screen and (min-width: 768px) {
-    .fa-2x {
-      font-size: 3rem;
-    }
+  footer {
+    display: none;
+  }
+  .fa-2x {
+    font-size: 3rem;
   }
 }
 

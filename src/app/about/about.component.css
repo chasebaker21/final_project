@@ -160,12 +160,12 @@ h4 {
 }
 
 .allDevs {
-    /* border: 3px solid orange; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 0;
+    margin-right: 30px;
 }
 
 .column {
