@@ -77,14 +77,13 @@ h4 {
     color: #fff;
 }
 
-.allDevs {
-    /* border: 3px solid orange; */
+/* .allDevs {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 0;
-}
+} */
 
 
 header {
