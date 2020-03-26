@@ -103,6 +103,11 @@ footer {
   max-height: 300px; 
   max-width: 400px;
 }
+#tag {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 h3 {
   width: max-content;
   animation-duration: 2s;
