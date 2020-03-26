@@ -19,6 +19,7 @@ export class VoteCommentComponent implements OnInit {
   downVoteCount: number = 0;
   name: string;
   fave: boolean;
+  show: boolean = false;
 
   // when page first loads ngOnInit() will check the node server.js for any vote counts and will update
   // the upVoteCount/downVoteCount
@@ -59,8 +60,7 @@ export class VoteCommentComponent implements OnInit {
   }
 
   addFave() {
-    this.fave = true;
-    
+    this.fave = true;    
     if (this.post.attributes) {   // only MJ permits have the "attributes" field
       this.MJAPIService.addToMJFavoritesList(this.post);
     }
@@ -79,4 +79,11 @@ export class VoteCommentComponent implements OnInit {
       this.PermitAPIService.removeFromBPFavoritesList(this.post);
     }
   }
+  addedFavorite(){
+    this.show=true;
+  }
+  showSnackbar () {
+    this.show=true;
+  }
+
 }

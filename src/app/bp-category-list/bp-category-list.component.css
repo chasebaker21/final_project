@@ -15,7 +15,7 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 input {
   position: absolute;
@@ -41,7 +41,7 @@ input {
 .searchBtn {
   position: relative;
   left: 38%;
-  top: 32px;
+  top: 10px;
   background: inherit;
   border: none;
 }
@@ -64,7 +64,6 @@ div {
 @media only screen and (min-width: 375px) {
   .searchBtn {
     left: 38%;
-    top: 32px;
   }
   input {
     font-size: 0.9rem;
@@ -94,6 +93,7 @@ div {
   }
   .searchBtn {
     padding-top: 5px;
+    left: 41%;
   }
   .fa-2x {
     font-size: 1.8rem;
@@ -123,6 +123,12 @@ div {
     right: 14%;
     font-size: 3.8rem;
   }
+  input {
+    width: 70%;
+  }
+  .searchBtn {
+    left: 32%;
+  }
 }
 
 /* css for larger laptop screens */
@@ -134,5 +140,11 @@ div {
     top: 2%;
     right: 12%;
     font-size: 5.8rem;
+  }
+  input {
+    width: 50%;
+  }
+  .searchBtn {
+    left: 23%;
   }
 }

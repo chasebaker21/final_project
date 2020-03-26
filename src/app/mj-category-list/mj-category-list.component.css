@@ -16,7 +16,7 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 input {
   position: absolute;
@@ -42,7 +42,7 @@ input {
 .searchBtn {
   position: relative;
   left: 39%;
-  top: 29px;
+  top: 7px;
   background: inherit;
   border: none;
 }
@@ -57,21 +57,15 @@ div {
   background-color: inherit;
   box-shadow: none;
 }
-
-@media only screen and (min-width: 350px) {
-  .fa-2x {
-    font-size: 1.5rem;
-  }
+.fa-2x {
+  font-size: 1.5rem;
 }
+
 
 @media only screen and (min-width: 375px) {
   .searchBtn {
     position: relative;
     right: 9%;
-    top: 33px;
-  }
-    .fa-2x {
-    font-size: 1.5rem;
   }
   .title {
     top: 9%;
@@ -133,10 +127,10 @@ div {
     top: 3%;
   }
   .searchBtn {
-    left: 28%;
+    left: 23%;
   }
   input {
-    width: 60%;
+    width: 50%;
   }
 
 }

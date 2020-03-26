@@ -1,5 +1,16 @@
-
-
-<google-map
-style= "height: 700px; width: 700px;"
-></google-map>
+<body>
+    <google-map
+    [height]="height"
+    [width]="width"
+    [zoom]="zoom"
+    [center]="center"
+    >
+        <map-marker
+        *ngFor="let location of locations"
+        [position]="location"
+        ></map-marker> 
+     
+    
+    
+    </google-map>
+</body>
