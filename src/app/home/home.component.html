@@ -1,16 +1,21 @@
 <body>
+
   <section id="testing" *ngIf="!show" (click)="display()">
       <div id = "splash"  class = "animated fadeInBig 3s"> 
       <h3 class = "animated fadeInRightBig">UPVOICE</h3>
+
       <img
         src="assets/UPVOICE LOGO.png"
         id="splashLogo"
         class="animated fadeInUpBig"
       />
+
       <h3 class="animated fadeInLeftBig">Grand Rapids</h3>
       </div> 
 </section>
-<h1 class="title">UPVOICE Grand Rapids</h1>
+<!-- <h1 class="title">UPVOICE Grand Rapids</h1> -->
+
+
   <main *ngIf="show">
     <div class="catContainer">
       <h2 class="textStyle">Building Permits</h2>

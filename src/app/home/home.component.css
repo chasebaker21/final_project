@@ -1,30 +1,9 @@
-* {
-  z-index: 3;
-}
-
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin: 0;
-}
-.title {
-  position: absolute;
-  top: 9%;
-  right: 7%;
-  font-size: 1.6rem;
-}
-.backgroundImg {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  border-radius: inherit;
-  z-index: 1;
-  filter: blur(2px);
-}
-.zIndex {
-  z-index: 3;
+  height: 75vh;
 }
 
 header {
@@ -40,7 +19,7 @@ input {
   border-radius: 5px;
   border: none;
   padding-left: 10px;
-}
+} 
 
 /* css for the category buttons  */
 .catContainer {
@@ -48,7 +27,7 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5px;
+  margin: 30px;
 }
 button {
   border: none;
@@ -57,26 +36,36 @@ button {
 
 .buildingBtn >img {
   color: black;
-  background-color: rgb(32, 184, 116, 0);
+  background-color: inherit;
+  height: 150px;
+  /* border: 5px solid #47BBDE; */
+  border-radius: 53%;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 8px -1px black;
+ 
 }
 
 .marijuanaBtn > img {
   color: black;
-  background-color: rgb(32, 184, 116, 0);
+  background-color: inherit;
+  height: 150px;
+  border-radius: 53%;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 8px -1px black;
+}
+.mapBtn > img {
+  color: black;
+  background-color: inherit;
+  height: 150px;
+  border-radius: 53%;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 8px -1px black;
 }
 
-.mapBtn {
-  color: black;
-  background-color: rgb(32, 184, 116, 0);
-}
+
 .textStyle {
-  color: white;
-  font-size: 2rem;
-  border-radius: 5px;
-  padding: 2%;
-  background: #20b874;
-  width: max-content;
-  text-align: center;
+  color: black;
+  font-size: 1rem;
 }
 
 .fa-5x {
@@ -85,7 +74,7 @@ button {
 
 main {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -103,8 +92,9 @@ footer {
   position: absolute;
   margin-top: 10px;
   left: 50%;
-  top: 69%;
+  top: 48%;
   transform: translate(-50%, -50%);
+  z-index: 3;
 }
 #splashLogo {
   border: 0;
@@ -118,32 +108,17 @@ h3 {
   animation-duration: 2s;
 }
 
-img {
-  height: 170px;
-  border-radius: 53%;
-  margin-bottom: 10px;
-  box-shadow: 4px 4px 8px -1px black;
-  animation-duration: 2s;
-}
-
-/* #splashBackground {
-  height: 100vh;
-  width: 100vw;
-  opacity: 70%;
-  border-radius: none;
-  z-index: -1
-}  */
-
 #testing {
-height: 175%;
-width: 100%;
-position: fixed;
-background: linear-gradient(to bottom, #1179cc 0%,#1179cc 50%,#1179cc 70%,#20b874 50%,#20b874 100%);
-z-index: 4;
-}
+  height: 175%;
+  width: 100%;
+  position: fixed;
+  background: linear-gradient(to bottom, #1179cc 0%,#1179cc 50%,#1179cc 50%,#20b874 50%,#20b874 100%);
+  z-index: 4;
+  }
 .city {
-  opacity: 60%;
-  width: 100vw;
+  margin-top: 30px;
+  margin-left: 30px;
+  color: black;
 }
 img:hover {
   box-shadow: 8px 11px 10px 2px #1179cc;
@@ -162,6 +137,11 @@ img:hover {
     top: 8%;
     right: 6%;
     font-size: 2.2rem;
+  }
+}
+@media only screen and (min-width: 550px) {
+  img {
+    height: 235px;
   }
 }
 
@@ -184,13 +164,6 @@ img:hover {
     right: 11%;
     font-size: 3.7rem;
   }
-  #testing {
-    background: linear-gradient(to bottom, #1179cc 0%,#1179cc 50%,#1179cc 64%,#20b874 50%,#20b874 100%);
-  }
-  #splash {
-    top: 62%;
-    margin-top: 20px;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -201,12 +174,6 @@ img:hover {
     top: 4%;
     right: 18%;
     font-size: 4rem;
-  }
-  #testing {
-    background: linear-gradient(to bottom, #1179cc 0%,#1179cc 50%,#1179cc 68%,#20b874 50%,#20b874 100%);
-  }
-  #splash {
-    top: 66%;
   }
   
 }

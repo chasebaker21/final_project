@@ -1,9 +1,9 @@
 <body>
     <google-map
-    [zoom]="zoom"
-    [center]="center"
     [height]="height"
     [width]="width"
+    [zoom]="zoom"
+    [center]="center"
     >
         <map-marker
         *ngFor="let location of locations"
@@ -13,7 +13,4 @@
     
     
     </google-map>
-    <h1>
-        Locations of all Grand Rapids Building Permits
-    </h1>
 </body>
