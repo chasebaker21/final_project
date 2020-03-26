@@ -15,6 +15,7 @@ export class MapLocationsComponent implements OnInit {
   height: string = "500px";
   width: string = "100vw"
 
+
    locations: any = [];
 
    coordinates = [];
