@@ -1,8 +1,91 @@
 /* CODE BEFORE BEING MODIFIED STARTS ON LINE 264 - RYAN 03/26/2020 @ 0252*/
 
 .sheet {
-    margin-bottom: 50px;
+    margin-bottom: 50px; ryan
 }
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.title {
+    position: absolute;
+    text-align: center;
+    top: 13%;
+    font-size: 1.3rem;
+    padding: 0;
+}
+
+#socialMedia{
+    display: flex;
+    flex-flow: row;
+    align-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: #0077B5;
+    margin: 3px;
+    display: inline;
+}
+
+#facebook {
+    color: #3b5998;
+    padding: 20px;
+}
+
+ /* fix instagram logo color */
+ #insta {
+    color:#E1306C;
+    padding: 20px;
+}
+
+#twitter {
+    color: #00acee;
+    padding: 20px;
+}
+
+#youtube {
+    color: #c4302b;
+    padding: 20px;
+}
+
+#location {
+    padding: 20px;
+    margin-right: 40px;
+    color: black;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.allDevs {
+    /* border: 3px solid orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
 
 header {
     display: flex;
@@ -163,13 +246,6 @@ h4 {
 }
 
 
-
-
- @media only screen and (min-width: 340px) {
-     .title {
-         font-size: 2.5rem;
-     }
- }
 
  @media only screen and (min-width: 405px) {
      div {
@@ -471,4 +547,5 @@ h4 {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  } */
+} 
+
