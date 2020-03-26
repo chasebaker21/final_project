@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&display=swap");
+
 .title {
   text-align: center;
   position: absolute;
   top: 7%;
   right: 1%;
   font-size: 1.8rem;
+}
+.message {
+  font-family: "Bellota Text", cursive;
 }
 header {
   display: flex;

@@ -11,6 +11,10 @@
     </div>
 </div>
 
-<div *ngIf="MJAPIService.permitList.length == 0">
-    <p>Please Wait...</p>
+<div class="message" *ngIf="!filtering && MJAPIService.permitList.length == 0">
+    <p>Please wait...</p>
+</div>
+
+<div class="message" *ngIf="filtering && MJAPIService.permitList.length == 0">
+    <p>Sorry, no results found.</p>
 </div>
