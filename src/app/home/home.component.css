@@ -9,12 +9,13 @@ body {
   align-items: center;
   margin: 0;
 }
-.title {
+/* .title {
   position: absolute;
   top: 9%;
   right: 7%;
   font-size: 1.6rem;
-}
+} */
+
 .backgroundImg {
   height: 100%;
   width: 100%;

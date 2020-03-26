@@ -6,13 +6,19 @@ button {
   border-radius: 10px;
 }
 
-header {
+.mainHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   background-color: #1179cc;
   height: 150px;
 }
+
+.title {
+  font-size: 2.5rem;
+}
+ 
 .menuBtn {
   position: relative;
   bottom: 21%;
@@ -111,6 +117,10 @@ h3 {
     top: 15px;
     right: 35px;
   }
+
+  .title {
+    font-size: 2.5rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -121,6 +131,10 @@ h3 {
     top: -5%;
     right: 6%;
     font-size: 7rem;
+  }
+
+  .title {
+    font-size: 4rem;
   }
 
   @media only screen and (min-width: 768px) {
