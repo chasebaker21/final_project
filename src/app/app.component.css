@@ -87,10 +87,12 @@ h3 {
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 1.24rem;
   color: white;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+  display: block;
+  transition: 0.3s;
+  text-align: end;
+  padding-right: 30px;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -106,18 +108,16 @@ h3 {
 /* Position the close button (top right corner) */
 .overlay .closebtn {
   position: absolute;
-  top: -4%;
-  right: 5%;
-  font-size: 5rem;
+  top: -5%;
+  right: 0%;
+  font-size: 3rem;
 }
 
 /* opens and closes the nav menu with ngclass */
 .openNav {
-  width: 100%;
-  height: 92%;
+  width: 235px;
+  height: 450px;
   border-bottom-left-radius: 100%;
-  /* border-left: 8px solid #F7F77C;
-  border-bottom: 5px solid #ff0100; */
   border-top: none;
   border-right: none;
 }
@@ -137,6 +137,15 @@ h3 {
     font-size: 2.5rem;
   }
 }
+@media screen and (min-width: 485px) {
+  .openNav {
+    height: 60%;
+    width: 370px;
+  }
+  .overlay a {
+    font-size: 2rem;
+  }
+}
 
 /* footer will not display on laptop screens */
 @media screen and (min-width: 1020px) {
@@ -144,16 +153,7 @@ h3 {
     display: none;
   }
 }
-
 @media only screen and (min-width: 768px) {
-  .overlay a {
-    font-size: 3rem;
-  }
-  .overlay .closebtn {
-    top: -5%;
-    right: 6%;
-    font-size: 7rem;
-  }
 
   .title {
     font-size: 4rem;
