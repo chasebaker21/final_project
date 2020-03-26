@@ -1,7 +1,7 @@
 /* CODE BEFORE BEING MODIFIED STARTS ON LINE 264 - RYAN 03/26/2020 @ 0252*/
 
 .sheet {
-    margin-bottom: 50px; ryan
+    margin-bottom: 50px;
 }
 
 header {
@@ -98,8 +98,8 @@ header {
 .title {
     position: absolute;
     text-align: center;
-    top: 8%;
-    font-size: 2.3rem;
+    top: 13%;
+    font-size: 1.3rem;
     padding: 0;
 }
 
@@ -187,6 +187,7 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
   /* Code from W3 Schools for photo overlay */
@@ -196,6 +197,7 @@ h4 {
     flex-basis: 130px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
 
  .devImg {
@@ -235,10 +237,14 @@ h4 {
   }
 
   .contactInfo {
-    /* border: 3px solid green; */
     display: flex;
     justify-content: center;
     max-height: fit-content;
+    margin: 3px 0px 5px 24px;
+    background: white;
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 14px;
 }
 
 .gitHub {
@@ -292,6 +298,11 @@ h4 {
          width: 260px;
          flex-basis: 260px;
      }
+      /* this will adjust Sam's to make it look not stretched, although it comes out slightly smaller */
+     /* #samImg {
+        height: 225px;
+    } */
+  
 
      .overlay {
         height: 260px;
@@ -548,4 +559,4 @@ h4 {
     transform: translate(-50%, -50%);
     text-align: center;
 } 
-
+*/
