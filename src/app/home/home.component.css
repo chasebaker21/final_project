@@ -242,15 +242,21 @@ h3 {
 }
 
 @media only screen and (min-width: 1024px) {
-  img {
+  /* img {
     height: 288px;
-  }
+  } */
+
+  .permitBtn, .overlay, .overlayMap {
+    /* border: 3px solid green; */
+    width: 250px;
+    height: 250px;
+    }
+
   .title {
     top: 4%;
     right: 18%;
     font-size: 4rem;
   }
-  
 }
 
 @media only screen and (min-width: 1440px) {
