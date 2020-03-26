@@ -13,13 +13,14 @@ export class BpCategoryListComponent implements OnInit {
   
 //  searchResults: any;
   permitAddress: string;
+  filtering: boolean = false;
 
 
   ngOnInit(): void {
   }
 
   filterAddress() {
-    this.permitAddress = this.permitAddress.toUpperCase();
+    this.filtering = true;
     this.PermitsAPIService.filterAddress(this.permitAddress).subscribe((data: any) => this.PermitsAPIService.permitList = data);
   }
 }
