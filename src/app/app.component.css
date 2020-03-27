@@ -27,7 +27,7 @@ button {
   align-items: center;
   text-align: center;
   background-color: #1179cc;
-  height: 150px;
+  height: 180px;
 }
 
 .title {
@@ -38,10 +38,12 @@ button {
   position: relative;
   bottom: 21%;
   right: 1%;
+  
 }
 .menuBtnLogo {
-  display: flex;
+  display: flex; 
   align-items: center;
+ 
 }
 img {
   height: 60px;
