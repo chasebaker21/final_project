@@ -1,9 +1,8 @@
 <header>
-    <!-- <h1 class="title">Commercial Building Permits</h1> -->
-    <div class="searchBar">
-        <input type="text" placeholder="Search by street name ex. 'Division'" [(ngModel)]="permitAddress" />
-        <button (click)="filterAddress()" class="searchBtn"><i class="fas fa-search fa-2x"></i></button>
-    </div>
+    <nav class="navbar navbar-light bg-light">
+          <input [(ngModel)]="permitAddress" class="form-control mr-sm-2" type="search" placeholder="Search by street name ex. 'Division'" aria-label="Search">
+          <button (click)="filterAddress()" id="searchBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </nav>
 </header>
 
 <div class="fullList">
