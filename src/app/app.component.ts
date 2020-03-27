@@ -29,7 +29,7 @@ export class AppComponent {
     this.open = true;
   }
 
-  /* Close when someone clicks on the "x" symbol inside the overlay */
+  /* Close when someone clicks on the "x" symbol or chooses am option */
   closeNav() {
     this.open = false;
   }
