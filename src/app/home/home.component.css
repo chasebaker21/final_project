@@ -279,7 +279,7 @@ h3 {
   }
 }
 
-@media only screen and (min-wdith: 1302px) {
+@media only screen and (min-width: 1302px) {
   .tag {
     font-size: 3rem;
   }
