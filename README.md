@@ -1,6 +1,6 @@
 # FinalProject by Chase Baker, Brielle Robinson, Sam Scholtens and Ryan DeVree
 
-UPVOICE is an app we built to serve our city and citizens. With it citizens of Grand Rapids can view the projects and/or buisnesses being built in their city. They can comment and vote on each project that has already passed or in the future.
+UPVOICE is an app we built as our final project at Grand Circus to serve our city and citizens. With UPGR citizens of Grand Rapids can view the projects and/or buisnesses being built in their city. They can comment and vote on each project that has already passed or in the future.
 
 Run this in terminal to redeploy to github pages.
 # npm run ng:push
