@@ -132,7 +132,7 @@ h3 {
 
 .container {
   position: relative;
-  width: 150px;
+  /* width: 150px; */
   flex-basis: 150px;
   border-radius: 53%;
  
