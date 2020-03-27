@@ -25,8 +25,8 @@ export class HomeComponent implements OnInit {
       this.displayTag()
     }
 
-    // const numbers = timer(3750);
-    // numbers.subscribe(x => this.display());
+    const numbers = timer(3750);
+    numbers.subscribe(x => this.display());
   }
 
   display() {
