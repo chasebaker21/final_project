@@ -19,6 +19,7 @@ button {
   border: none;
   background-color: inherit;
   border-radius: 10px;
+  outline: none;
 }
 
 .mainHeader {
@@ -43,6 +44,7 @@ button {
 .menuBtnLogo {
   display: flex; 
   align-items: center;
+ 
  
 }
 img {
