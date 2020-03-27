@@ -15,10 +15,8 @@ export class MapLocationsComponent implements OnInit {
   center : any = {lng: this.longitude, lat: this.latitude}
   height: string = "500px";
   width: string = "100vw";
-   locations = [];
-
-   coordinates = [];
-  
+  locations = [];
+  coordinates = [];
 
 
   constructor(public MJAPIService: MJAPIService, public PermitsAPIService: PermitsAPIService) {
@@ -34,10 +32,5 @@ export class MapLocationsComponent implements OnInit {
     for (let i of this.PermitsAPIService.permitList) {
       this.locations.push({lng: Number(i.lon), lat: Number(i.lat), alpha: 1});
     }
-  }
-
-  getLocations() {
-    this.locations = this.MJAPIService.permitList;
-    console.log(this.MJAPIService.permitList)
   }
 } 
