@@ -6,6 +6,12 @@ body {
   height: 75vh;
 }
 
+.pics {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+} 
+
 header {
   display: flex;
   justify-content: center;
@@ -241,6 +247,10 @@ h3 {
     top: 5%;
     right: 11%;
     font-size: 3.7rem;
+  }
+  
+  .pics {
+    flex-direction: row;
   }
 }
 @media only screen and (min-width: 635px) {
