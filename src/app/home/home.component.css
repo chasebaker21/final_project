@@ -6,9 +6,23 @@ body {
   height: 75vh;
 }
 
+.pics {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
 header {
   display: flex;
   justify-content: center;
+}
+.tag {
+    font-size: 1rem;
+    text-align: center;
+    background: #1179cc;
+    position: absolute;
+    top: 14%;
+    width: 100%;
 }
 
 input {
@@ -38,7 +52,6 @@ button {
   color: black;
   background-color: white;
   height: 150px;
-  /* border: 5px solid #47BBDE; */
   border-radius: 53%;
   margin-bottom: 10px;
   box-shadow: 4px 4px 8px -1px black;
@@ -120,16 +133,11 @@ h3 {
   margin-left: 30px;
   color: black;
 }
-/* img:hover {
-  box-shadow: 8px 11px 10px 2px #1179cc;
-} */
 
 
 .container {
   position: relative;
-  width: 150px;
   flex-basis: 150px;
-  /* background-color: white; */
   border-radius: 53%;
  
 }
@@ -139,10 +147,6 @@ h3 {
   height: 150px;
   width: 150px;
 }
-/* .devImg:hover{
-    opacity: 90%;
-}
- */
 .overlay {
   position: absolute;
   display: block;
@@ -153,12 +157,12 @@ h3 {
   right: 0;
   width: 100%;
   height: 150px;
-  width: 150px;
+  width: 157px;
   opacity: 0;
   transition: .5s ease;
   background-color: #101419;
   margin-left: 15px;
-  border: 1px solid #FBEE37;
+  border: 3px solid #FBEE37;
 }
 .overlayMap {
   position: absolute;
@@ -170,12 +174,12 @@ h3 {
   right: 0;
   width: 100%;
   height: 150px;
-  width: 150px;
+  width: 157px;
   opacity: 0;
   transition: .5s ease;
   background-color: #101419;
   margin-left: 15px;
-  border: 1px solid #FBEE37;
+  border: 3px solid #FBEE37;
 }
 
 .container:hover .overlay {
@@ -214,6 +218,11 @@ h3 {
     font-size: 2.2rem;
   }
 }
+@media only screen and (min-width: 409px) {
+  .tag {
+    font-size: 1.3rem;
+  }
+}
 @media only screen and (min-width: 550px) {
   img {
     height: 235px;
@@ -240,14 +249,24 @@ h3 {
     font-size: 3.7rem;
   }
 }
+@media only screen and (min-width: 635px) {
+  .tag {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 755px) {
+  .tag {
+    font-size: 2.2rem;
+  }
+  .pics {
+    flex-direction: row;
+  }
+}
+
 
 @media only screen and (min-width: 1024px) {
-  /* img {
-    height: 288px;
-  } */
 
   .permitBtn, .overlay, .overlayMap {
-    /* border: 3px solid green; */
     width: 250px;
     height: 250px;
     }
@@ -257,6 +276,13 @@ h3 {
     right: 18%;
     font-size: 4rem;
   }
+}
+
+@media only screen and (min-width: 1302px) {
+  .tag {
+    font-size: 3rem;
+  }
+
 }
 
 @media only screen and (min-width: 1440px) {

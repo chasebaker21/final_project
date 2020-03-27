@@ -1,61 +1,62 @@
 <body>
-
-  <section id="testing" *ngIf="!show" (click)="display()">
-      <div id = "splash"  class = "animated fadeInBig 3s"> 
-      <h3 class = "animated fadeInRightBig">UPVOICE</h3>
-
-      <img
-        src="assets/UPVOICE LOGO.png"
-        id="splashLogo"
-        class="animated fadeInUpBig"
-      />
-
-      <h3 class="animated fadeInLeftBig">Grand Rapids</h3>
-      </div> 
-</section>
-<!-- <h1 class="title">UPVOICE Grand Rapids</h1> -->
-
-  <main *ngIf="show">
-    <div class="catContainer"> 
-      <!-- <h2 class="textStyle">Building Permits</h2> -->
-      <button
-        class="buildingBtn"
-        (click)="fetchBuildings()"
-        [routerLink]="['/bpCategoryList']"
-        routerLinkActive="router-link-active"
-      >
-      <div class = "container">
-        <img class = "permitBtn"
-          src="assets/2-man-on-construction-site-during-daytime-159306.png"
+  <header>
+    <h1 class="tag">View, vote, and comment on Grand Rapids Projects below!</h1>
+  </header>
+    <section id="testing" *ngIf="!show" (click)="display()">
+        <div id = "splash"  class = "animated fadeInBig 3s"> 
+        <h3 class = "animated fadeInRightBig">UPVOICE</h3>
+  
+        <img
+          src="assets/UPVOICE LOGO.png"
+          id="splashLogo"
+          class="animated fadeInUpBig"
         />
-        <div class = "overlay">
-          <div class = "text">Building Permits</div>
+  
+        <h3 class="animated fadeInLeftBig">Grand Rapids</h3>
+        </div> 
+  </section>
+    <main *ngIf="show">
+      <div class = "pics">
+      <div class="catContainer"> 
+        <button
+          class="buildingBtn"
+          (click)="fetchBuildings()"
+          [routerLink]="['/bpCategoryList']"
+          routerLinkActive="router-link-active"
+        >
+        <div class = "container">
+          <img class = "permitBtn"
+            src="assets/2-man-on-construction-site-during-daytime-159306.png"
+          />
+          <div class = "overlay">
+            <div class = "text">Building Permits</div>
+          </div>
         </div>
+        </button> 
       </div>
-      </button> 
-    </div>
-
-
-    <div class="catContainer">
-      <div class = "container"> 
-      <button class="marijuanaBtn" (click)="fetchMarijuana()" [routerLink]="['/mjCategoryList']" routerLinkActive="router-link-active">
-        <img class = "permitBtn" src="assets/mjLeaf.png" />
-        <div class = "overlay">
-          <div class = "text">Marijuana Permits</div>
-        </div>
+  
+  
+      <div class="catContainer">
+        <div class = "container"> 
+        <button class="marijuanaBtn" (click)="fetchMarijuana()" [routerLink]="['/mjCategoryList']" routerLinkActive="router-link-active">
+          <img class = "permitBtn" src="assets/mjLeaf.png" />
+          <div class = "overlay">
+            <div class = "text">Marijuana Permits</div>
+          </div>
+          </button>
+      </div>
+      </div>
+      
+  
+  
+      <div class="catContainer">
+        <div class = "container"> 
+        <button class="mapBtn" [routerLink]="['/map-locations']" routerLinkActive="router-link-active" >
+          <img src="assets/GoogleMapMarker.png" class="permitBtn" />
+          <div class = "overlayMap">
+            <div class = "text">View Locations</div>
+          </div>
         </button>
-    </div>
-    </div>
-    
-
-
-    <div class="catContainer">
-      <div class = "container"> 
-      <button class="mapBtn" [routerLink]="['/map-locations']" routerLinkActive="router-link-active" >
-        <img src="assets/GoogleMapMarker.png" class="permitBtn" />
-        <div class = "overlayMap">
-          <div class = "text">View Locations</div>
-        </div>
-      </button>
-    </div>
+      </div>
+      </div>
     </div>
