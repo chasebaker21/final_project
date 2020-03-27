@@ -13,6 +13,7 @@ import { timer } from 'rxjs';
 export class HomeComponent implements OnInit {
   
   show:boolean = false;
+  tag: boolean = false;
 
   constructor(public service1: MJAPIService, public service2: PermitsAPIService, public route: ActivatedRoute) { }
 
@@ -21,6 +22,7 @@ export class HomeComponent implements OnInit {
 
     if (param.get('skipintro') == 'true') {
       this.display();
+      this.displayTag()
     }
 
     const numbers = timer(3750);
@@ -29,6 +31,10 @@ export class HomeComponent implements OnInit {
 
   display() {
     this.show = true;
+  }
+
+  displayTag() {
+    this.tag = true;
   }
 
   fetchMarijuana() {
