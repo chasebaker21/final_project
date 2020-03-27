@@ -6,6 +6,12 @@ body {
   height: 75vh;
 }
 
+.pics {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+} 
+
 header {
   display: flex;
   justify-content: center;
